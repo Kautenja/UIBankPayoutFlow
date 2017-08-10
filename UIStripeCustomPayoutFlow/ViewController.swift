@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         UIStripeCustomPayoutSetup.appName = "Very Good App"
         UIStripeCustomPayoutSetup.termsAndConditions = "Very reasonable terms and conditions"
         UIStripeCustomPayoutSetup.tintColor = .orange
+        UIStripeCustomPayoutSetup.logo = #imageLiteral(resourceName: "logo")
         UIStripeCustomPayoutSetup.show(on: self) { (company) in
             self.updateOuput(company)
             NSLog("\(company)")

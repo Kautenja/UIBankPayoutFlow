@@ -32,8 +32,6 @@ public class CompanyInformationVC: UIViewController {
         let bundle = Bundle(for: classForCoder())
         let storyboard = UIStoryboard(name: name, bundle: bundle)
         let welcomeVC = storyboard.instantiateInitialViewController() as! CompanyInformationVC
-        // TODO: setup the view controller with deocrative code
-        
         vc.show(welcomeVC, sender: nil)
         return welcomeVC
     }

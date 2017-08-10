@@ -55,8 +55,8 @@
                                     <constraint firstAttribute="bottom" secondItem="kSi-DV-drU" secondAttribute="bottom" id="dNb-PA-nA4"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qs-5b-SdK">
-                                <rect key="frame" x="87" y="255" width="202.5" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Done!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qs-5b-SdK">
+                                <rect key="frame" x="110.5" y="255" width="154" height="43"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -68,7 +68,7 @@
                                     <constraint firstAttribute="width" secondItem="NJ8-Os-CWK" secondAttribute="height" id="N8n-4x-YwV"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="before you can get started, we need to collect some information" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ja6-4T-Ese">
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="you're all set up to start covering your customers with Brella" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ja6-4T-Ese">
                                 <rect key="frame" x="36" y="318" width="303" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>

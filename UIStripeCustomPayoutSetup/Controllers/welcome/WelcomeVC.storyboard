@@ -74,7 +74,7 @@
                                     <constraint firstAttribute="width" constant="200" id="i1k-tO-KJx"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="before you can get started, we need to collect some information" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzQ-iu-gPT">
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="before you can get started, we need to collect some information" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzQ-iu-gPT">
                                 <rect key="frame" x="36" y="366" width="303" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>

@@ -25,13 +25,10 @@ public class TermsAndConditionsVC: UIViewController {
     /// the text view to display the terms and conditions
     @IBOutlet weak var termsAndConditionsTextView: UITextView! {
         didSet {
-            termsAndConditionsTextView.text = termsAndConditions
+            termsAndConditionsTextView.text = UIStripeCustomPayoutSetup.termsAndConditions
         }
     }
-    
-    /// the terms and conditions for the application
-    var termsAndConditions: String?
-    
+
     /// the switch for users to use to agree
     @IBOutlet weak var agreementSwitch: UISwitch!
     
@@ -48,8 +45,6 @@ public class TermsAndConditionsVC: UIViewController {
         let bundle = Bundle(for: classForCoder())
         let storyboard = UIStoryboard(name: name, bundle: bundle)
         let welcomeVC = storyboard.instantiateInitialViewController() as! TermsAndConditionsVC
-        // TODO: setup the view controller with deocrative code
-        
         vc.show(welcomeVC, sender: nil)
         return welcomeVC
     }

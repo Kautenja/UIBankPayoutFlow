@@ -25,22 +25,16 @@ public class WelcomeVC: UIViewController {
     /// the company logo to display
     @IBOutlet weak var logo: UIImageView! {
         didSet {
-            logo.image = logoImage
+            logo.image = UIStripeCustomPayoutSetup.logo
         }
     }
-    
-    /// the image of the logo
-    var logoImage: UIImage?
-    
+
     /// the name of the app
     @IBOutlet weak var appNameLabel: UILabel! {
         didSet {
-            appNameLabel.text = appName
+            appNameLabel.text = UIStripeCustomPayoutSetup.appName
         }
     }
-    
-    /// the name of the app
-    var appName: String?
     
     /// Respond to a press on the get started button
     @IBAction func didPressGetStarted() {

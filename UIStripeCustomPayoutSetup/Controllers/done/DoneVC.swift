@@ -23,7 +23,11 @@ public class DoneVC: UIViewController {
     var delegate: DoneVCDelegate?
     
     /// the company logo to display
-    @IBOutlet weak var logo: UIImageView!
+    @IBOutlet weak var logo: UIImageView! {
+        didSet {
+            logo.image = UIStripeCustomPayoutSetup.logo
+        }
+    }
     
     /// Respond to a press on the get started button
     @IBAction func didPressGetStarted() {
@@ -35,8 +39,6 @@ public class DoneVC: UIViewController {
         let bundle = Bundle(for: classForCoder())
         let storyboard = UIStoryboard(name: name, bundle: bundle)
         let welcomeVC = storyboard.instantiateInitialViewController() as! DoneVC
-        // TODO: setup the view controller with deocrative code
-        
         vc.show(welcomeVC, sender: nil)
         return welcomeVC
     }
