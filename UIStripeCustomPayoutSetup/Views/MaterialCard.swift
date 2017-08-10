@@ -24,10 +24,10 @@ protocol MaterialCardDelegate {
 @IBDesignable class MaterialCard: UIView {
     
     /// the delegate to send events to
-    public var delegate: MaterialCardDelegate?
+    var delegate: MaterialCardDelegate?
     
     /// the radius for the corners of the card
-    @IBInspectable public var cornerRadius: CGFloat {
+    @IBInspectable var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
         }
@@ -41,13 +41,13 @@ protocol MaterialCardDelegate {
     }
     
     /// Initialize with the given frame
-    override public init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
     
     /// Initialzie with the given decoder
-    public required init?(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
@@ -63,7 +63,7 @@ protocol MaterialCardDelegate {
     }
     
     /// setup the views after loading from nib
-    override open func awakeFromNib() {
+    override func awakeFromNib() {
         super.awakeFromNib()
         let tap = UITapGestureRecognizer(target: self,
                                          action: #selector(consumeTap))
@@ -82,7 +82,7 @@ protocol MaterialCardDelegate {
     /// Set the tap handler to a new escaping closure
     /// - parameters:
     ///   - block: the block to call when a tap occurs
-    public func setTapHandler(block: @escaping (MaterialCard) -> Void) {
+    func setTapHandler(block: @escaping (MaterialCard) -> Void) {
         tapHandler = block
     }
     

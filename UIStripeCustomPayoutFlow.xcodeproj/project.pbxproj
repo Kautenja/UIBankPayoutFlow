@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		09AB93741F3C81E900AF1D85 /* DoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB93731F3C81E900AF1D85 /* DoneVC.swift */; };
+		09BCA1031F3D0D3C00423DDE /* MaterialSelectionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BCA1011F3D0D3C00423DDE /* MaterialSelectionCard.swift */; };
+		09BCA1041F3D0D3C00423DDE /* MaterialSelectionCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BCA1021F3D0D3C00423DDE /* MaterialSelectionCard.xib */; };
+		09BCA10C1F3D0E3800423DDE /* UIXibView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BCA10B1F3D0E3800423DDE /* UIXibView.framework */; };
+		09BCA10F1F3D0F7C00423DDE /* PopupDialog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BCA10E1F3D0F7C00423DDE /* PopupDialog.framework */; };
 		09FA3CA81F3C68F40059B3B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3CA71F3C68F40059B3B3 /* AppDelegate.swift */; };
 		09FA3CAA1F3C68F40059B3B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3CA91F3C68F40059B3B3 /* ViewController.swift */; };
 		09FA3CAD1F3C68F40059B3B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09FA3CAB1F3C68F40059B3B3 /* Main.storyboard */; };
@@ -92,6 +96,15 @@
 
 /* Begin PBXFileReference section */
 		09AB93731F3C81E900AF1D85 /* DoneVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoneVC.swift; path = Controllers/done/DoneVC.swift; sourceTree = "<group>"; };
+		09BCA1011F3D0D3C00423DDE /* MaterialSelectionCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialSelectionCard.swift; sourceTree = "<group>"; };
+		09BCA1021F3D0D3C00423DDE /* MaterialSelectionCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MaterialSelectionCard.xib; sourceTree = "<group>"; };
+		09BCA1051F3D0DC700423DDE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		09BCA1061F3D0DCF00423DDE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		09BCA1071F3D0DD600423DDE /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		09BCA1081F3D0DDB00423DDE /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		09BCA10B1F3D0E3800423DDE /* UIXibView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIXibView.framework; path = Carthage/Build/iOS/UIXibView.framework; sourceTree = "<group>"; };
+		09BCA10E1F3D0F7C00423DDE /* PopupDialog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PopupDialog.framework; path = Carthage/Build/iOS/PopupDialog.framework; sourceTree = "<group>"; };
+		09BCA1101F3D127C00423DDE /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
 		09FA3CA41F3C68F40059B3B3 /* UIStripeCustomPayoutFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIStripeCustomPayoutFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09FA3CA71F3C68F40059B3B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09FA3CA91F3C68F40059B3B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +169,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09BCA10C1F3D0E3800423DDE /* UIXibView.framework in Frameworks */,
+				09BCA10F1F3D0F7C00423DDE /* PopupDialog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,15 +185,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09BCA1001F3D0D2A00423DDE /* MaterialSelectionCard */ = {
+			isa = PBXGroup;
+			children = (
+				09BCA1021F3D0D3C00423DDE /* MaterialSelectionCard.xib */,
+				09BCA1011F3D0D3C00423DDE /* MaterialSelectionCard.swift */,
+			);
+			name = MaterialSelectionCard;
+			sourceTree = "<group>";
+		};
+		09BCA10A1F3D0E3800423DDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09BCA10E1F3D0F7C00423DDE /* PopupDialog.framework */,
+				09BCA10B1F3D0E3800423DDE /* UIXibView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		09FA3C9B1F3C68F40059B3B3 = {
 			isa = PBXGroup;
 			children = (
+				09BCA1051F3D0DC700423DDE /* .gitignore */,
+				09BCA1061F3D0DCF00423DDE /* README.md */,
+				09BCA1101F3D127C00423DDE /* CONTRIBUTING.md */,
+				09BCA1071F3D0DD600423DDE /* Cartfile */,
+				09BCA1081F3D0DDB00423DDE /* Makefile */,
 				09FA3CA61F3C68F40059B3B3 /* UIStripeCustomPayoutFlow */,
 				09FA3CBB1F3C68F40059B3B3 /* UIStripeCustomPayoutFlowTests */,
 				09FA3CC61F3C68F40059B3B3 /* UIStripeCustomPayoutFlowUITests */,
 				09FA3CDB1F3C69350059B3B3 /* UIStripeCustomPayoutSetup */,
 				09FA3CE81F3C69350059B3B3 /* UIStripeCustomPayoutSetupTests */,
 				09FA3CA51F3C68F40059B3B3 /* Products */,
+				09BCA10A1F3D0E3800423DDE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -262,6 +301,7 @@
 			children = (
 				09FA3D031F3C6ED70059B3B3 /* MaterialCard.swift */,
 				09FA3D211F3C74B90059B3B3 /* ZFRippleButton.swift */,
+				09BCA1001F3D0D2A00423DDE /* MaterialSelectionCard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -346,6 +386,7 @@
 				09FA3CA11F3C68F40059B3B3 /* Frameworks */,
 				09FA3CA21F3C68F40059B3B3 /* Resources */,
 				09FA3CF41F3C69350059B3B3 /* Embed Frameworks */,
+				09BCA10D1F3D0F1900423DDE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -525,6 +566,7 @@
 				09FA3D0D1F3C73E50059B3B3 /* WelcomeVC.storyboard in Resources */,
 				09FA3D101F3C740A0059B3B3 /* TermsAndConditionsVC.storyboard in Resources */,
 				09FA3D141F3C74370059B3B3 /* PayoutInformationVC.storyboard in Resources */,
+				09BCA1041F3D0D3C00423DDE /* MaterialSelectionCard.xib in Resources */,
 				09FA3D161F3C74490059B3B3 /* DoneVC.storyboard in Resources */,
 				09FA3D121F3C74220059B3B3 /* CompanyInformationVC.storyboard in Resources */,
 			);
@@ -538,6 +580,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09BCA10D1F3D0F1900423DDE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/PopupDialog.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/UIXibView.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		09FA3CA01F3C68F40059B3B3 /* Sources */ = {
@@ -573,6 +633,7 @@
 				09FA3CFE1F3C6B890059B3B3 /* BankAccount.swift in Sources */,
 				09FA3CFA1F3C6B6F0059B3B3 /* Address.swift in Sources */,
 				09FA3D221F3C74B90059B3B3 /* ZFRippleButton.swift in Sources */,
+				09BCA1031F3D0D3C00423DDE /* MaterialSelectionCard.swift in Sources */,
 				09FA3D1C1F3C74790059B3B3 /* CompanyInformationVC.swift in Sources */,
 				09FA3D041F3C6ED70059B3B3 /* MaterialCard.swift in Sources */,
 				09AB93741F3C81E900AF1D85 /* DoneVC.swift in Sources */,
@@ -683,7 +744,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -728,7 +789,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -834,6 +895,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UIStripeCustomPayoutSetup/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -858,6 +923,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UIStripeCustomPayoutSetup/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
