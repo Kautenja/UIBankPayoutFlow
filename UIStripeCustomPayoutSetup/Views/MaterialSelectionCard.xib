@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -15,21 +14,19 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MaterialSelectionCard" customModule="_Ring" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MaterialSelectionCard" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
             <connections>
                 <outlet property="card" destination="KbX-7q-bfg" id="pi3-qN-aOK"/>
-                <outlet property="imageView" destination="LoW-eS-3Ip" id="6RC-hN-Lzg"/>
-                <outlet property="leftPadding" destination="LbT-SA-z4s" id="UOT-jt-S0z"/>
                 <outlet property="titleLabel" destination="Y6t-s5-e5H" id="Quw-GJ-hEj"/>
                 <outlet property="valueLabel" destination="mvW-kP-hNG" id="3SZ-LR-pzq"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="KbX-7q-bfg" customClass="MaterialCard" customModule="_Ring" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="KbX-7q-bfg" customClass="MaterialCard" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1X-BK-Roh" customClass="ZFRippleButton" customModule="_Ring" customModuleProvider="target">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1X-BK-Roh" customClass="ZFRippleButton" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                     <state key="normal" title=" "/>
                     <userDefinedRuntimeAttributes>
@@ -58,31 +55,20 @@
                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LoW-eS-3Ip">
-                    <rect key="frame" x="10" y="10.5" width="29" height="29.5"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="LoW-eS-3Ip" secondAttribute="height" id="nnG-cZ-3KP"/>
-                    </constraints>
-                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="N1X-BK-Roh" secondAttribute="bottom" id="7Cs-CH-ckM"/>
-                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="LoW-eS-3Ip" secondAttribute="bottom" constant="10" id="Bqf-zR-u5F"/>
                 <constraint firstItem="N1X-BK-Roh" firstAttribute="leading" secondItem="KbX-7q-bfg" secondAttribute="leading" id="GJm-sp-XZh"/>
-                <constraint firstItem="LoW-eS-3Ip" firstAttribute="leading" secondItem="KbX-7q-bfg" secondAttribute="leading" constant="10" id="LbT-SA-z4s"/>
                 <constraint firstAttribute="trailing" secondItem="mvW-kP-hNG" secondAttribute="trailing" constant="10" id="QVe-OX-i7P"/>
                 <constraint firstItem="mvW-kP-hNG" firstAttribute="top" secondItem="KbX-7q-bfg" secondAttribute="top" constant="5" id="Uod-BJ-bDH"/>
                 <constraint firstItem="Y6t-s5-e5H" firstAttribute="top" secondItem="KbX-7q-bfg" secondAttribute="top" constant="5" id="XzH-OI-QJB"/>
                 <constraint firstItem="mvW-kP-hNG" firstAttribute="leading" secondItem="Y6t-s5-e5H" secondAttribute="trailing" constant="5" id="ZWM-hd-wVX"/>
                 <constraint firstItem="N1X-BK-Roh" firstAttribute="top" secondItem="KbX-7q-bfg" secondAttribute="top" id="dyU-Bu-86e"/>
-                <constraint firstItem="Y6t-s5-e5H" firstAttribute="leading" secondItem="LoW-eS-3Ip" secondAttribute="trailing" constant="10" id="h2u-Z4-FTd"/>
                 <constraint firstAttribute="bottom" secondItem="Y6t-s5-e5H" secondAttribute="bottom" constant="5" id="qA9-Sp-FGv"/>
-                <constraint firstItem="Y6t-s5-e5H" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KbX-7q-bfg" secondAttribute="leading" constant="10" id="rUO-Rt-b0B"/>
-                <constraint firstItem="LoW-eS-3Ip" firstAttribute="top" relation="greaterThanOrEqual" secondItem="KbX-7q-bfg" secondAttribute="top" constant="10" id="rf7-Gj-Ktx"/>
+                <constraint firstItem="Y6t-s5-e5H" firstAttribute="leading" secondItem="KbX-7q-bfg" secondAttribute="leading" constant="10" id="rUO-Rt-b0B"/>
                 <constraint firstAttribute="bottom" secondItem="mvW-kP-hNG" secondAttribute="bottom" constant="5" id="x92-Wz-l5r"/>
                 <constraint firstAttribute="trailing" secondItem="N1X-BK-Roh" secondAttribute="trailing" id="xRM-fG-7hu"/>
-                <constraint firstItem="LoW-eS-3Ip" firstAttribute="centerY" secondItem="KbX-7q-bfg" secondAttribute="centerY" id="yTd-gd-mGs"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>

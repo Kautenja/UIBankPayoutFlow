@@ -286,8 +286,8 @@
 		09FA3CC61F3C68F40059B3B3 /* UIStripeCustomPayoutFlowUITests */ = {
 			isa = PBXGroup;
 			children = (
-				09FA3CC71F3C68F40059B3B3 /* UIStripeCustomPayoutFlowUITests.swift */,
 				09FA3CC91F3C68F40059B3B3 /* Info.plist */,
+				09FA3CC71F3C68F40059B3B3 /* UIStripeCustomPayoutFlowUITests.swift */,
 			);
 			path = UIStripeCustomPayoutFlowUITests;
 			sourceTree = "<group>";

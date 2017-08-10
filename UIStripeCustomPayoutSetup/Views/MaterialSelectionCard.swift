@@ -36,60 +36,6 @@ import UIXibView
         }
     }
     
-    /// the constraint padding the image from the left side of the cell
-    @IBOutlet weak var leftPadding: NSLayoutConstraint!
-    
-    /// the imageview on the left side of the view
-    @IBOutlet weak private var imageView: UIImageView!
-    
-    /// the image to display on the image view
-    @IBInspectable var image: UIImage? {
-        get {
-            return imageView.image
-        }
-        set {
-            imageView.image = newValue
-            resizeImage()
-        }
-    }
-    
-    /// Resize the auto layout based on the nullity of the image
-    private func resizeImage() {
-        if let _ = image {
-            leftPadding.constant = 10
-        } else {
-            let imageViewWidth = imageView?.bounds.width ?? 0
-            leftPadding.constant = -(imageViewWidth - 10)
-        }
-    }
-    
-    /// The tint color for the image (mainly for templates)
-    @IBInspectable var imageTint: UIColor! {
-        get {
-            return imageView.tintColor
-        }
-        set {
-            imageView.tintColor = newValue
-        }
-    }
-    
-    /// Whether the image is a template or not
-    @IBInspectable var imageIsTemplate: Bool = false {
-        didSet {
-            if imageIsTemplate {
-                image = image?.withRenderingMode(.alwaysTemplate)
-            } else {
-                image = image?.withRenderingMode(.alwaysOriginal)
-            }
-        }
-    }
-    
-    /// Layout the subviews within the view
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        resizeImage()
-    }
-    
     /// the title of the card
     @IBOutlet var titleLabel: UILabel!
     
