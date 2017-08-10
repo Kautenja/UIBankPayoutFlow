@@ -18,7 +18,7 @@ public class UIStripeCustomPayoutSetup: UINavigationController {
     public static var logo: UIImage?
     
     /// the name of the company
-    public static var companyName: String?
+    public static var appName: String?
     
     /// the terms and conditions as a string
     public static var termsAndConditions: String?
@@ -35,6 +35,8 @@ public class UIStripeCustomPayoutSetup: UINavigationController {
         // create welcom screen on the navigation controller
         let welcome = WelcomeVC.show(on: nc)
         welcome.delegate = nc
+        welcome.appName = appName
+        welcome.logoImage = logo
         // present the navigation controller
         vc.present(nc, animated: true)
     }
@@ -51,6 +53,7 @@ extension UIStripeCustomPayoutSetup: WelcomeVCDelegate {
         NSLog("did press get started on welcome screen")
         let termsAndConditions = TermsAndConditionsVC.show(on: on)
         termsAndConditions.delegate = self
+        termsAndConditions.termsAndConditions = UIStripeCustomPayoutSetup.termsAndConditions
     }
 
 }

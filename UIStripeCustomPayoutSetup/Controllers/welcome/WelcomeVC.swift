@@ -23,23 +23,36 @@ public class WelcomeVC: UIViewController {
     var delegate: WelcomeVCDelegate?
     
     /// the company logo to display
-    @IBOutlet weak var logo: UIImageView!
+    @IBOutlet weak var logo: UIImageView! {
+        didSet {
+            logo.image = logoImage
+        }
+    }
     
-    /// the name of the company
-    @IBOutlet weak var companyName: UILabel!
+    /// the image of the logo
+    var logoImage: UIImage?
+    
+    /// the name of the app
+    @IBOutlet weak var appNameLabel: UILabel! {
+        didSet {
+            appNameLabel.text = appName
+        }
+    }
+    
+    /// the name of the app
+    var appName: String?
     
     /// Respond to a press on the get started button
     @IBAction func didPressGetStarted() {
         delegate?.didPressGetStarted(self)
     }
     
+    /// Show thw view controller on the existing view controller
     public static func show(on vc: UIViewController) -> WelcomeVC {
         let name = String(describing: classForCoder())
         let bundle = Bundle(for: classForCoder())
         let storyboard = UIStoryboard(name: name, bundle: bundle)
         let welcomeVC = storyboard.instantiateInitialViewController() as! WelcomeVC
-        // TODO: setup the view controller with deocrative code
-        
         vc.show(welcomeVC, sender: nil)
         return welcomeVC
     }

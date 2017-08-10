@@ -20,6 +20,9 @@ class ViewController: UIViewController {
     /// Respond to a press to the start button
     @IBAction func didPressStart() {
         /// show the setup flow on self with the given callback handler
+        UIStripeCustomPayoutSetup.appName = "Very Good App"
+        UIStripeCustomPayoutSetup.termsAndConditions = "Very reasonable terms and conditions"
+        UIStripeCustomPayoutSetup.tintColor = .orange
         UIStripeCustomPayoutSetup.show(on: self) { (company) in
             self.updateOuput(company)
             NSLog("\(company)")

@@ -23,7 +23,14 @@ public class TermsAndConditionsVC: UIViewController {
     var delegate: TermsAndConditionsVCDelegate?
     
     /// the text view to display the terms and conditions
-    @IBOutlet weak var termsAndConditionsTextView: UITextView!
+    @IBOutlet weak var termsAndConditionsTextView: UITextView! {
+        didSet {
+            termsAndConditionsTextView.text = termsAndConditions
+        }
+    }
+    
+    /// the terms and conditions for the application
+    var termsAndConditions: String?
     
     /// the switch for users to use to agree
     @IBOutlet weak var agreementSwitch: UISwitch!

@@ -103,7 +103,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="companyName" destination="KNx-p4-2lz" id="UJA-DU-2QP"/>
+                        <outlet property="appNameLabel" destination="KNx-p4-2lz" id="AzT-YT-Kje"/>
                         <outlet property="logo" destination="7BY-vg-VXY" id="j9k-MO-CT9"/>
                     </connections>
                 </viewController>
