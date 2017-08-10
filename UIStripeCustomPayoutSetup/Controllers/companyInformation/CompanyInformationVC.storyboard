@@ -1,11 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8WO-MS-8XG">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Company InformationVC-->
+        <scene sceneID="gu4-rA-W4D">
+            <objects>
+                <viewController id="8WO-MS-8XG" customClass="CompanyInformationVC" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zs9-xI-YEX"/>
+                        <viewControllerLayoutGuide type="bottom" id="59J-Wg-JhP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iU2-bL-euH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yae-cM-3HX" customClass="MaterialCard" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
+                                <rect key="frame" x="10" y="622" width="355" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7r6-kU-zZz" customClass="ZFRippleButton" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="35"/>
+                                        <state key="normal" title="Continue"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="trackTouchLocation" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadowRippleEnable" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="rippleBackgroundColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isShadowEnabled" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="ripplePercent">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didPressContinue" destination="8WO-MS-8XG" eventType="touchUpInside" id="fep-99-dH1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="KQV-uj-Eml"/>
+                                    <constraint firstItem="7r6-kU-zZz" firstAttribute="top" secondItem="Yae-cM-3HX" secondAttribute="top" id="RHG-jC-vGg"/>
+                                    <constraint firstItem="7r6-kU-zZz" firstAttribute="leading" secondItem="Yae-cM-3HX" secondAttribute="leading" id="TYN-3w-5bJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="7r6-kU-zZz" secondAttribute="trailing" id="X7r-8j-5sf"/>
+                                    <constraint firstAttribute="bottom" secondItem="7r6-kU-zZz" secondAttribute="bottom" id="laP-pq-9Xi"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="28" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rcH-cX-GQA">
+                                <rect key="frame" x="10" y="30" width="355" height="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82038187979999999" green="0.83498078580000001" blue="0.85553735490000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rcH-cX-GQA" firstAttribute="leading" secondItem="iU2-bL-euH" secondAttribute="leading" constant="10" id="Mvs-Pu-PXs"/>
+                            <constraint firstAttribute="trailing" secondItem="rcH-cX-GQA" secondAttribute="trailing" constant="10" id="P1T-fi-H0E"/>
+                            <constraint firstAttribute="trailing" secondItem="Yae-cM-3HX" secondAttribute="trailing" constant="10" id="P9x-gN-hoW"/>
+                            <constraint firstItem="Yae-cM-3HX" firstAttribute="leading" secondItem="iU2-bL-euH" secondAttribute="leading" constant="10" id="X4T-HJ-BE3"/>
+                            <constraint firstItem="rcH-cX-GQA" firstAttribute="top" secondItem="zs9-xI-YEX" secondAttribute="bottom" constant="10" id="mT3-ce-XYy"/>
+                            <constraint firstItem="59J-Wg-JhP" firstAttribute="top" secondItem="Yae-cM-3HX" secondAttribute="bottom" constant="10" id="qEC-jo-zJc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q2J-44-Zw7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-220" y="152.47376311844079"/>
+        </scene>
+    </scenes>
 </document>

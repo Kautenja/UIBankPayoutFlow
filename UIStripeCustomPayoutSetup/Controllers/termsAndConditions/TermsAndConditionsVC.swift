@@ -8,15 +8,15 @@
 
 import UIKit
 
-/// a protocol for interracting with events from the welcome view
+/// a protocol for interracting with events from the terms and conditions view
 protocol TermsAndConditionsVCDelegate {
     
-    /// Respond to a press on the get started button
+    /// Respond to a the terms and conditions being accepted
     func didAcceptTermsAndConditions(_ on: TermsAndConditionsVC)
     
 }
 
-/// the welcome page for the flow
+/// the terms and conditions page for the flow
 public class TermsAndConditionsVC: UIViewController {
     
     /// the delegate to pass events to if any
@@ -28,7 +28,7 @@ public class TermsAndConditionsVC: UIViewController {
     /// the switch for users to use to agree
     @IBOutlet weak var agreementSwitch: UISwitch!
     
-    /// Respond to a press on the get started button
+    /// Respond to a press on the continue button
     @IBAction func didPressContinue() {
         guard agreementSwitch.isOn else {
             return

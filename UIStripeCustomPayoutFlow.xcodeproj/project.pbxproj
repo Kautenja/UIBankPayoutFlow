@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09AB93741F3C81E900AF1D85 /* DoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB93731F3C81E900AF1D85 /* DoneVC.swift */; };
 		09FA3CA81F3C68F40059B3B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3CA71F3C68F40059B3B3 /* AppDelegate.swift */; };
 		09FA3CAA1F3C68F40059B3B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3CA91F3C68F40059B3B3 /* ViewController.swift */; };
 		09FA3CAD1F3C68F40059B3B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09FA3CAB1F3C68F40059B3B3 /* Main.storyboard */; };
@@ -34,7 +35,6 @@
 		09FA3D1A1F3C746C0059B3B3 /* TermsAndConditionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3D191F3C746C0059B3B3 /* TermsAndConditionsVC.swift */; };
 		09FA3D1C1F3C74790059B3B3 /* CompanyInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3D1B1F3C74790059B3B3 /* CompanyInformationVC.swift */; };
 		09FA3D1E1F3C74850059B3B3 /* PayoutInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3D1D1F3C74850059B3B3 /* PayoutInformationVC.swift */; };
-		09FA3D201F3C74920059B3B3 /* DoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3D1F1F3C74920059B3B3 /* DoneVC.swift */; };
 		09FA3D221F3C74B90059B3B3 /* ZFRippleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3D211F3C74B90059B3B3 /* ZFRippleButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +91,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		09AB93731F3C81E900AF1D85 /* DoneVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoneVC.swift; path = Controllers/done/DoneVC.swift; sourceTree = "<group>"; };
 		09FA3CA41F3C68F40059B3B3 /* UIStripeCustomPayoutFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIStripeCustomPayoutFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09FA3CA71F3C68F40059B3B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09FA3CA91F3C68F40059B3B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,7 +126,6 @@
 		09FA3D191F3C746C0059B3B3 /* TermsAndConditionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TermsAndConditionsVC.swift; path = Controllers/termsAndConditions/TermsAndConditionsVC.swift; sourceTree = "<group>"; };
 		09FA3D1B1F3C74790059B3B3 /* CompanyInformationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyInformationVC.swift; path = Controllers/companyInformation/CompanyInformationVC.swift; sourceTree = "<group>"; };
 		09FA3D1D1F3C74850059B3B3 /* PayoutInformationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PayoutInformationVC.swift; path = Controllers/payoutInformation/PayoutInformationVC.swift; sourceTree = "<group>"; };
-		09FA3D1F1F3C74920059B3B3 /* DoneVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoneVC.swift; path = Controllers/done/DoneVC.swift; sourceTree = "<group>"; };
 		09FA3D211F3C74B90059B3B3 /* ZFRippleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZFRippleButton.swift; path = Views/ZFRippleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -292,7 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				09FA3D151F3C74490059B3B3 /* DoneVC.storyboard */,
-				09FA3D1F1F3C74920059B3B3 /* DoneVC.swift */,
+				09AB93731F3C81E900AF1D85 /* DoneVC.swift */,
 			);
 			name = done;
 			sourceTree = "<group>";
@@ -574,8 +574,8 @@
 				09FA3CFA1F3C6B6F0059B3B3 /* Address.swift in Sources */,
 				09FA3D221F3C74B90059B3B3 /* ZFRippleButton.swift in Sources */,
 				09FA3D1C1F3C74790059B3B3 /* CompanyInformationVC.swift in Sources */,
-				09FA3D201F3C74920059B3B3 /* DoneVC.swift in Sources */,
 				09FA3D041F3C6ED70059B3B3 /* MaterialCard.swift in Sources */,
+				09AB93741F3C81E900AF1D85 /* DoneVC.swift in Sources */,
 				09FA3D001F3C6B950059B3B3 /* Company.swift in Sources */,
 				09FA3D181F3C74570059B3B3 /* WelcomeVC.swift in Sources */,
 				09FA3D1A1F3C746C0059B3B3 /* TermsAndConditionsVC.swift in Sources */,
@@ -917,6 +917,7 @@
 				09FA3CCE1F3C68F40059B3B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09FA3CCF1F3C68F40059B3B3 /* Build configuration list for PBXNativeTarget "UIStripeCustomPayoutFlowTests" */ = {
 			isa = XCConfigurationList;
@@ -925,6 +926,7 @@
 				09FA3CD11F3C68F40059B3B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09FA3CD21F3C68F40059B3B3 /* Build configuration list for PBXNativeTarget "UIStripeCustomPayoutFlowUITests" */ = {
 			isa = XCConfigurationList;
@@ -933,6 +935,7 @@
 				09FA3CD41F3C68F40059B3B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09FA3CF11F3C69350059B3B3 /* Build configuration list for PBXNativeTarget "UIStripeCustomPayoutSetup" */ = {
 			isa = XCConfigurationList;
@@ -941,6 +944,7 @@
 				09FA3CF31F3C69350059B3B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09FA3CF51F3C69350059B3B3 /* Build configuration list for PBXNativeTarget "UIStripeCustomPayoutSetupTests" */ = {
 			isa = XCConfigurationList;
@@ -949,6 +953,7 @@
 				09FA3CF71F3C69350059B3B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

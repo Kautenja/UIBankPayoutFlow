@@ -1,7 +1,105 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="par-Ko-bAQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--DoneVC-->
+        <scene sceneID="iKb-LU-eAx">
+            <objects>
+                <viewController id="par-Ko-bAQ" customClass="DoneVC" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="19A-tm-Byx"/>
+                        <viewControllerLayoutGuide type="bottom" id="rkD-PI-aKr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yba-jY-Mvj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mTQ-5D-O4q" customClass="MaterialCard" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
+                                <rect key="frame" x="10" y="622" width="355" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSi-DV-drU" customClass="ZFRippleButton" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="35"/>
+                                        <state key="normal" title="Get Started"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="trackTouchLocation" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadowRippleEnable" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="rippleBackgroundColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isShadowEnabled" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="ripplePercent">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didPressGetStarted" destination="par-Ko-bAQ" eventType="touchUpInside" id="DNY-hR-uFR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="4CL-fe-3r7"/>
+                                    <constraint firstItem="kSi-DV-drU" firstAttribute="leading" secondItem="mTQ-5D-O4q" secondAttribute="leading" id="CUb-ef-fyO"/>
+                                    <constraint firstAttribute="trailing" secondItem="kSi-DV-drU" secondAttribute="trailing" id="NoD-oK-Bf8"/>
+                                    <constraint firstItem="kSi-DV-drU" firstAttribute="top" secondItem="mTQ-5D-O4q" secondAttribute="top" id="bBE-uF-eSb"/>
+                                    <constraint firstAttribute="bottom" secondItem="kSi-DV-drU" secondAttribute="bottom" id="dNb-PA-nA4"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qs-5b-SdK">
+                                <rect key="frame" x="87" y="255" width="202.5" height="43"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NJ8-Os-CWK">
+                                <rect key="frame" x="87.5" y="40" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="1US-fG-CsT"/>
+                                    <constraint firstAttribute="width" secondItem="NJ8-Os-CWK" secondAttribute="height" id="N8n-4x-YwV"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="before you can get started, we need to collect some information" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ja6-4T-Ese">
+                                <rect key="frame" x="36" y="318" width="303" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="40v-6q-D1N"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82038187979999999" green="0.83498078580000001" blue="0.85553735490000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4qs-5b-SdK" firstAttribute="centerX" secondItem="NJ8-Os-CWK" secondAttribute="centerX" id="2he-JM-DW0"/>
+                            <constraint firstItem="NJ8-Os-CWK" firstAttribute="top" secondItem="19A-tm-Byx" secondAttribute="bottom" constant="20" id="2kA-0K-u6L"/>
+                            <constraint firstAttribute="trailing" secondItem="mTQ-5D-O4q" secondAttribute="trailing" constant="10" id="8be-Oa-fKO"/>
+                            <constraint firstItem="4qs-5b-SdK" firstAttribute="top" secondItem="NJ8-Os-CWK" secondAttribute="bottom" constant="15" id="KcE-Qs-KYp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ja6-4T-Ese" secondAttribute="trailing" constant="20" id="bij-C2-Ds1"/>
+                            <constraint firstItem="rkD-PI-aKr" firstAttribute="top" secondItem="mTQ-5D-O4q" secondAttribute="bottom" constant="10" id="huQ-7i-pJM"/>
+                            <constraint firstItem="ja6-4T-Ese" firstAttribute="leading" secondItem="yba-jY-Mvj" secondAttribute="leadingMargin" constant="20" id="lUH-vS-6lA"/>
+                            <constraint firstItem="NJ8-Os-CWK" firstAttribute="centerX" secondItem="yba-jY-Mvj" secondAttribute="centerX" id="nwg-40-HJq"/>
+                            <constraint firstItem="ja6-4T-Ese" firstAttribute="top" secondItem="4qs-5b-SdK" secondAttribute="bottom" constant="20" id="pN3-rA-8Pz"/>
+                            <constraint firstItem="mTQ-5D-O4q" firstAttribute="leading" secondItem="yba-jY-Mvj" secondAttribute="leading" constant="10" id="wu5-cd-xJG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logo" destination="NJ8-Os-CWK" id="UEu-9o-xYs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6nk-dL-S4e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-220" y="154"/>
+        </scene>
+    </scenes>
 </document>

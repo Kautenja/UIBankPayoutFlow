@@ -23,8 +23,10 @@ public class UIStripeCustomPayoutSetup {
     /// the terms and conditions as a string
     public static var termsAndConditions: String?
     
-    
-    
+    /// Show the view controller on the existing view controller with a callback
+    /// - parameters:
+    ///   - vc: the view controller to present on top of
+    ///   - callback: the callback function for when the setup completes
     public static func show(on vc: UIViewController,
                             callback: @escaping (Company) -> Void) {
         let welcome = WelcomeVC.show(on: vc)
@@ -53,9 +55,53 @@ extension UIStripeCustomPayoutSetup: WelcomeVCDelegate {
 // MARK: Terms And Conditions Screen Delegate Functions
 extension UIStripeCustomPayoutSetup: TermsAndConditionsVCDelegate {
     
-    /// Respond to a press on the get started button
+    /// Respond to a press on the continue button
     func didAcceptTermsAndConditions(_ on: TermsAndConditionsVC) {
         NSLog("did accept terms and conditions")
+        let companyInformation = CompanyInformationVC.show(on: on)
+        companyInformation.delegate = self
+        
+    }
+    
+}
+
+
+
+// MARK: Company Information Screen Delegate Functions
+extension UIStripeCustomPayoutSetup: CompanyInformationVCDelegate {
+    
+    /// Respond to the form being filled
+    func didFill(_ on: CompanyInformationVC, company: Company) {
+        NSLog("did fill company information form")
+        let payoutInformation = PayoutInformationVC.show(on: on)
+        payoutInformation.delegate = self
+    }
+    
+}
+
+
+
+// MARK: Payout Information Screen Delegate Functions
+extension UIStripeCustomPayoutSetup: PayoutInformationVCDelegate {
+    
+    /// Respond to the form being filled
+    func didFill(_ on: PayoutInformationVC, account: BankAccount) {
+        NSLog("did fill payout information form")
+        let done = DoneVC.show(on: on)
+        done.delegate = self
+    }
+    
+}
+
+
+
+// MARK: Payout Information Screen Delegate Functions
+extension UIStripeCustomPayoutSetup: DoneVCDelegate {
+    
+    /// Respond to a press on the get started button button
+    func didPressGetStarted(_ on: DoneVC) {
+        NSLog("did finish setup!")
+        on.dismiss(animated: true)
     }
     
 }

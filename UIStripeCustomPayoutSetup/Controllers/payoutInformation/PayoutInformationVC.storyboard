@@ -1,7 +1,79 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XLn-Cs-6Gx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Payout InformationVC-->
+        <scene sceneID="qXa-rB-TTy">
+            <objects>
+                <viewController id="XLn-Cs-6Gx" customClass="PayoutInformationVC" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2eG-Xk-vFW"/>
+                        <viewControllerLayoutGuide type="bottom" id="DFU-Eo-gJy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hK3-Ti-bAM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEV-Tl-WIw" customClass="MaterialCard" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
+                                <rect key="frame" x="10" y="622" width="355" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKH-w1-0BH" customClass="ZFRippleButton" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="35"/>
+                                        <state key="normal" title="Continue"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="trackTouchLocation" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadowRippleEnable" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="rippleBackgroundColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isShadowEnabled" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="ripplePercent">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didPressContinue" destination="XLn-Cs-6Gx" eventType="touchUpInside" id="tbS-mr-J5z"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="TKH-w1-0BH" secondAttribute="trailing" id="3Py-vU-qGH"/>
+                                    <constraint firstAttribute="bottom" secondItem="TKH-w1-0BH" secondAttribute="bottom" id="6R4-GM-JGc"/>
+                                    <constraint firstItem="TKH-w1-0BH" firstAttribute="top" secondItem="XEV-Tl-WIw" secondAttribute="top" id="CIJ-6N-GE9"/>
+                                    <constraint firstAttribute="height" constant="35" id="WoK-Jv-AlZ"/>
+                                    <constraint firstItem="TKH-w1-0BH" firstAttribute="leading" secondItem="XEV-Tl-WIw" secondAttribute="leading" id="lBQ-OY-Prb"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payout Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="28" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ohc-iQ-nMq">
+                                <rect key="frame" x="10" y="30" width="355" height="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82038187979999999" green="0.83498078580000001" blue="0.85553735490000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ohc-iQ-nMq" secondAttribute="trailing" constant="10" id="Bew-hr-Q7g"/>
+                            <constraint firstItem="ohc-iQ-nMq" firstAttribute="leading" secondItem="hK3-Ti-bAM" secondAttribute="leading" constant="10" id="RiL-7V-kU1"/>
+                            <constraint firstItem="XEV-Tl-WIw" firstAttribute="leading" secondItem="hK3-Ti-bAM" secondAttribute="leading" constant="10" id="VOl-e2-UvE"/>
+                            <constraint firstAttribute="trailing" secondItem="XEV-Tl-WIw" secondAttribute="trailing" constant="10" id="b4L-Oe-bZf"/>
+                            <constraint firstItem="DFU-Eo-gJy" firstAttribute="top" secondItem="XEV-Tl-WIw" secondAttribute="bottom" constant="10" id="pD3-HR-JJH"/>
+                            <constraint firstItem="ohc-iQ-nMq" firstAttribute="top" secondItem="2eG-Xk-vFW" secondAttribute="bottom" constant="10" id="sWh-9k-0Il"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O8S-Hg-nD0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-220" y="152.47376311844079"/>
+        </scene>
+    </scenes>
 </document>
