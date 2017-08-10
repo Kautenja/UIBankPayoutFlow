@@ -9,7 +9,7 @@
 import UIKit
 
 /// the central entry point for the flow
-public class UIStripeCustomPayoutSetup {
+public class UIStripeCustomPayoutSetup: UINavigationController {
     
     /// the tint color for the view controllers
     public static var tintColor: UIColor = UIColor.yellow
@@ -29,9 +29,14 @@ public class UIStripeCustomPayoutSetup {
     ///   - callback: the callback function for when the setup completes
     public static func show(on vc: UIViewController,
                             callback: @escaping (Company) -> Void) {
-        let welcome = WelcomeVC.show(on: vc)
-        let delegate = UIStripeCustomPayoutSetup()
-        welcome.delegate = delegate
+        // create an instance of self
+        let nc = UIStripeCustomPayoutSetup()
+        nc.isNavigationBarHidden = true
+        // create welcom screen on the navigation controller
+        let welcome = WelcomeVC.show(on: nc)
+        welcome.delegate = nc
+        // present the navigation controller
+        vc.present(nc, animated: true)
     }
     
 }
@@ -60,7 +65,6 @@ extension UIStripeCustomPayoutSetup: TermsAndConditionsVCDelegate {
         NSLog("did accept terms and conditions")
         let companyInformation = CompanyInformationVC.show(on: on)
         companyInformation.delegate = self
-        
     }
     
 }
@@ -99,9 +103,9 @@ extension UIStripeCustomPayoutSetup: PayoutInformationVCDelegate {
 extension UIStripeCustomPayoutSetup: DoneVCDelegate {
     
     /// Respond to a press on the get started button button
-    func didPressGetStarted(_ on: DoneVC) {
+    func didPressDone(_ on: DoneVC) {
         NSLog("did finish setup!")
-        on.dismiss(animated: true)
+        self.dismiss(animated: true)
     }
     
 }

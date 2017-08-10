@@ -12,7 +12,7 @@ import UIKit
 protocol DoneVCDelegate {
     
     /// Respond to a press on the get started button
-    func didPressGetStarted(_ on: DoneVC)
+    func didPressDone(_ on: DoneVC)
     
 }
 
@@ -27,7 +27,7 @@ public class DoneVC: UIViewController {
     
     /// Respond to a press on the get started button
     @IBAction func didPressGetStarted() {
-        delegate?.didPressGetStarted(self)
+        delegate?.didPressDone(self)
     }
     
     public static func show(on vc: UIViewController) -> DoneVC {
