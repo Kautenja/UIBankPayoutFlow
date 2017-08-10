@@ -95,7 +95,7 @@ See the list of [contributors](https://github.com/kautenja/UIStripeCustomPayoutF
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md][] file 
+This project is licensed under the MIT License - see the [LICENSE][] file 
 for details
 
-[LICENSE.md]: ./LICENSE.md
+[LICENSE]: ./LICENSE

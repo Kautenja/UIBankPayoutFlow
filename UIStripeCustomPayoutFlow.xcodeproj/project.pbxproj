@@ -105,6 +105,7 @@
 		09BCA10B1F3D0E3800423DDE /* UIXibView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIXibView.framework; path = Carthage/Build/iOS/UIXibView.framework; sourceTree = "<group>"; };
 		09BCA10E1F3D0F7C00423DDE /* PopupDialog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PopupDialog.framework; path = Carthage/Build/iOS/PopupDialog.framework; sourceTree = "<group>"; };
 		09BCA1101F3D127C00423DDE /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		09BCA1111F3D159E00423DDE /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		09FA3CA41F3C68F40059B3B3 /* UIStripeCustomPayoutFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIStripeCustomPayoutFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09FA3CA71F3C68F40059B3B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09FA3CA91F3C68F40059B3B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -207,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				09BCA1051F3D0DC700423DDE /* .gitignore */,
+				09BCA1111F3D159E00423DDE /* LICENSE */,
 				09BCA1061F3D0DCF00423DDE /* README.md */,
 				09BCA1101F3D127C00423DDE /* CONTRIBUTING.md */,
 				09BCA1071F3D0DD600423DDE /* Cartfile */,
