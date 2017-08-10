@@ -1,0 +1,31 @@
+@startuml
+
+class Address {
+  street: String
+  city: String
+  state: String
+  zip: String
+}
+
+class Representative {
+  firstName: String
+  middleName: String
+  lastName: String
+  dob: Date
+  ssn: String
+}
+
+class BankAccount {
+  routingNumber: String
+  accountNumber: String
+}
+
+class Company {
+  type: String
+  name: String
+}
+Company "1" *-- "1" Address: location >
+Company "1" *-- "1" Representative: representative >
+Company "1" *-- "1" BankAccount: payout >
+
+@enduml
