@@ -7,19 +7,24 @@
 //
 
 import UIKit
+import UIStripeCustomPayoutSetup
 
+/// the main view controller for the example
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    /// Update the view controller with data from the given company
+    func updateOuput(_ company: Company) {
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    /// Respond to a press to the start button
+    @IBAction func didPressStart() {
+        /// show the setup flow on self with the given callback handler
+        UIStripeCustomPayoutSetup.show(on: self) { (company) in
+            self.updateOuput(company)
+            NSLog("\(company)")
+        }
     }
-
-
+    
 }
 

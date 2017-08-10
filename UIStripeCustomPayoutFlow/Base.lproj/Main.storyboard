@@ -25,6 +25,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTj-qo-QIv">
                                 <rect key="frame" x="26" y="627" width="323" height="30"/>
                                 <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="didPressStart" destination="BYZ-38-t0r" eventType="touchUpInside" id="3BZ-SM-4Vl"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIStripeCustomPayoutSetup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggd-bb-8pS">
                                 <rect key="frame" x="26" y="30" width="323" height="27.5"/>

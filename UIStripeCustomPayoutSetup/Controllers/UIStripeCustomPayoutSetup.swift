@@ -9,7 +9,7 @@
 import UIKit
 
 /// the central entry point for the flow
-public class UIStripeCustomPayoutSetup: UIViewController {
+public class UIStripeCustomPayoutSetup {
     
     /// the tint color for the view controllers
     public static var tintColor: UIColor = UIColor.yellow
@@ -23,8 +23,23 @@ public class UIStripeCustomPayoutSetup: UIViewController {
     /// the terms and conditions as a string
     public static var termsAndConditions: String?
     
-    public func show(on vc: UIViewController,
-                     callback: @escaping (Company) -> Void) {
-        
+    public static func show(on vc: UIViewController,
+                            callback: @escaping (Company) -> Void) {
+        let welcome = WelcomeVC.show(on: vc)
+        let delegate = UIStripeCustomPayoutSetup()
+        welcome.delegate = delegate
     }
+    
+}
+
+
+
+// MARK: Welcome Screen Delegate Functions
+extension UIStripeCustomPayoutSetup: WelcomeVCDelegate {
+    
+    /// Respond to a press on the get started button
+    func didPressGetStarted() {
+        NSLog("did press get started on Welcome screen")
+    }
+
 }
