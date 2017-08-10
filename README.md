@@ -66,7 +66,9 @@ Give an example
 To incorporate this framework in your workflow simply add the following line to
 your Cartfile:
 
+```ruby
 github "kautenja/UIStripeCustomPayoutFlow"
+```
 
 ## Built With
 
@@ -78,7 +80,7 @@ github "kautenja/UIStripeCustomPayoutFlow"
 
 ## Contributing
 
-Please read [CONTRIBUTING.md][]for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md][] for details on our code of conduct, and the process for submitting pull requests to us.
 
 [CONTRIBUTING.md]: ./CONTRIBUTING.md
 
