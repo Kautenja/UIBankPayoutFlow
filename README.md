@@ -5,6 +5,8 @@ a custom seller account on [Stripe][]
 
 [Stripe]: https://stripe.com
 
+![Design](./img/design.png)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your 
