@@ -68,7 +68,7 @@
                                     <constraint firstAttribute="width" secondItem="NJ8-Os-CWK" secondAttribute="height" id="N8n-4x-YwV"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="you're all set up to start covering your customers with Brella" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ja6-4T-Ese">
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="you're all set up to start charging your customers" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ja6-4T-Ese">
                                 <rect key="frame" x="36" y="318" width="303" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -94,6 +94,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="allSetUpLabel" destination="ja6-4T-Ese" id="OPB-3E-GA9"/>
                         <outlet property="logo" destination="NJ8-Os-CWK" id="UEu-9o-xYs"/>
                     </connections>
                 </viewController>

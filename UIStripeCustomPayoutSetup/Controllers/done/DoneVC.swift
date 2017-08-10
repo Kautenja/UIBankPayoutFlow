@@ -29,6 +29,16 @@ public class DoneVC: UIViewController {
         }
     }
     
+    /// The label with the all setup message, try to add an app name disclosure
+    /// if there is one, else just leave as is
+    @IBOutlet weak var allSetUpLabel: UITextView! {
+        didSet {
+            guard let appName = UIStripeCustomPayoutSetup.appName else {
+                return
+            }
+            allSetUpLabel.text = allSetUpLabel.text + " with \(appName)"
+        }
+    }
     /// Respond to a press on the get started button
     @IBAction func didPressGetStarted() {
         delegate?.didPressDone(self)
