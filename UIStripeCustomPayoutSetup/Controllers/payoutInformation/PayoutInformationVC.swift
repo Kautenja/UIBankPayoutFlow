@@ -17,7 +17,7 @@ protocol PayoutInformationVCDelegate {
 }
 
 /// the payout information page for the flow
-public class PayoutInformationVC: UIViewController {
+class PayoutInformationVC: UIViewController {
     
     /// the delegate to pass events to if any
     var delegate: PayoutInformationVCDelegate?
@@ -31,7 +31,7 @@ public class PayoutInformationVC: UIViewController {
     /// controller
     /// - parameters:
     ///   - vc: the view controller to show on top of
-    public static func show(on vc: UIViewController) -> PayoutInformationVC {
+    static func show(on vc: UIViewController) -> PayoutInformationVC {
         let name = String(describing: classForCoder())
         let bundle = Bundle(for: classForCoder())
         let storyboard = UIStoryboard(name: name, bundle: bundle)

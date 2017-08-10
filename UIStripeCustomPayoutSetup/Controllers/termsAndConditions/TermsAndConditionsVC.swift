@@ -17,7 +17,7 @@ protocol TermsAndConditionsVCDelegate {
 }
 
 /// the terms and conditions page for the flow
-public class TermsAndConditionsVC: UIViewController {
+class TermsAndConditionsVC: UIViewController {
     
     /// the delegate to pass events to if any
     var delegate: TermsAndConditionsVCDelegate?
@@ -44,7 +44,7 @@ public class TermsAndConditionsVC: UIViewController {
     /// controller
     /// - parameters:
     ///   - vc: the view controller to show on top of
-    public static func show(on vc: UIViewController) -> TermsAndConditionsVC {
+    static func show(on vc: UIViewController) -> TermsAndConditionsVC {
         let name = String(describing: classForCoder())
         let bundle = Bundle(for: classForCoder())
         let storyboard = UIStoryboard(name: name, bundle: bundle)

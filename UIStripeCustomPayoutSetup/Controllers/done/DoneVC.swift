@@ -17,7 +17,7 @@ protocol DoneVCDelegate {
 }
 
 /// the welcome page for the flow
-public class DoneVC: UIViewController {
+class DoneVC: UIViewController {
     
     /// the delegate to pass events to if any
     var delegate: DoneVCDelegate?
@@ -48,7 +48,7 @@ public class DoneVC: UIViewController {
     /// controller
     /// - parameters:
     ///   - vc: the view controller to show on top of
-    public static func show(on vc: UIViewController) -> DoneVC {
+    static func show(on vc: UIViewController) -> DoneVC {
         let name = String(describing: classForCoder())
         let bundle = Bundle(for: classForCoder())
         let storyboard = UIStoryboard(name: name, bundle: bundle)
