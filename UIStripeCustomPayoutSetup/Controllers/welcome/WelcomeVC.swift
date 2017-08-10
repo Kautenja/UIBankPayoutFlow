@@ -12,7 +12,7 @@ import UIKit
 protocol WelcomeVCDelegate {
     
     /// Respond to a press on the get started button
-    func didPressGetStarted()
+    func didPressGetStarted(_ on: WelcomeVC)
     
 }
 
@@ -30,7 +30,7 @@ public class WelcomeVC: UIViewController {
     
     /// Respond to a press on the get started button
     @IBAction func didPressGetStarted() {
-        
+        delegate?.didPressGetStarted(self)
     }
     
     public static func show(on vc: UIViewController) -> WelcomeVC {

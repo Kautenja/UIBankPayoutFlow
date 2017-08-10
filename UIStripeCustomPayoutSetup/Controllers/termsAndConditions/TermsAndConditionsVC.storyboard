@@ -1,7 +1,109 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dM1-4q-Ab0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Terms And ConditionsVC-->
+        <scene sceneID="P6O-Iq-6Ed">
+            <objects>
+                <viewController id="dM1-4q-Ab0" customClass="TermsAndConditionsVC" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PCm-Nk-JlI"/>
+                        <viewControllerLayoutGuide type="bottom" id="fnF-G4-F2U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dBk-VJ-zrr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vWT-po-Ks2" customClass="MaterialCard" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
+                                <rect key="frame" x="10" y="622" width="355" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WhJ-YV-iEs" customClass="ZFRippleButton" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="35"/>
+                                        <state key="normal" title="Continue"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="trackTouchLocation" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadowRippleEnable" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="rippleBackgroundColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isShadowEnabled" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="ripplePercent">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didPressContinue" destination="dM1-4q-Ab0" eventType="touchUpInside" id="6ZC-St-zOs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="WhJ-YV-iEs" secondAttribute="bottom" id="18y-KZ-2qD"/>
+                                    <constraint firstItem="WhJ-YV-iEs" firstAttribute="leading" secondItem="vWT-po-Ks2" secondAttribute="leading" id="M85-5N-GEE"/>
+                                    <constraint firstAttribute="height" constant="35" id="lZr-CT-FRn"/>
+                                    <constraint firstAttribute="trailing" secondItem="WhJ-YV-iEs" secondAttribute="trailing" id="pf2-vj-mrJ"/>
+                                    <constraint firstItem="WhJ-YV-iEs" firstAttribute="top" secondItem="vWT-po-Ks2" secondAttribute="top" id="xUw-gS-yHo"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms and Conditions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="28" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cpM-XQ-oPB">
+                                <rect key="frame" x="10" y="30" width="355" height="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zw2-cR-1W6">
+                                <rect key="frame" x="26" y="69" width="323" height="507"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="v3j-2a-iLh">
+                                <rect key="frame" x="300" y="581" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agree?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Gs-Nt-dyu">
+                                <rect key="frame" x="224" y="586" width="61" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82038187979999999" green="0.83498078580000001" blue="0.85553735490000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vWT-po-Ks2" secondAttribute="trailing" constant="10" id="3v4-2H-HsK"/>
+                            <constraint firstAttribute="trailing" secondItem="cpM-XQ-oPB" secondAttribute="trailing" constant="10" id="8Ar-hS-fqm"/>
+                            <constraint firstItem="v3j-2a-iLh" firstAttribute="top" secondItem="zw2-cR-1W6" secondAttribute="bottom" constant="5" id="FL7-r6-9xw"/>
+                            <constraint firstItem="fnF-G4-F2U" firstAttribute="top" secondItem="vWT-po-Ks2" secondAttribute="bottom" constant="10" id="PxR-K4-2I9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="v3j-2a-iLh" secondAttribute="trailing" constant="10" id="RgM-tz-sNU"/>
+                            <constraint firstItem="v3j-2a-iLh" firstAttribute="centerY" secondItem="6Gs-Nt-dyu" secondAttribute="centerY" id="Tfw-q5-RwE"/>
+                            <constraint firstItem="cpM-XQ-oPB" firstAttribute="leading" secondItem="dBk-VJ-zrr" secondAttribute="leading" constant="10" id="ajX-HZ-dS3"/>
+                            <constraint firstItem="cpM-XQ-oPB" firstAttribute="top" secondItem="PCm-Nk-JlI" secondAttribute="bottom" constant="10" id="b2L-2E-3bi"/>
+                            <constraint firstItem="vWT-po-Ks2" firstAttribute="top" secondItem="v3j-2a-iLh" secondAttribute="bottom" constant="10" id="gpY-Qq-8MV"/>
+                            <constraint firstItem="vWT-po-Ks2" firstAttribute="leading" secondItem="dBk-VJ-zrr" secondAttribute="leading" constant="10" id="gxO-lq-YOp"/>
+                            <constraint firstItem="zw2-cR-1W6" firstAttribute="leading" secondItem="dBk-VJ-zrr" secondAttribute="leadingMargin" constant="10" id="hsd-1z-eIt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zw2-cR-1W6" secondAttribute="trailing" constant="10" id="kEp-tx-acQ"/>
+                            <constraint firstItem="v3j-2a-iLh" firstAttribute="leading" secondItem="6Gs-Nt-dyu" secondAttribute="trailing" constant="15" id="u4h-aR-pZO"/>
+                            <constraint firstItem="zw2-cR-1W6" firstAttribute="top" secondItem="cpM-XQ-oPB" secondAttribute="bottom" constant="10" id="uRN-Em-qlE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="agreementSwitch" destination="v3j-2a-iLh" id="ptQ-bq-MF3"/>
+                        <outlet property="termsAndConditionsTextView" destination="zw2-cR-1W6" id="mNF-9H-58g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cd1-xq-6bb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-220" y="152.47376311844079"/>
+        </scene>
+    </scenes>
 </document>

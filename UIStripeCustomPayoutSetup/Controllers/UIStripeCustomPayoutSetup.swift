@@ -23,6 +23,8 @@ public class UIStripeCustomPayoutSetup {
     /// the terms and conditions as a string
     public static var termsAndConditions: String?
     
+    
+    
     public static func show(on vc: UIViewController,
                             callback: @escaping (Company) -> Void) {
         let welcome = WelcomeVC.show(on: vc)
@@ -38,8 +40,22 @@ public class UIStripeCustomPayoutSetup {
 extension UIStripeCustomPayoutSetup: WelcomeVCDelegate {
     
     /// Respond to a press on the get started button
-    func didPressGetStarted() {
-        NSLog("did press get started on Welcome screen")
+    func didPressGetStarted(_ on: WelcomeVC) {
+        NSLog("did press get started on welcome screen")
+        let termsAndConditions = TermsAndConditionsVC.show(on: on)
+        termsAndConditions.delegate = self
     }
 
+}
+
+
+
+// MARK: Terms And Conditions Screen Delegate Functions
+extension UIStripeCustomPayoutSetup: TermsAndConditionsVCDelegate {
+    
+    /// Respond to a press on the get started button
+    func didAcceptTermsAndConditions(_ on: TermsAndConditionsVC) {
+        NSLog("did accept terms and conditions")
+    }
+    
 }
