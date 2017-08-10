@@ -24,7 +24,7 @@ class Company {
   type: String
   name: String
 }
-Company "1" *-- "1" Address: location >
+Company "1" *-- "1" Address: address >
 Company "1" *-- "1" Representative: representative >
 Company "1" *-- "1" BankAccount: payout >
 

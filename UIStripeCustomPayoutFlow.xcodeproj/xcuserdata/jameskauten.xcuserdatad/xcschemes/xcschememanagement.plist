@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>UIStripeCustomPayoutSetup.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +28,16 @@
 			<true/>
 		</dict>
 		<key>09FA3CC21F3C68F40059B3B3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>09FA3CD91F3C69350059B3B3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>09FA3CE11F3C69350059B3B3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

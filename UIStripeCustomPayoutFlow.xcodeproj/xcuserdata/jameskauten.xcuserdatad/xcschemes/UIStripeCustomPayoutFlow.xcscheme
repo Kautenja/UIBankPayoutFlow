@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "09FA3CA31F3C68F40059B3B3"
+               BuildableName = "UIStripeCustomPayoutFlow.app"
+               BlueprintName = "UIStripeCustomPayoutFlow"
+               ReferencedContainer = "container:UIStripeCustomPayoutFlow.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,46 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "09FA3CB71F3C68F40059B3B3"
+               BuildableName = "UIStripeCustomPayoutFlowTests.xctest"
+               BlueprintName = "UIStripeCustomPayoutFlowTests"
+               ReferencedContainer = "container:UIStripeCustomPayoutFlow.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "09FA3CC21F3C68F40059B3B3"
+               BuildableName = "UIStripeCustomPayoutFlowUITests.xctest"
+               BlueprintName = "UIStripeCustomPayoutFlowUITests"
+               ReferencedContainer = "container:UIStripeCustomPayoutFlow.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "09FA3CE11F3C69350059B3B3"
+               BuildableName = "UIStripeCustomPayoutSetupTests.xctest"
+               BlueprintName = "UIStripeCustomPayoutSetupTests"
+               ReferencedContainer = "container:UIStripeCustomPayoutFlow.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "09FA3CA31F3C68F40059B3B3"
+            BuildableName = "UIStripeCustomPayoutFlow.app"
+            BlueprintName = "UIStripeCustomPayoutFlow"
+            ReferencedContainer = "container:UIStripeCustomPayoutFlow.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +81,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "09FA3CA31F3C68F40059B3B3"
+            BuildableName = "UIStripeCustomPayoutFlow.app"
+            BlueprintName = "UIStripeCustomPayoutFlow"
+            ReferencedContainer = "container:UIStripeCustomPayoutFlow.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +100,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "09FA3CA31F3C68F40059B3B3"
+            BuildableName = "UIStripeCustomPayoutFlow.app"
+            BlueprintName = "UIStripeCustomPayoutFlow"
+            ReferencedContainer = "container:UIStripeCustomPayoutFlow.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
