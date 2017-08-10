@@ -41,7 +41,10 @@ public class WelcomeVC: UIViewController {
         delegate?.didPressGetStarted(self)
     }
     
-    /// Show thw view controller on the existing view controller
+    /// Show a new instance of this view controller on top of the exisitng view
+    /// controller
+    /// - parameters:
+    ///   - vc: the view controller to show on top of
     public static func show(on vc: UIViewController) -> WelcomeVC {
         let name = String(describing: classForCoder())
         let bundle = Bundle(for: classForCoder())

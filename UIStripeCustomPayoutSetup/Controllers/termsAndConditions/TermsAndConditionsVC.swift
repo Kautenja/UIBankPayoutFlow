@@ -40,6 +40,10 @@ public class TermsAndConditionsVC: UIViewController {
         delegate?.didAcceptTermsAndConditions(self)
     }
     
+    /// Show a new instance of this view controller on top of the exisitng view
+    /// controller
+    /// - parameters:
+    ///   - vc: the view controller to show on top of
     public static func show(on vc: UIViewController) -> TermsAndConditionsVC {
         let name = String(describing: classForCoder())
         let bundle = Bundle(for: classForCoder())

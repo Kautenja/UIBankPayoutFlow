@@ -27,6 +27,10 @@ public class CompanyInformationVC: UIViewController {
         delegate?.didFill(self, company: Company())
     }
     
+    /// Show a new instance of this view controller on top of the exisitng view
+    /// controller
+    /// - parameters:
+    ///   - vc: the view controller to show on top of
     public static func show(on vc: UIViewController) -> CompanyInformationVC {
         let name = String(describing: classForCoder())
         let bundle = Bundle(for: classForCoder())
