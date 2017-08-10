@@ -10,21 +10,21 @@ import Foundation
 
 /// a representative for the company, this includes all relevant metadata as 
 /// needed for payments processing according to basic US standards
-struct Representative {
+public struct Representative {
     
     /// the first name of the person
-    var firstName: String?
+    public var firstName: String?
     
     /// the middle name of the person
-    var middleName: String?
+    public var middleName: String?
     
     /// the last/family name of the persone
-    var lastName: String?
+    public var lastName: String?
     
     /// the date of birth of the person
-    var dob: Date?
+    public var dob: Date?
     
     /// the person's US social security number
-    var ssn: String?
+    public var ssn: String?
     
 }

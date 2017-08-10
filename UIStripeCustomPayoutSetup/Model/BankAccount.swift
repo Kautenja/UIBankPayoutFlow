@@ -9,12 +9,12 @@
 import Foundation
 
 /// a US bank account with relevant data needed for payouts
-struct BankAccount {
+public struct BankAccount {
     
     /// the routing number of the account
-    var routingNumber: String?
+    public var routingNumber: String?
     
     /// the account number for the account
-    var accountNumber: String?
+    public var accountNumber: String?
     
 }

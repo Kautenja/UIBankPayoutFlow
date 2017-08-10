@@ -10,18 +10,18 @@ import Foundation
 
 /// a physical address represented by its modular pieces according to US
 /// requirements for addresses
-struct Address {
+public struct Address {
     
     /// the first line of the street address
-    var street: String?
+    public var street: String?
     
     /// the city the address is in
-    var city: String?
+    public var city: String?
     
     /// the state the city is in
-    var state: String?
+    public var state: String?
     
     /// the US postal code
-    var zip: String?
+    public var zip: String?
     
 }
