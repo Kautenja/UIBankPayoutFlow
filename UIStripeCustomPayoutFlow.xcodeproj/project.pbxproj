@@ -23,6 +23,8 @@
 		09FA3CFC1F3C6B7D0059B3B3 /* Representative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3CFB1F3C6B7D0059B3B3 /* Representative.swift */; };
 		09FA3CFE1F3C6B890059B3B3 /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3CFD1F3C6B890059B3B3 /* BankAccount.swift */; };
 		09FA3D001F3C6B950059B3B3 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3CFF1F3C6B950059B3B3 /* Company.swift */; };
+		09FA3D041F3C6ED70059B3B3 /* MaterialCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3D031F3C6ED70059B3B3 /* MaterialCard.swift */; };
+		09FA3D061F3C6FC10059B3B3 /* UIStripeCustomPayoutSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3D051F3C6FC10059B3B3 /* UIStripeCustomPayoutSetup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,8 @@
 		09FA3CFB1F3C6B7D0059B3B3 /* Representative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Representative.swift; path = Model/Representative.swift; sourceTree = "<group>"; };
 		09FA3CFD1F3C6B890059B3B3 /* BankAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BankAccount.swift; path = Model/BankAccount.swift; sourceTree = "<group>"; };
 		09FA3CFF1F3C6B950059B3B3 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Company.swift; path = Model/Company.swift; sourceTree = "<group>"; };
+		09FA3D031F3C6ED70059B3B3 /* MaterialCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialCard.swift; path = Views/MaterialCard.swift; sourceTree = "<group>"; };
+		09FA3D051F3C6FC10059B3B3 /* UIStripeCustomPayoutSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIStripeCustomPayoutSetup.swift; path = Controllers/UIStripeCustomPayoutSetup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,9 +206,11 @@
 		09FA3CDB1F3C69350059B3B3 /* UIStripeCustomPayoutSetup */ = {
 			isa = PBXGroup;
 			children = (
+				09FA3CDD1F3C69350059B3B3 /* Info.plist */,
 				09FA3CDC1F3C69350059B3B3 /* UIStripeCustomPayoutSetup.h */,
 				09FA3CF81F3C6B590059B3B3 /* Model */,
-				09FA3CDD1F3C69350059B3B3 /* Info.plist */,
+				09FA3D011F3C6EAF0059B3B3 /* Views */,
+				09FA3D021F3C6EB90059B3B3 /* Controllers */,
 			);
 			path = UIStripeCustomPayoutSetup;
 			sourceTree = "<group>";
@@ -227,6 +233,22 @@
 				09FA3CFF1F3C6B950059B3B3 /* Company.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		09FA3D011F3C6EAF0059B3B3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				09FA3D031F3C6ED70059B3B3 /* MaterialCard.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		09FA3D021F3C6EB90059B3B3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				09FA3D051F3C6FC10059B3B3 /* UIStripeCustomPayoutSetup.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -472,7 +494,9 @@
 				09FA3CFC1F3C6B7D0059B3B3 /* Representative.swift in Sources */,
 				09FA3CFE1F3C6B890059B3B3 /* BankAccount.swift in Sources */,
 				09FA3CFA1F3C6B6F0059B3B3 /* Address.swift in Sources */,
+				09FA3D041F3C6ED70059B3B3 /* MaterialCard.swift in Sources */,
 				09FA3D001F3C6B950059B3B3 /* Company.swift in Sources */,
+				09FA3D061F3C6FC10059B3B3 /* UIStripeCustomPayoutSetup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
