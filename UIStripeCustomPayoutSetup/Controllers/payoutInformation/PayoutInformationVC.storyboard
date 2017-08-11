@@ -102,6 +102,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="correction" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="spellChecking" value="NO"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="returnKey" value="done"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isDimissOnReturnPressEnabled" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
