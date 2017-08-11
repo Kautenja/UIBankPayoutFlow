@@ -23,6 +23,12 @@ public class UIStripeCustomPayoutSetup: UINavigationController {
     /// the terms and conditions as a string
     public static var termsAndConditions: String?
     
+    /// the company being mutated by the view controller
+    var company: Company!
+    
+    /// the callback for the flow
+    var callback: ((Company) -> Void)!
+    
     /// Show the view controller on the existing view controller with a callback
     /// - parameters:
     ///   - vc: the view controller to present on top of
@@ -32,6 +38,7 @@ public class UIStripeCustomPayoutSetup: UINavigationController {
         // create an instance of self
         let nc = UIStripeCustomPayoutSetup()
         nc.isNavigationBarHidden = true
+        nc.callback = callback
         // create welcom screen on the navigation controller
         let welcome = WelcomeVC.show(on: nc)
         welcome.delegate = nc
@@ -76,7 +83,8 @@ extension UIStripeCustomPayoutSetup: CompanyInformationVCDelegate {
     
     /// Respond to the form being filled
     func didFill(_ on: CompanyInformationVC, company: Company) {
-        NSLog("did fill company information form")
+        NSLog("did fill company information form with company: \(company)")
+        self.company = company
         let payoutInformation = PayoutInformationVC.show(on: on)
         payoutInformation.delegate = self
     }
@@ -91,6 +99,7 @@ extension UIStripeCustomPayoutSetup: PayoutInformationVCDelegate {
     /// Respond to the form being filled
     func didFill(_ on: PayoutInformationVC, account: BankAccount) {
         NSLog("did fill payout information form with account: \(account)")
+        company.payout = account
         let done = DoneVC.show(on: on)
         done.delegate = self
     }
@@ -105,7 +114,8 @@ extension UIStripeCustomPayoutSetup: DoneVCDelegate {
     /// Respond to a press on the get started button button
     func didPressDone(_ on: DoneVC) {
         NSLog("did finish setup")
-        self.dismiss(animated: true)
+        dismiss(animated: true)
+        callback(company)
     }
     
 }

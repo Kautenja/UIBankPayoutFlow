@@ -22,6 +22,9 @@ class CompanyInformationVC: UIViewController {
     /// the delegate to pass events to if any
     var delegate: CompanyInformationVCDelegate?
 
+    /// the company to mutate with the form
+    var company = Company()
+    
     /// the tableview housing the data entry cells
     @IBOutlet weak var tableView: UITableView! {
         didSet {
@@ -58,7 +61,7 @@ class CompanyInformationVC: UIViewController {
     
     /// Respond to a press on the continue button
     @IBAction func didPressContinue() {
-        delegate?.didFill(self, company: Company())
+        delegate?.didFill(self, company: company)
     }
     
     /// Show a new instance of this view controller on top of the exisitng view
