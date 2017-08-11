@@ -118,7 +118,7 @@ protocol MaterialAddressCardDelegate {
             address.field.delegate = self
             address.setFieldEditingChangedHandler { (address) in
                 self.delegate?.addressDidChange(self, address: address.text)
-                self.zoomMap(to: address.text!)
+                self.zoomMap(to: self.completeAddress!)
             }
         }
     }
@@ -129,9 +129,13 @@ protocol MaterialAddressCardDelegate {
             city.field.delegate = self
             city.setFieldEditingChangedHandler { (city) in
                 self.delegate?.cityDidChange(self, city: city.text)
+                self.zoomMap(to: self.completeAddress!)
             }
         }
     }
+    
+    /// the picker view containing the selected state
+    @IBOutlet weak var state: UIPickerView!
     
     /// the text field with the zip info
     @IBOutlet weak var zip: MaterialTextField! {
@@ -139,8 +143,15 @@ protocol MaterialAddressCardDelegate {
             zip.field.delegate = self
             zip.setFieldEditingChangedHandler { (zip) in
                 self.delegate?.zipDidChange(self, zip: zip.text)
+                self.zoomMap(to: self.completeAddress!)
             }
         }
+    }
+    
+    /// Return a string with the complete formatted address
+    var completeAddress: String! {
+        let _state = states[state.selectedRow(inComponent: 0)]
+        return "\(address.text!), \(city.text!), \(_state) \(zip.text!)"
     }
     
 }
@@ -171,16 +182,25 @@ extension MaterialAddressCard: UITextFieldDelegate {
 // MARK: Picker view delegate functions
 extension MaterialAddressCard: UIPickerViewDataSource, UIPickerViewDelegate {
 
+    /// Return the number of states in the picker
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return states.count
     }
 
+    /// only one component, the state
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
+    /// return the name of the state for the row
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return states[row]
+    }
+    
+    /// Respond to a row (state) being selected
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        delegate?.stateDidChange(self, state: states[row])
+        zoomMap(to: self.completeAddress!)
     }
     
 }

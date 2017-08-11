@@ -16,6 +16,7 @@
                 <outlet property="card" destination="dh9-mH-mJp" id="wvZ-Pb-eQV"/>
                 <outlet property="city" destination="2C5-QN-x4h" id="ayK-9B-aUW"/>
                 <outlet property="map" destination="iXp-cc-vMS" id="pTZ-OK-aiZ"/>
+                <outlet property="state" destination="aIV-Sj-Ehb" id="1V5-bb-AfK"/>
                 <outlet property="zip" destination="We8-ib-uS7" id="urg-ZM-wzh"/>
             </connections>
         </placeholder>
@@ -24,7 +25,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iXp-cc-vMS">
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXp-cc-vMS">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
