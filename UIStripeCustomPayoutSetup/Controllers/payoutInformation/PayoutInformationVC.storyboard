@@ -72,19 +72,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIO-oK-BPt" customClass="MaterialCard" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIO-oK-BPt" customClass="MaterialTextField" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
                                 <rect key="frame" x="16" y="101" width="343" height="35"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Iya-ZG-53c"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="cardBackgroundColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Bank Routing Number"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="correction" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="spellChecking" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="returnKey" value="next"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gyt-2p-l4j" customClass="MaterialCard" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gyt-2p-l4j" customClass="MaterialTextField" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
                                 <rect key="frame" x="16" y="183" width="343" height="35"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Qg6-kg-13T"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="cardBackgroundColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Bank Account Number"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="correction" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="spellChecking" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="returnKey" value="done"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.82038187979999999" green="0.83498078580000001" blue="0.85553735490000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
