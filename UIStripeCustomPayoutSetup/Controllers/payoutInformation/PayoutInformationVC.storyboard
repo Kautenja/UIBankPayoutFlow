@@ -66,12 +66,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydz-SV-tEY">
-                                <rect key="frame" x="16" y="151" width="343" height="22"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIO-oK-BPt" customClass="MaterialTextField" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
                                 <rect key="frame" x="16" y="101" width="343" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -88,6 +82,12 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="returnKey" value="next"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydz-SV-tEY">
+                                <rect key="frame" x="16" y="151" width="343" height="22"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gyt-2p-l4j" customClass="MaterialTextField" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
                                 <rect key="frame" x="16" y="183" width="343" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -128,6 +128,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="gyt-2p-l4j" secondAttribute="trailing" id="t88-MW-h5e"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="accountNumber" destination="gyt-2p-l4j" id="Jeq-xE-OrC"/>
+                        <outlet property="routingNumber" destination="iIO-oK-BPt" id="iBm-k3-Gk9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O8S-Hg-nD0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

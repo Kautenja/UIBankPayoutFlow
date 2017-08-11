@@ -22,9 +22,32 @@ class PayoutInformationVC: UIViewController {
     /// the delegate to pass events to if any
     var delegate: PayoutInformationVCDelegate?
     
+    /// the bank account information to fill in the form
+    var bankAccount = BankAccount()
+    
+    /// the text field for collecting the routing number
+    @IBOutlet weak var routingNumber: MaterialTextField! {
+        didSet {
+            routingNumber.field.delegate = self
+            routingNumber.setFieldEditingChangedHandler { (field) in
+                self.bankAccount.routingNumber = field.text
+            }
+        }
+    }
+    
+    /// the text field for collecting the account number
+    @IBOutlet weak var accountNumber: MaterialTextField! {
+        didSet {
+            accountNumber.field.delegate = self
+            accountNumber.setFieldEditingChangedHandler { (field) in
+                self.bankAccount.accountNumber = field.text
+            }
+        }
+    }
+    
     /// Respond to a press on the continue button
     @IBAction func didPressContinue() {
-        delegate?.didFill(self, account: BankAccount())
+        delegate?.didFill(self, account: bankAccount)
     }
     
     /// Show a new instance of this view controller on top of the exisitng view
@@ -38,6 +61,24 @@ class PayoutInformationVC: UIViewController {
         let welcomeVC = storyboard.instantiateInitialViewController() as! PayoutInformationVC
         vc.show(welcomeVC, sender: nil)
         return welcomeVC
+    }
+    
+}
+
+
+
+// MARK: Text Field Functions
+extension PayoutInformationVC: UITextFieldDelegate {
+    
+    /// Handle a press to the return key
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case routingNumber.field:
+            _ = accountNumber.becomeFirstResponder()
+        default:
+            textField.resignFirstResponder()
+        }
+        return false
     }
     
 }

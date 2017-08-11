@@ -90,7 +90,7 @@ extension UIStripeCustomPayoutSetup: PayoutInformationVCDelegate {
     
     /// Respond to the form being filled
     func didFill(_ on: PayoutInformationVC, account: BankAccount) {
-        NSLog("did fill payout information form")
+        NSLog("did fill payout information form with account: \(account)")
         let done = DoneVC.show(on: on)
         done.delegate = self
     }
@@ -104,7 +104,7 @@ extension UIStripeCustomPayoutSetup: DoneVCDelegate {
     
     /// Respond to a press on the get started button button
     func didPressDone(_ on: DoneVC) {
-        NSLog("did finish setup!")
+        NSLog("did finish setup")
         self.dismiss(animated: true)
     }
     
