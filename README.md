@@ -43,26 +43,6 @@ dependency installation went smoothly
 
 [UIStripeCustomPayoutFlow.xcodeproj]: ./UIStripeCustomPayoutFlow.xcodeproj
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
 ## Deployment
 
 To incorporate this framework in your workflow simply add the following line to
