@@ -30,7 +30,11 @@ class TermsAndConditionsVC: UIViewController {
     }
 
     /// the switch for users to use to agree
-    @IBOutlet weak var agreementSwitch: UISwitch!
+    @IBOutlet weak var agreementSwitch: UISwitch! {
+        didSet {
+            agreementSwitch.onTintColor = UIStripeCustomPayoutSetup.tintColor
+        }
+    }
     
     /// Respond to a press on the continue button
     @IBAction func didPressContinue() {
@@ -38,6 +42,14 @@ class TermsAndConditionsVC: UIViewController {
             return
         }
         delegate?.didAcceptTermsAndConditions(self)
+    }
+    
+    /// the continue button
+    @IBOutlet weak var continueButton: ZFRippleButton! {
+        didSet {
+            continueButton.backgroundColor = UIStripeCustomPayoutSetup.buttonBackgroundColor
+            continueButton.tintColor = UIStripeCustomPayoutSetup.tintColor
+        }
     }
     
     /// Show a new instance of this view controller on top of the exisitng view

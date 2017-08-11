@@ -98,6 +98,7 @@
                     </view>
                     <connections>
                         <outlet property="agreementSwitch" destination="v3j-2a-iLh" id="ptQ-bq-MF3"/>
+                        <outlet property="continueButton" destination="WhJ-YV-iEs" id="5tF-ay-sBh"/>
                         <outlet property="termsAndConditionsTextView" destination="zw2-cR-1W6" id="mNF-9H-58g"/>
                     </connections>
                 </viewController>

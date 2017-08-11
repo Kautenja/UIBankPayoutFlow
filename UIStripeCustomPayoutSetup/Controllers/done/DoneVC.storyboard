@@ -95,6 +95,7 @@
                     </view>
                     <connections>
                         <outlet property="allSetUpLabel" destination="ja6-4T-Ese" id="OPB-3E-GA9"/>
+                        <outlet property="getStarted" destination="kSi-DV-drU" id="flN-G1-qnC"/>
                         <outlet property="logo" destination="NJ8-Os-CWK" id="UEu-9o-xYs"/>
                     </connections>
                 </viewController>

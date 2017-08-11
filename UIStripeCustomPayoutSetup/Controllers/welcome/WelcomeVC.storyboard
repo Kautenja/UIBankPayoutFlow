@@ -104,6 +104,7 @@
                     </view>
                     <connections>
                         <outlet property="appNameLabel" destination="KNx-p4-2lz" id="AzT-YT-Kje"/>
+                        <outlet property="getStarted" destination="hkv-c4-VUM" id="TN4-Yf-LYg"/>
                         <outlet property="logo" destination="7BY-vg-VXY" id="j9k-MO-CT9"/>
                     </connections>
                 </viewController>

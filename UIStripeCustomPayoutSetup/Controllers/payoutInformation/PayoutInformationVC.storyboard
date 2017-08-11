@@ -130,6 +130,7 @@
                     </view>
                     <connections>
                         <outlet property="accountNumber" destination="gyt-2p-l4j" id="Jeq-xE-OrC"/>
+                        <outlet property="continueButton" destination="TKH-w1-0BH" id="9bh-sv-OEy"/>
                         <outlet property="routingNumber" destination="iIO-oK-BPt" id="iBm-k3-Gk9"/>
                     </connections>
                 </viewController>

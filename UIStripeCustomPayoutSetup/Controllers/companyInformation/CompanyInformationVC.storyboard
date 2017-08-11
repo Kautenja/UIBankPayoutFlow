@@ -393,7 +393,7 @@
                                                     <rect key="frame" x="10" y="5" width="355" height="39.5"/>
                                                     <subviews>
                                                         <datePicker contentMode="scaleToFill" horizontalCompressionResistancePriority="748" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="qXh-zt-WT1">
-                                                            <rect key="frame" x="97" y="-10" width="258" height="59.5"/>
+                                                            <rect key="frame" x="97" y="-10" width="258" height="59"/>
                                                             <date key="date" timeIntervalSinceReferenceDate="524112204.74466902">
                                                                 <!--2017-08-11 02:43:24 +0000-->
                                                             </date>
@@ -452,6 +452,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="continueButton" destination="7r6-kU-zZz" id="Fp4-Ej-E0S"/>
                         <outlet property="tableView" destination="fI3-d2-Xa7" id="cFo-co-9v6"/>
                     </connections>
                 </viewController>

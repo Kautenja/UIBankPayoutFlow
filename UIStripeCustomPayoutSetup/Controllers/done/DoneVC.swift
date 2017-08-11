@@ -39,12 +39,21 @@ class DoneVC: UIViewController {
             allSetUpLabel.text = allSetUpLabel.text + " with \(appName)"
         }
     }
+    
     /// Respond to a press on the get started button
     @IBAction func didPressGetStarted() {
         delegate?.didPressDone(self)
     }
     
-    /// Show a new instance of this view controller on top of the exisitng view 
+    /// the get started button
+    @IBOutlet weak var getStarted: ZFRippleButton! {
+        didSet {
+            getStarted.backgroundColor = UIStripeCustomPayoutSetup.buttonBackgroundColor
+            getStarted.tintColor = UIStripeCustomPayoutSetup.tintColor
+        }
+    }
+    
+    /// Show a new instance of this view controller on top of the exisitng view
     /// controller
     /// - parameters:
     ///   - vc: the view controller to show on top of

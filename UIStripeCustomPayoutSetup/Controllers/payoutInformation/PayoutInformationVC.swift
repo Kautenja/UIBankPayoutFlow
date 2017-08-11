@@ -28,6 +28,7 @@ class PayoutInformationVC: UIViewController {
     /// the text field for collecting the routing number
     @IBOutlet weak var routingNumber: MaterialTextField! {
         didSet {
+            routingNumber.field.tintColor = UIStripeCustomPayoutSetup.tintColor
             routingNumber.field.delegate = self
             routingNumber.setFieldEditingChangedHandler { (field) in
                 self.bankAccount.routingNumber = field.text
@@ -38,6 +39,7 @@ class PayoutInformationVC: UIViewController {
     /// the text field for collecting the account number
     @IBOutlet weak var accountNumber: MaterialTextField! {
         didSet {
+            accountNumber.field.tintColor = UIStripeCustomPayoutSetup.tintColor
             accountNumber.field.delegate = self
             accountNumber.setFieldEditingChangedHandler { (field) in
                 self.bankAccount.accountNumber = field.text
@@ -48,6 +50,14 @@ class PayoutInformationVC: UIViewController {
     /// Respond to a press on the continue button
     @IBAction func didPressContinue() {
         delegate?.didFill(self, account: bankAccount)
+    }
+    
+    /// the continue button
+    @IBOutlet weak var continueButton: ZFRippleButton! {
+        didSet {
+            continueButton.backgroundColor = UIStripeCustomPayoutSetup.buttonBackgroundColor
+            continueButton.tintColor = UIStripeCustomPayoutSetup.tintColor
+        }
     }
     
     /// Show a new instance of this view controller on top of the exisitng view

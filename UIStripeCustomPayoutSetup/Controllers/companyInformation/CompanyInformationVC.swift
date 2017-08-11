@@ -69,6 +69,7 @@ class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
     /// the name of the company
     var name: MaterialTextField! {
         didSet {
+            name.field.tintColor = UIStripeCustomPayoutSetup.tintColor
             name.setFieldEditingChangedHandler { (field) in
                 self.company.name = field.text
             }
@@ -78,6 +79,7 @@ class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
     /// the type of the company
     var companyType: UISegmentedControl! {
         didSet {
+            companyType.tintColor = UIStripeCustomPayoutSetup.tintColor
             companyType.addTarget(self, action: #selector(companyTypeDidChange),
                                   for: UIControlEvents.valueChanged)
         }
@@ -98,6 +100,7 @@ class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
     /// the companies address
     var address: MaterialAddressCard! {
         didSet {
+            address.tintColor = UIStripeCustomPayoutSetup.tintColor
             address.delegate = self
         }
     }
@@ -137,6 +140,7 @@ class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
     /// the first name of the comapny representative
     var repFirst: MaterialTextField! {
         didSet {
+            repFirst.field.tintColor = UIStripeCustomPayoutSetup.tintColor
             repFirst.field.delegate = self
             repFirst.setFieldEditingChangedHandler { (field) in
                 self.company.representative?.firstName = field.text
@@ -147,6 +151,7 @@ class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
     /// the middle name of the comapny representative
     var repMiddle: MaterialTextField! {
         didSet {
+            repMiddle.field.tintColor = UIStripeCustomPayoutSetup.tintColor
             repMiddle.field.delegate = self
             repMiddle.setFieldEditingChangedHandler { (field) in
                 self.company.representative?.middleName = field.text
@@ -157,6 +162,7 @@ class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
     /// the last name of the comapny representative
     var repLast: MaterialTextField! {
         didSet {
+            repLast.field.tintColor = UIStripeCustomPayoutSetup.tintColor
             repLast.field.delegate = self
             repLast.setFieldEditingChangedHandler { (field) in
                 self.company.representative?.lastName = field.text
@@ -167,6 +173,7 @@ class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
     /// the last 4 digitst of the SSN of the comapny representative
     var repSSN: MaterialTextField! {
         didSet {
+            repSSN.field.tintColor = UIStripeCustomPayoutSetup.tintColor
             repSSN.setFieldEditingChangedHandler { (field) in
                 self.company.representative?.ssn = field.text
             }
@@ -190,6 +197,14 @@ class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
     /// Respond to a press on the continue button
     @IBAction func didPressContinue() {
         delegate?.didFill(self, company: company)
+    }
+    
+    /// the continue button
+    @IBOutlet weak var continueButton: ZFRippleButton! {
+        didSet {
+            continueButton.backgroundColor = UIStripeCustomPayoutSetup.buttonBackgroundColor
+            continueButton.tintColor = UIStripeCustomPayoutSetup.tintColor
+        }
     }
     
     /// Show a new instance of this view controller on top of the exisitng view

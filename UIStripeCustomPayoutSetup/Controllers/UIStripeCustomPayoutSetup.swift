@@ -11,8 +11,11 @@ import UIKit
 /// the central entry point for the flow
 public class UIStripeCustomPayoutSetup: UINavigationController {
     
+    /// the background color of the buttons
+    public static var buttonBackgroundColor: UIColor = .white
+    
     /// the tint color for the view controllers
-    public static var tintColor: UIColor = UIColor.yellow
+    public static var tintColor: UIColor = .yellow
     
     /// the logo for the app if any
     public static var logo: UIImage?

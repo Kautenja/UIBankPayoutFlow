@@ -41,6 +41,14 @@ class WelcomeVC: UIViewController {
         delegate?.didPressGetStarted(self)
     }
     
+    /// the get started button
+    @IBOutlet weak var getStarted: ZFRippleButton! {
+        didSet {
+            getStarted.backgroundColor = UIStripeCustomPayoutSetup.buttonBackgroundColor
+            getStarted.tintColor = UIStripeCustomPayoutSetup.tintColor
+        }
+    }
+    
     /// Show a new instance of this view controller on top of the exisitng view
     /// controller
     /// - parameters:
