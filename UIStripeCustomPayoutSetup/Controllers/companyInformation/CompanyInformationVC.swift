@@ -29,7 +29,14 @@ class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.contentInset = UIEdgeInsetsMake(0, 0, 300, 0)
+            let tap = UITapGestureRecognizer(target: self, action: #selector(didTapTable))
+            tableView.addGestureRecognizer(tap)
         }
+    }
+    
+    /// Respond to a tap on the tableview
+    func didTapTable() {
+        view.endEditing(true)
     }
     
     /// Return the number of cells in the table view
@@ -130,6 +137,7 @@ class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
     /// the first name of the comapny representative
     var repFirst: MaterialTextField! {
         didSet {
+            repFirst.field.delegate = self
             repFirst.setFieldEditingChangedHandler { (field) in
                 self.company.representative?.firstName = field.text
             }
@@ -139,6 +147,7 @@ class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
     /// the middle name of the comapny representative
     var repMiddle: MaterialTextField! {
         didSet {
+            repMiddle.field.delegate = self
             repMiddle.setFieldEditingChangedHandler { (field) in
                 self.company.representative?.middleName = field.text
             }
@@ -148,6 +157,7 @@ class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
     /// the last name of the comapny representative
     var repLast: MaterialTextField! {
         didSet {
+            repLast.field.delegate = self
             repLast.setFieldEditingChangedHandler { (field) in
                 self.company.representative?.lastName = field.text
             }
@@ -164,10 +174,17 @@ class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
     }
     
     /// the date of birth of the comapny representative
-    var repDOB: MaterialSelectionCard! {
+    var repDOB: UIDatePicker! {
         didSet {
-            
+            repDOB.addTarget(self,
+                             action: #selector(dobDidChange),
+                             for: .valueChanged)
         }
+    }
+    
+    /// Repond to a change in the date of birth of the company representative
+    func dobDidChange() {
+        company.representative?.dob = repDOB.date
     }
     
     /// Respond to a press on the continue button
@@ -231,7 +248,7 @@ extension CompanyInformationVC: UITableViewDelegate, UITableViewDataSource {
             repSSN = cell.field
         }
         else if let cell = cell as? RepresentativeDOBCell {
-            repDOB = cell.card
+            repDOB = cell.picker
         }
         return cell
     }
@@ -244,6 +261,28 @@ extension CompanyInformationVC: UITableViewDelegate, UITableViewDataSource {
     /// Return the height for the cell at the given index path
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return cellHeights[indexPath.row]!
+    }
+    
+}
+
+
+
+// MARK: Text Field Delegate functions
+extension CompanyInformationVC: UITextFieldDelegate {
+    
+    /// repond to a press on the return key
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case repFirst.field:
+            _ = repMiddle.becomeFirstResponder()
+        case repMiddle.field:
+            _ = repLast.becomeFirstResponder()
+        case repLast.field:
+            _ = repSSN.becomeFirstResponder()
+        default:
+            ()
+        }
+        return false
     }
     
 }

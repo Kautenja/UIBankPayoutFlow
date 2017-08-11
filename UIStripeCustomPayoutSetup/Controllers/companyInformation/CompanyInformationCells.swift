@@ -44,6 +44,6 @@ class RepresentativeSSNCell: UITableViewCell {
 
 class RepresentativeDOBCell: UITableViewCell {
     
-    @IBOutlet weak var card: MaterialSelectionCard!
+    @IBOutlet weak var picker: UIDatePicker!
     
 }

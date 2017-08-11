@@ -389,16 +389,32 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mnn-1k-9cJ" customClass="MaterialSelectionCard" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mnn-1k-9cJ" customClass="MaterialCard" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
                                                     <rect key="frame" x="10" y="5" width="355" height="39.5"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="cardBackgroundColor">
-                                                            <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Date of Birth"/>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="value" value="-"/>
-                                                    </userDefinedRuntimeAttributes>
+                                                    <subviews>
+                                                        <datePicker contentMode="scaleToFill" horizontalCompressionResistancePriority="748" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="qXh-zt-WT1">
+                                                            <rect key="frame" x="97" y="-10" width="258" height="59.5"/>
+                                                            <date key="date" timeIntervalSinceReferenceDate="524112204.74466902">
+                                                                <!--2017-08-11 02:43:24 +0000-->
+                                                            </date>
+                                                        </datePicker>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5S-J6-6LB">
+                                                            <rect key="frame" x="10" y="5" width="82.5" height="24"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="qXh-zt-WT1" firstAttribute="top" secondItem="mnn-1k-9cJ" secondAttribute="top" constant="-10" id="0YP-Oc-y6c"/>
+                                                        <constraint firstItem="d5S-J6-6LB" firstAttribute="top" secondItem="mnn-1k-9cJ" secondAttribute="top" constant="5" id="Jbv-if-if7"/>
+                                                        <constraint firstAttribute="trailing" secondItem="qXh-zt-WT1" secondAttribute="trailing" id="cW8-b0-sAL"/>
+                                                        <constraint firstItem="qXh-zt-WT1" firstAttribute="leading" secondItem="d5S-J6-6LB" secondAttribute="trailing" constant="5" id="nNK-rb-B62"/>
+                                                        <constraint firstAttribute="bottom" secondItem="d5S-J6-6LB" secondAttribute="bottom" constant="10" id="qHT-0R-sG6"/>
+                                                        <constraint firstAttribute="bottom" secondItem="qXh-zt-WT1" secondAttribute="bottom" constant="-10" id="qjx-fu-6uN"/>
+                                                        <constraint firstItem="d5S-J6-6LB" firstAttribute="leading" secondItem="mnn-1k-9cJ" secondAttribute="leading" constant="10" id="r86-zP-SO4"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
@@ -410,7 +426,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <outlet property="card" destination="mnn-1k-9cJ" id="SoW-kv-mPN"/>
+                                            <outlet property="picker" destination="qXh-zt-WT1" id="hQa-Ef-FSb"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

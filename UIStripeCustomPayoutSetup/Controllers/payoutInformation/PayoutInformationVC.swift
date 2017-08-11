@@ -63,6 +63,18 @@ class PayoutInformationVC: UIViewController {
         return welcomeVC
     }
     
+    /// Setup the view on load
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(didTapView))
+        view.addGestureRecognizer(tap)
+    }
+    
+    /// Respond to a tap on the tableview
+    func didTapView() {
+        view.endEditing(true)
+    }
+    
 }
 
 
