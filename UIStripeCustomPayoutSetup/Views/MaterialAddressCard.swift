@@ -11,41 +11,53 @@ import UIXibView
 import MapKit
 import CoreLocation
 
+/// a list of state abbreviations
+let states = ["AL","AK","AZ","AR","CA","CO","CT","DE","DC","FL","GA","HI","ID","IL",
+              "IN","IA","KS","KY","LA","ME","MT","NE","NV","NH","NJ","NM","NY","NC",
+              "ND","OH","OK","OR","MD","MA","MI","MN","MS","MO","PA","RI","SC","SD",
+              "TN","TX","UT","VT","VA","WA","WV","WI","WY"]
+
 /// a protocol for interacting with events from a Material Room Picker Card
-protocol MaterialRoomPickerCardDelegate {
+protocol MaterialAddressCardDelegate {
     
     /// Respond to the address value changing to a prevalidated address
     /// - parameters:
     ///   - picker: the picker the event happened on
     ///   - address: the new address
-    func addressDidChange(_ picker: MaterialRoomPickerCard, address: String?)
+    func addressDidChange(_ picker: MaterialAddressCard, address: String?)
     
-    /// Respond to the building name value changing
+    /// Respond to the address value changing to a prevalidated address
     /// - parameters:
     ///   - picker: the picker the event happened on
-    ///   - building: the new building name
-    func buildingDidChange(_ picker: MaterialRoomPickerCard, building: String?)
+    ///   - city: the new city
+    func cityDidChange(_ picker: MaterialAddressCard, city: String?)
     
-    /// Respond to the room number value changing
+    /// Respond to the address value changing to a prevalidated address
     /// - parameters:
     ///   - picker: the picker the event happened on
-    ///   - room: the new room number
-    func roomDidChange(_ picker: MaterialRoomPickerCard, room: String?)
+    ///   - state: the new state
+    func stateDidChange(_ picker: MaterialAddressCard, state: String?)
+    
+    /// Respond to the address value changing to a prevalidated address
+    /// - parameters:
+    ///   - picker: the picker the event happened on
+    ///   - zip: the new zip
+    func zipDidChange(_ picker: MaterialAddressCard, zip: String?)
     
 }
 
-/// this class gathers information about a room in a building while displaying
-/// the building on a map
-@IBDesignable class MaterialRoomPickerCard: UIXibView {
+/// this class gathers information about an address and displays it on a map
+@IBDesignable class MaterialAddressCard: UIXibView {
     
     /// the delegate to pass events along to
-    var delegate: MaterialRoomPickerCardDelegate?
+    var delegate: MaterialAddressCardDelegate?
     
     /// the card that the controls sit on top of
     @IBOutlet var card: MaterialCard!
     
     /// the background color of the card
-    @IBInspectable public var cardBackgroundColor: UIColor? {
+    @IBInspectable
+    var cardBackgroundColor: UIColor? {
         get {
             return card.backgroundColor
         }
@@ -111,22 +123,22 @@ protocol MaterialRoomPickerCardDelegate {
         }
     }
     
-    /// the text field with the building name info
-    @IBOutlet weak var building: MaterialTextField! {
+    /// the text field with the city info
+    @IBOutlet weak var city: MaterialTextField! {
         didSet {
-            building.field.delegate = self
-            building.setFieldEditingChangedHandler { (building) in
-                self.delegate?.buildingDidChange(self, building: building.text)
+            city.field.delegate = self
+            city.setFieldEditingChangedHandler { (city) in
+                self.delegate?.cityDidChange(self, city: city.text)
             }
         }
     }
     
-    /// the text field with the room number info
-    @IBOutlet weak var room: MaterialTextField! {
+    /// the text field with the zip info
+    @IBOutlet weak var zip: MaterialTextField! {
         didSet {
-            room.field.delegate = self
-            room.setFieldEditingChangedHandler { (room) in
-                self.delegate?.roomDidChange(self, room: room.text)
+            zip.field.delegate = self
+            zip.setFieldEditingChangedHandler { (zip) in
+                self.delegate?.zipDidChange(self, zip: zip.text)
             }
         }
     }
@@ -136,19 +148,39 @@ protocol MaterialRoomPickerCardDelegate {
 
 
 // MARK: UITextField delegate functions
-extension MaterialRoomPickerCard: UITextFieldDelegate {
+extension MaterialAddressCard: UITextFieldDelegate {
     
     /// switch keyboard focus as appropriate
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == address.field {
-            _ = building.becomeFirstResponder()
+            _ = city.becomeFirstResponder()
         }
-        else if textField == building.field {
-            _ = room.becomeFirstResponder()
+        else if textField == city.field {
+            _ = zip.becomeFirstResponder()
         }
         else {
             textField.resignFirstResponder()
         }
         return false
     }
+    
+}
+
+
+
+// MARK: Picker view delegate functions
+extension MaterialAddressCard: UIPickerViewDataSource, UIPickerViewDelegate {
+
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return states.count
+    }
+
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return states[row]
+    }
+    
 }

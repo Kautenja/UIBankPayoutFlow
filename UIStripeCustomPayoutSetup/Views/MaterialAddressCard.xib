@@ -1,10 +1,128 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MaterialAddressCard" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
+            <connections>
+                <outlet property="address" destination="V57-KT-2Qp" id="ypS-0K-1DW"/>
+                <outlet property="card" destination="dh9-mH-mJp" id="wvZ-Pb-eQV"/>
+                <outlet property="city" destination="2C5-QN-x4h" id="ayK-9B-aUW"/>
+                <outlet property="map" destination="iXp-cc-vMS" id="pTZ-OK-aiZ"/>
+                <outlet property="zip" destination="We8-ib-uS7" id="urg-ZM-wzh"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="dh9-mH-mJp" customClass="MaterialCard" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iXp-cc-vMS">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </mapView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2C5-QN-x4h" customClass="MaterialTextField" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
+                    <rect key="frame" x="10" y="135" width="140" height="35"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="wvY-gC-YIs"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="cardBackgroundColor">
+                            <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="City"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="returnKey" value="next"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="capitalization" value="words"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2hh-HX-eMK" customClass="MaterialCard" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
+                    <rect key="frame" x="160" y="135" width="55" height="35"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aIV-Sj-Ehb">
+                            <rect key="frame" x="-5" y="-10" width="60" height="55"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="kkQ-Pb-9bg"/>
+                                <outlet property="delegate" destination="-1" id="QZe-vi-o1C"/>
+                            </connections>
+                        </pickerView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="aIV-Sj-Ehb" firstAttribute="top" secondItem="2hh-HX-eMK" secondAttribute="top" constant="-10" id="CCy-c8-xXW"/>
+                        <constraint firstAttribute="height" constant="35" id="T7Q-4L-ATn"/>
+                        <constraint firstAttribute="trailing" secondItem="aIV-Sj-Ehb" secondAttribute="trailing" id="ZAJ-fd-y00"/>
+                        <constraint firstItem="aIV-Sj-Ehb" firstAttribute="leading" secondItem="2hh-HX-eMK" secondAttribute="leading" constant="-5" id="hZY-dt-l67"/>
+                        <constraint firstAttribute="bottom" secondItem="aIV-Sj-Ehb" secondAttribute="bottom" constant="-10" id="sfa-Iy-c2Z"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="We8-ib-uS7" customClass="MaterialTextField" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
+                    <rect key="frame" x="225" y="135" width="140" height="35"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="4Oh-Yc-IUf"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="cardBackgroundColor">
+                            <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Zip"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="keyboardType" value="number pad"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="returnKey" value="done"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isDimissOnReturnPressEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V57-KT-2Qp" customClass="MaterialTextField" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
+                    <rect key="frame" x="10" y="95" width="355" height="35"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="1u6-Uq-hNS"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="cardBackgroundColor">
+                            <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="capitalization" value="words"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="returnKey" value="next"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Address"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2C5-QN-x4h" firstAttribute="width" secondItem="dh9-mH-mJp" secondAttribute="width" multiplier="2/5" constant="-10" id="4ZG-MQ-2Df"/>
+                <constraint firstAttribute="bottom" secondItem="2hh-HX-eMK" secondAttribute="bottom" constant="10" id="8nL-lV-TxE"/>
+                <constraint firstItem="2hh-HX-eMK" firstAttribute="top" secondItem="V57-KT-2Qp" secondAttribute="bottom" constant="5" id="9TQ-b3-QiY"/>
+                <constraint firstItem="2C5-QN-x4h" firstAttribute="leading" secondItem="dh9-mH-mJp" secondAttribute="leading" constant="10" id="AwM-u1-Gel"/>
+                <constraint firstItem="iXp-cc-vMS" firstAttribute="leading" secondItem="dh9-mH-mJp" secondAttribute="leading" id="Cdf-M6-mmZ"/>
+                <constraint firstAttribute="trailing" secondItem="iXp-cc-vMS" secondAttribute="trailing" id="Cgk-8h-Wj2"/>
+                <constraint firstItem="We8-ib-uS7" firstAttribute="width" secondItem="2C5-QN-x4h" secondAttribute="width" id="EtG-QI-C16"/>
+                <constraint firstAttribute="trailing" secondItem="We8-ib-uS7" secondAttribute="trailing" constant="10" id="I2N-MP-Dp6"/>
+                <constraint firstItem="V57-KT-2Qp" firstAttribute="leading" secondItem="dh9-mH-mJp" secondAttribute="leading" constant="10" id="MVf-hK-XJD"/>
+                <constraint firstItem="We8-ib-uS7" firstAttribute="leading" secondItem="2hh-HX-eMK" secondAttribute="trailing" constant="10" id="OM4-np-hZD"/>
+                <constraint firstAttribute="bottom" secondItem="iXp-cc-vMS" secondAttribute="bottom" id="TAp-NZ-PKI"/>
+                <constraint firstItem="iXp-cc-vMS" firstAttribute="top" secondItem="dh9-mH-mJp" secondAttribute="top" id="b9O-cP-xMY"/>
+                <constraint firstAttribute="trailing" secondItem="V57-KT-2Qp" secondAttribute="trailing" constant="10" id="bJI-wN-LRi"/>
+                <constraint firstItem="2hh-HX-eMK" firstAttribute="leading" secondItem="2C5-QN-x4h" secondAttribute="trailing" constant="10" id="i6p-J0-hEo"/>
+                <constraint firstAttribute="bottom" secondItem="2C5-QN-x4h" secondAttribute="bottom" constant="10" id="q32-cF-pOC"/>
+                <constraint firstAttribute="bottom" secondItem="We8-ib-uS7" secondAttribute="bottom" constant="10" id="uTR-Mi-4Pv"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-107.5" y="-47"/>
+        </view>
     </objects>
 </document>
