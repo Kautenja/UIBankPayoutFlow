@@ -11,6 +11,9 @@ import UIKit
 /// the central entry point for the flow
 public class UIStripeCustomPayoutSetup: UINavigationController {
     
+    /// a boolean determining whether logging is enabled
+    public var isLoggingEnabled = false
+    
     /// the background color of the buttons
     public static var buttonBackgroundColor: UIColor = .white
     
@@ -58,7 +61,9 @@ extension UIStripeCustomPayoutSetup: WelcomeVCDelegate {
     
     /// Respond to a press on the get started button
     func didPressGetStarted(_ on: WelcomeVC) {
-        NSLog("did press get started on welcome screen")
+        if isLoggingEnabled {
+            NSLog("did press get started on welcome screen")
+        }
         let termsAndConditions = TermsAndConditionsVC.show(on: on)
         termsAndConditions.delegate = self
     }
@@ -72,7 +77,9 @@ extension UIStripeCustomPayoutSetup: TermsAndConditionsVCDelegate {
     
     /// Respond to a press on the continue button
     func didAcceptTermsAndConditions(_ on: TermsAndConditionsVC) {
-        NSLog("did accept terms and conditions")
+        if isLoggingEnabled {
+            NSLog("did accept terms and conditions")
+        }
         let companyInformation = CompanyInformationVC.show(on: on)
         companyInformation.delegate = self
     }
@@ -86,7 +93,9 @@ extension UIStripeCustomPayoutSetup: CompanyInformationVCDelegate {
     
     /// Respond to the form being filled
     func didFill(_ on: CompanyInformationVC, company: Company) {
-        NSLog("did fill company information form with company: \(company)")
+        if isLoggingEnabled {
+            NSLog("did fill company information form with company: \(company)")
+        }
         self.company = company
         let payoutInformation = PayoutInformationVC.show(on: on)
         payoutInformation.delegate = self
@@ -101,7 +110,9 @@ extension UIStripeCustomPayoutSetup: PayoutInformationVCDelegate {
     
     /// Respond to the form being filled
     func didFill(_ on: PayoutInformationVC, account: BankAccount) {
-        NSLog("did fill payout information form with account: \(account)")
+        if isLoggingEnabled {
+            NSLog("did fill payout information form with account: \(account)")
+        }
         company.payout = account
         let done = DoneVC.show(on: on)
         done.delegate = self
@@ -116,7 +127,9 @@ extension UIStripeCustomPayoutSetup: DoneVCDelegate {
     
     /// Respond to a press on the get started button button
     func didPressDone(_ on: DoneVC) {
-        NSLog("did finish setup")
+        if isLoggingEnabled {
+            NSLog("did finish setup")
+        }
         dismiss(animated: true)
         callback(company)
     }

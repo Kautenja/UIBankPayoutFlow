@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -61,13 +60,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Routing Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbl-9l-YRd">
-                                <rect key="frame" x="16" y="69" width="343" height="22"/>
+                                <rect key="frame" x="10" y="69" width="355" height="22"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIO-oK-BPt" customClass="MaterialTextField" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
-                                <rect key="frame" x="16" y="101" width="343" height="35"/>
+                                <rect key="frame" x="10" y="101" width="355" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Iya-ZG-53c"/>
@@ -80,16 +79,17 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="correction" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="spellChecking" value="NO"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="returnKey" value="next"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="keyboardType" value="number pad"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydz-SV-tEY">
-                                <rect key="frame" x="16" y="151" width="343" height="22"/>
+                                <rect key="frame" x="10" y="151" width="355" height="22"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gyt-2p-l4j" customClass="MaterialTextField" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
-                                <rect key="frame" x="16" y="183" width="343" height="35"/>
+                                <rect key="frame" x="10" y="183" width="355" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Qg6-kg-13T"/>
@@ -103,29 +103,30 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="spellChecking" value="NO"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="returnKey" value="done"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isDimissOnReturnPressEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="keyboardType" value="number pad"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.82038187979999999" green="0.83498078580000001" blue="0.85553735490000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ydz-SV-tEY" firstAttribute="leading" secondItem="hK3-Ti-bAM" secondAttribute="leadingMargin" id="3r3-7M-bky"/>
+                            <constraint firstItem="bbl-9l-YRd" firstAttribute="leading" secondItem="hK3-Ti-bAM" secondAttribute="leading" constant="10" id="6jh-sA-RVO"/>
                             <constraint firstItem="gyt-2p-l4j" firstAttribute="top" secondItem="ydz-SV-tEY" secondAttribute="bottom" constant="10" id="7EF-xf-H06"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="iIO-oK-BPt" secondAttribute="trailing" id="7Fh-G3-ont"/>
                             <constraint firstItem="bbl-9l-YRd" firstAttribute="top" secondItem="ohc-iQ-nMq" secondAttribute="bottom" constant="10" id="AaG-TW-Jsr"/>
                             <constraint firstAttribute="trailing" secondItem="ohc-iQ-nMq" secondAttribute="trailing" constant="10" id="Bew-hr-Q7g"/>
-                            <constraint firstItem="gyt-2p-l4j" firstAttribute="leading" secondItem="hK3-Ti-bAM" secondAttribute="leadingMargin" id="DP8-Ps-OAc"/>
                             <constraint firstItem="ydz-SV-tEY" firstAttribute="top" secondItem="iIO-oK-BPt" secondAttribute="bottom" constant="15" id="Fik-80-SzV"/>
-                            <constraint firstItem="ydz-SV-tEY" firstAttribute="trailing" secondItem="hK3-Ti-bAM" secondAttribute="trailingMargin" id="HmR-E1-gu2"/>
-                            <constraint firstItem="bbl-9l-YRd" firstAttribute="leading" secondItem="hK3-Ti-bAM" secondAttribute="leadingMargin" id="RHS-Q6-u9V"/>
+                            <constraint firstAttribute="trailing" secondItem="ydz-SV-tEY" secondAttribute="trailing" constant="10" id="MFn-TD-f0z"/>
+                            <constraint firstAttribute="trailing" secondItem="iIO-oK-BPt" secondAttribute="trailing" constant="10" id="Na6-eM-4zH"/>
+                            <constraint firstAttribute="trailing" secondItem="gyt-2p-l4j" secondAttribute="trailing" constant="10" id="R8r-du-LVJ"/>
                             <constraint firstItem="ohc-iQ-nMq" firstAttribute="leading" secondItem="hK3-Ti-bAM" secondAttribute="leading" constant="10" id="RiL-7V-kU1"/>
+                            <constraint firstItem="ydz-SV-tEY" firstAttribute="leading" secondItem="hK3-Ti-bAM" secondAttribute="leading" constant="10" id="Uia-Am-eN5"/>
                             <constraint firstItem="XEV-Tl-WIw" firstAttribute="leading" secondItem="hK3-Ti-bAM" secondAttribute="leading" constant="10" id="VOl-e2-UvE"/>
                             <constraint firstAttribute="trailing" secondItem="XEV-Tl-WIw" secondAttribute="trailing" constant="10" id="b4L-Oe-bZf"/>
-                            <constraint firstItem="iIO-oK-BPt" firstAttribute="leading" secondItem="hK3-Ti-bAM" secondAttribute="leadingMargin" id="e2g-U2-2UR"/>
-                            <constraint firstItem="bbl-9l-YRd" firstAttribute="trailing" secondItem="hK3-Ti-bAM" secondAttribute="trailingMargin" id="fYc-6T-xN1"/>
+                            <constraint firstAttribute="trailing" secondItem="bbl-9l-YRd" secondAttribute="trailing" constant="10" id="eMb-qY-r9h"/>
+                            <constraint firstItem="iIO-oK-BPt" firstAttribute="leading" secondItem="hK3-Ti-bAM" secondAttribute="leading" constant="10" id="fsz-1q-wPt"/>
                             <constraint firstItem="iIO-oK-BPt" firstAttribute="top" secondItem="bbl-9l-YRd" secondAttribute="bottom" constant="10" id="h6W-ue-Ycq"/>
+                            <constraint firstItem="gyt-2p-l4j" firstAttribute="leading" secondItem="hK3-Ti-bAM" secondAttribute="leading" constant="10" id="nk3-l4-4eY"/>
                             <constraint firstItem="DFU-Eo-gJy" firstAttribute="top" secondItem="XEV-Tl-WIw" secondAttribute="bottom" constant="10" id="pD3-HR-JJH"/>
                             <constraint firstItem="ohc-iQ-nMq" firstAttribute="top" secondItem="2eG-Xk-vFW" secondAttribute="bottom" constant="10" id="sWh-9k-0Il"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gyt-2p-l4j" secondAttribute="trailing" id="t88-MW-h5e"/>
                         </constraints>
                     </view>
                     <connections>

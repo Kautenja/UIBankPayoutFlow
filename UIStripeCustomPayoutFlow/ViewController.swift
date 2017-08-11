@@ -12,21 +12,22 @@ import UIStripeCustomPayoutSetup
 /// the main view controller for the example
 class ViewController: UIViewController {
     
-    /// Update the view controller with data from the given company
-    func updateOuput(_ company: Company) {
-        
-    }
+    /// the text view to output to
+    @IBOutlet weak var textView: UITextView!
     
     /// Respond to a press to the start button
     @IBAction func didPressStart() {
         /// show the setup flow on self with the given callback handler
         UIStripeCustomPayoutSetup.appName = "Very Good App"
-        UIStripeCustomPayoutSetup.termsAndConditions = "Very reasonable terms and conditions"
+        var terms = "Very reasonable terms and conditions. "
+        for _ in 0...12 {
+            terms += terms
+        }
+        UIStripeCustomPayoutSetup.termsAndConditions = terms
         UIStripeCustomPayoutSetup.tintColor = .orange
         UIStripeCustomPayoutSetup.logo = #imageLiteral(resourceName: "logo")
         UIStripeCustomPayoutSetup.show(on: self) { (company) in
-            self.updateOuput(company)
-            NSLog("\(company)")
+            self.textView.text = "\(company)"
         }
     }
     

@@ -28,7 +28,7 @@ class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
     /// the tableview housing the data entry cells
     @IBOutlet weak var tableView: UITableView! {
         didSet {
-            tableView.contentInset = UIEdgeInsetsMake(0, 0, 300, 0)
+            tableView.contentInset = UIEdgeInsetsMake(0, 0, 190, 0)
             let tap = UITapGestureRecognizer(target: self, action: #selector(didTapTable))
             tableView.addGestureRecognizer(tap)
         }
@@ -175,6 +175,11 @@ class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
         didSet {
             repSSN.field.tintColor = UIStripeCustomPayoutSetup.tintColor
             repSSN.setFieldEditingChangedHandler { (field) in
+                guard field.text!.characters.count <= 4 else {
+                    let index = field.text!.index(field.text!.startIndex, offsetBy: 4)
+                    field.text = field.text!.substring(to: index)
+                    return
+                }
                 self.company.representative?.ssn = field.text
             }
         }
@@ -196,6 +201,66 @@ class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
     
     /// Respond to a press on the continue button
     @IBAction func didPressContinue() {
+        guard let _ = company.name else {
+            PopupAlert.show(on: self,
+                            title: "What's your company called?",
+                            message: "you must provide a name for your compnany")
+            return
+        }
+        guard let _ = company.address?.street else {
+            PopupAlert.show(on: self,
+                            title: "What street are you on?",
+                            message: "you must provide the street your company is on")
+            return
+        }
+        guard let _ = company.address?.city else {
+            PopupAlert.show(on: self,
+                            title: "What city are you in?",
+                            message: "you must provide the city your company is in")
+            return
+        }
+        guard let _ = company.address?.state else {
+            PopupAlert.show(on: self,
+                            title: "What state are you in?",
+                            message: "you must provide the state your company is in")
+            return
+        }
+        guard let _ = company.address?.zip else {
+            PopupAlert.show(on: self,
+                            title: "What's your zip code?",
+                            message: "you must provide the zipcode your company is located in")
+            return
+        }
+        guard let _ = company.representative?.firstName else {
+            PopupAlert.show(on: self,
+                            title: "What's your representative's first name?",
+                            message: "you must provide the full name of your company representative")
+            return
+        }
+        guard let _ = company.representative?.middleName else {
+            PopupAlert.show(on: self,
+                            title: "What's your representative's middle name?",
+                            message: "you must provide the full name of your company representative")
+            return
+        }
+        guard let _ = company.representative?.lastName else {
+            PopupAlert.show(on: self,
+                            title: "What's your representative's last name?",
+                            message: "you must provide the full name of your company representative")
+            return
+        }
+        guard let ssn = company.representative?.ssn, ssn.characters.count == 4 else {
+            PopupAlert.show(on: self,
+                            title: "What's your representative's social?",
+                            message: "you must provide the last 4 digits of you representative's social security number")
+            return
+        }
+        guard let _ = company.representative?.dob else {
+            PopupAlert.show(on: self,
+                            title: "What's your representative's date of birth?",
+                            message: "you must provide the date of birth of your company representative")
+            return
+        }
         delegate?.didFill(self, company: company)
     }
     

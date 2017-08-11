@@ -31,6 +31,11 @@ class PayoutInformationVC: UIViewController {
             routingNumber.field.tintColor = UIStripeCustomPayoutSetup.tintColor
             routingNumber.field.delegate = self
             routingNumber.setFieldEditingChangedHandler { (field) in
+                guard field.text!.characters.count <= 9 else {
+                    let index = field.text!.index(field.text!.startIndex, offsetBy: 9)
+                    field.text = field.text!.substring(to: index)
+                    return
+                }
                 self.bankAccount.routingNumber = field.text
             }
         }
@@ -49,6 +54,18 @@ class PayoutInformationVC: UIViewController {
     
     /// Respond to a press on the continue button
     @IBAction func didPressContinue() {
+        guard let routingNumber = bankAccount.routingNumber, routingNumber.characters.count == 9 else {
+            PopupAlert.show(on: self,
+                            title: "What's your routing number?",
+                            message: "you must provide the 9 digit routing number for your bank")
+            return
+        }
+        guard let _ = bankAccount.accountNumber else {
+            PopupAlert.show(on: self,
+                            title: "What's your bank account number?",
+                            message: "you must provide the account number for your bank")
+            return
+        }
         delegate?.didFill(self, account: bankAccount)
     }
     

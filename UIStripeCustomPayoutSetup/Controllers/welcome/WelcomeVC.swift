@@ -32,7 +32,10 @@ class WelcomeVC: UIViewController {
     /// the name of the app
     @IBOutlet weak var appNameLabel: UILabel! {
         didSet {
-            appNameLabel.text = UIStripeCustomPayoutSetup.appName
+            guard let appName = UIStripeCustomPayoutSetup.appName else {
+                return
+            }
+            appNameLabel.text = "\(appName)!"
         }
     }
     

@@ -35,17 +35,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cK-oi-z8Q">
+                                <rect key="frame" x="26" y="67.5" width="323" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Chv-du-efG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="ggd-bb-8pS" secondAttribute="trailing" constant="10" id="93j-19-HLk"/>
                             <constraint firstItem="fTj-qo-QIv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="ICM-Bv-j5z"/>
                             <constraint firstItem="ggd-bb-8pS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="NSp-Ic-ocz"/>
+                            <constraint firstItem="0cK-oi-z8Q" firstAttribute="top" secondItem="ggd-bb-8pS" secondAttribute="bottom" constant="10" id="Qzo-ei-roK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0cK-oi-z8Q" secondAttribute="trailing" constant="10" id="aNk-db-JWN"/>
+                            <constraint firstItem="0cK-oi-z8Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="maX-cI-cAa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fTj-qo-QIv" secondAttribute="trailing" constant="10" id="uhm-JE-TLW"/>
                             <constraint firstItem="ggd-bb-8pS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="uto-HC-7CC"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fTj-qo-QIv" secondAttribute="bottom" constant="10" id="zfg-DG-Klw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="0cK-oi-z8Q" id="DOD-XO-s2g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

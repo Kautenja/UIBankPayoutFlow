@@ -10,7 +10,7 @@ import UIKit
 import QuartzCore
 
 @IBDesignable
-open class ZFRippleButton: UIButton {
+class ZFRippleButton: UIButton {
     
     /// determines whether the button will have a drop shadow or not
     @IBInspectable var isShadowEnabled: Bool = true
