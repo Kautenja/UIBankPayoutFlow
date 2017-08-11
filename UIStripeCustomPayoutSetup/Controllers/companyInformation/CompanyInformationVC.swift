@@ -21,6 +21,40 @@ class CompanyInformationVC: UIViewController {
     
     /// the delegate to pass events to if any
     var delegate: CompanyInformationVCDelegate?
+
+    /// the tableview housing the data entry cells
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            tableView.contentInset = UIEdgeInsetsMake(0, 0, 300, 0)
+        }
+    }
+    
+    /// Return the number of cells in the table view
+    let numberOfCells = 10
+    
+    /// the mapping of cell index to its cell ID
+    let cellIDs = [ 0 : "nameString",
+                    1 : "name",
+                    2 : "typeString",
+                    3 : "type",
+                    4 : "addressString",
+                    5 : "address",
+                    6 : "repString",
+                    7 : "repName",
+                    8 : "repSSN",
+                    9 : "repDOB"]
+    
+    /// the mapping of cell index to its cell ID
+    let cellHeights: [Int : CGFloat] = [ 0 : 34,
+                                         1 : 50,
+                                         2 : 34,
+                                         3 : 50,
+                                         4 : 34,
+                                         5 : 150,
+                                         6 : 34,
+                                         7 : 50,
+                                         8 : 50,
+                                         9 : 50]
     
     /// Respond to a press on the continue button
     @IBAction func didPressContinue() {
@@ -40,4 +74,25 @@ class CompanyInformationVC: UIViewController {
         return welcomeVC
     }
     
+}
+
+
+
+// MARK: Table View functions
+extension CompanyInformationVC: UITableViewDelegate, UITableViewDataSource {
+    
+    /// Dequeue the correct cell based on the static mapping and return it
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return tableView.dequeueReusableCell(withIdentifier: cellIDs[indexPath.row]!, for: indexPath)
+    }
+
+    /// Return the number of cells in the table view
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return numberOfCells
+    }
+
+    /// Return the height for the cell at the given index path
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return cellHeights[indexPath.row]!
+    }
 }
