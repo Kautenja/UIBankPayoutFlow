@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09523F4E1F3D5A6F0062AA79 /* PopupAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09523F4D1F3D5A6F0062AA79 /* PopupAlert.swift */; };
 		09AB93741F3C81E900AF1D85 /* DoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB93731F3C81E900AF1D85 /* DoneVC.swift */; };
 		09AFDF5D1F3D4501004D6CEE /* CompanyInformationCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AFDF5C1F3D4501004D6CEE /* CompanyInformationCells.swift */; };
 		09BCA10C1F3D0E3800423DDE /* UIXibView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BCA10B1F3D0E3800423DDE /* UIXibView.framework */; };
@@ -100,6 +101,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		09523F4D1F3D5A6F0062AA79 /* PopupAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopupAlert.swift; path = Controllers/PopupAlert.swift; sourceTree = "<group>"; };
 		09AB93731F3C81E900AF1D85 /* DoneVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoneVC.swift; path = Controllers/done/DoneVC.swift; sourceTree = "<group>"; };
 		09AFDF5C1F3D4501004D6CEE /* CompanyInformationCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyInformationCells.swift; path = Controllers/companyInformation/CompanyInformationCells.swift; sourceTree = "<group>"; };
 		09BCA1051F3D0DC700423DDE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -342,6 +344,7 @@
 			isa = PBXGroup;
 			children = (
 				09FA3D051F3C6FC10059B3B3 /* UIStripeCustomPayoutSetup.swift */,
+				09523F4D1F3D5A6F0062AA79 /* PopupAlert.swift */,
 				09FA3D071F3C738C0059B3B3 /* welcome */,
 				09FA3D0B1F3C739E0059B3B3 /* terms and conditions */,
 				09FA3D0A1F3C73990059B3B3 /* company information */,
@@ -679,6 +682,7 @@
 				09BCA11B1F3D17FB00423DDE /* MaterialTextField.swift in Sources */,
 				09BCA11E1F3D184000423DDE /* MaterialSelectionCard.swift in Sources */,
 				09FA3D061F3C6FC10059B3B3 /* UIStripeCustomPayoutSetup.swift in Sources */,
+				09523F4E1F3D5A6F0062AA79 /* PopupAlert.swift in Sources */,
 				09FA3D1E1F3C74850059B3B3 /* PayoutInformationVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

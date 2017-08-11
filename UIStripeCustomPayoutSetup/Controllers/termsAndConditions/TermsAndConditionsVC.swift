@@ -39,6 +39,9 @@ class TermsAndConditionsVC: UIViewController {
     /// Respond to a press on the continue button
     @IBAction func didPressContinue() {
         guard agreementSwitch.isOn else {
+            PopupAlert.show(on: self,
+                            title: "Do you agree?",
+                            message: "you must agree to the terms and conditions before continuing")
             return
         }
         delegate?.didAcceptTermsAndConditions(self)
