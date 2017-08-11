@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		09AB93741F3C81E900AF1D85 /* DoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB93731F3C81E900AF1D85 /* DoneVC.swift */; };
+		09AFDF5D1F3D4501004D6CEE /* CompanyInformationCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AFDF5C1F3D4501004D6CEE /* CompanyInformationCells.swift */; };
 		09BCA10C1F3D0E3800423DDE /* UIXibView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BCA10B1F3D0E3800423DDE /* UIXibView.framework */; };
 		09BCA10F1F3D0F7C00423DDE /* PopupDialog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BCA10E1F3D0F7C00423DDE /* PopupDialog.framework */; };
 		09BCA1151F3D17CB00423DDE /* MaterialAddressCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BCA1141F3D17CB00423DDE /* MaterialAddressCard.swift */; };
@@ -100,6 +101,7 @@
 
 /* Begin PBXFileReference section */
 		09AB93731F3C81E900AF1D85 /* DoneVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoneVC.swift; path = Controllers/done/DoneVC.swift; sourceTree = "<group>"; };
+		09AFDF5C1F3D4501004D6CEE /* CompanyInformationCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyInformationCells.swift; path = Controllers/companyInformation/CompanyInformationCells.swift; sourceTree = "<group>"; };
 		09BCA1051F3D0DC700423DDE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		09BCA1061F3D0DCF00423DDE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		09BCA1071F3D0DD600423DDE /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
@@ -381,6 +383,7 @@
 			children = (
 				09FA3D111F3C74220059B3B3 /* CompanyInformationVC.storyboard */,
 				09FA3D1B1F3C74790059B3B3 /* CompanyInformationVC.swift */,
+				09AFDF5C1F3D4501004D6CEE /* CompanyInformationCells.swift */,
 			);
 			name = "company information";
 			sourceTree = "<group>";
@@ -669,6 +672,7 @@
 				09FA3D1C1F3C74790059B3B3 /* CompanyInformationVC.swift in Sources */,
 				09FA3D041F3C6ED70059B3B3 /* MaterialCard.swift in Sources */,
 				09AB93741F3C81E900AF1D85 /* DoneVC.swift in Sources */,
+				09AFDF5D1F3D4501004D6CEE /* CompanyInformationCells.swift in Sources */,
 				09FA3D001F3C6B950059B3B3 /* Company.swift in Sources */,
 				09FA3D181F3C74570059B3B3 /* WelcomeVC.swift in Sources */,
 				09FA3D1A1F3C746C0059B3B3 /* TermsAndConditionsVC.swift in Sources */,

@@ -96,7 +96,7 @@
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="string" keyPath="capitalization" value="words"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="returnKey" value="next"/>
-                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Address"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Street"/>
                     </userDefinedRuntimeAttributes>
                 </view>
             </subviews>

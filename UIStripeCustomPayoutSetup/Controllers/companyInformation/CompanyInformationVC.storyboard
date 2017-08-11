@@ -86,7 +86,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="name" rowHeight="50" id="GNw-Km-FAC">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="name" rowHeight="50" id="GNw-Km-FAC" customClass="NameCell" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="62" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GNw-Km-FAC" id="ze6-Rz-g4j">
@@ -116,6 +116,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="field" destination="93N-hL-oIl" id="da0-Mc-2RV"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="typeString" rowHeight="34" id="0cW-Ct-vmf">
                                         <rect key="frame" x="0.0" y="112" width="375" height="34"/>
@@ -139,7 +142,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="type" rowHeight="50" id="1X3-jO-JTw">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="type" rowHeight="50" id="1X3-jO-JTw" customClass="TypeCell" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="146" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1X3-jO-JTw" id="F4M-vE-8ul">
@@ -192,6 +195,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="segmentedControl" destination="fE3-Y3-HgY" id="6Qt-rX-FJD"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="addressString" rowHeight="34" id="lmd-W5-Sqy">
                                         <rect key="frame" x="0.0" y="196" width="375" height="34"/>
@@ -215,7 +221,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="address" rowHeight="150" id="oCC-aW-C57">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="address" rowHeight="150" id="oCC-aW-C57" customClass="AddressCell" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="230" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oCC-aW-C57" id="hSU-f9-qas">
@@ -240,6 +246,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="card" destination="cOf-Tw-dah" id="kKv-XO-kHo"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="repString" rowHeight="34" id="EbN-rE-J8F">
                                         <rect key="frame" x="0.0" y="380" width="375" height="34"/>
@@ -263,7 +272,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="repName" rowHeight="50" id="7XF-nf-FzJ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="repName" rowHeight="50" id="7XF-nf-FzJ" customClass="RepresentativeNameCell" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="414" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7XF-nf-FzJ" id="NfA-5v-4d3">
@@ -334,8 +343,13 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="first" destination="X4I-aT-Wcr" id="eQC-dh-cqf"/>
+                                            <outlet property="last" destination="IaA-d7-MJv" id="gwf-Ms-51c"/>
+                                            <outlet property="middle" destination="Cqp-Pj-f6t" id="ohF-RS-a3B"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="repSSN" rowHeight="50" id="JCJ-LU-9hT">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="repSSN" rowHeight="50" id="JCJ-LU-9hT" customClass="RepresentativeSSNCell" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="464" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JCJ-LU-9hT" id="20h-0w-aOB">
@@ -364,8 +378,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="field" destination="bWI-BR-9wF" id="jED-BB-zfX"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="repDOB" rowHeight="50" id="eBO-2G-fog">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="repDOB" rowHeight="50" id="eBO-2G-fog" customClass="RepresentativeDOBCell" customModule="UIStripeCustomPayoutSetup" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="514" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eBO-2G-fog" id="fPC-9a-eHx">
@@ -392,6 +409,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="card" destination="mnn-1k-9cJ" id="SoW-kv-mPN"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>

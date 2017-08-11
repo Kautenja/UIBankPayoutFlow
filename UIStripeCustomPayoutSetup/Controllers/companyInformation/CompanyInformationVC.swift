@@ -17,13 +17,13 @@ protocol CompanyInformationVCDelegate {
 }
 
 /// the company information page for the flow
-class CompanyInformationVC: UIViewController {
+class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
     
     /// the delegate to pass events to if any
     var delegate: CompanyInformationVCDelegate?
 
     /// the company to mutate with the form
-    var company = Company()
+    var company: Company!
     
     /// the tableview housing the data entry cells
     @IBOutlet weak var tableView: UITableView! {
@@ -59,6 +59,117 @@ class CompanyInformationVC: UIViewController {
                                          8 : 50,
                                          9 : 50]
     
+    /// the name of the company
+    var name: MaterialTextField! {
+        didSet {
+            name.setFieldEditingChangedHandler { (field) in
+                self.company.name = field.text
+            }
+        }
+    }
+    
+    /// the type of the company
+    var companyType: UISegmentedControl! {
+        didSet {
+            companyType.addTarget(self, action: #selector(companyTypeDidChange),
+                                  for: UIControlEvents.valueChanged)
+        }
+    }
+    
+    /// Repond to the segmented control changing
+    func companyTypeDidChange() {
+        switch companyType.selectedSegmentIndex {
+        case 0:
+            company.type = .company
+        case 1:
+            company.type = .individual
+        default:
+            ()
+        }
+    }
+    
+    /// the companies address
+    var address: MaterialAddressCard! {
+        didSet {
+            address.delegate = self
+        }
+    }
+    
+    /// Respond to the address value changing to a prevalidated address
+    /// - parameters:
+    ///   - picker: the picker the event happened on
+    ///   - address: the new address
+    func addressDidChange(_ picker: MaterialAddressCard, address: String?) {
+        company.address?.street = address
+    }
+    
+    /// Respond to the address value changing to a prevalidated address
+    /// - parameters:
+    ///   - picker: the picker the event happened on
+    ///   - city: the new city
+    func cityDidChange(_ picker: MaterialAddressCard, city: String?) {
+        company.address?.city = city
+    }
+    
+    /// Respond to the address value changing to a prevalidated address
+    /// - parameters:
+    ///   - picker: the picker the event happened on
+    ///   - state: the new state
+    func stateDidChange(_ picker: MaterialAddressCard, state: String?) {
+        company.address?.state = state
+    }
+    
+    /// Respond to the address value changing to a prevalidated address
+    /// - parameters:
+    ///   - picker: the picker the event happened on
+    ///   - zip: the new zip
+    func zipDidChange(_ picker: MaterialAddressCard, zip: String?) {
+        company.address?.zip = zip
+    }
+    
+    /// the first name of the comapny representative
+    var repFirst: MaterialTextField! {
+        didSet {
+            repFirst.setFieldEditingChangedHandler { (field) in
+                self.company.representative?.firstName = field.text
+            }
+        }
+    }
+    
+    /// the middle name of the comapny representative
+    var repMiddle: MaterialTextField! {
+        didSet {
+            repMiddle.setFieldEditingChangedHandler { (field) in
+                self.company.representative?.middleName = field.text
+            }
+        }
+    }
+    
+    /// the last name of the comapny representative
+    var repLast: MaterialTextField! {
+        didSet {
+            repLast.setFieldEditingChangedHandler { (field) in
+                self.company.representative?.lastName = field.text
+            }
+        }
+    }
+    
+    /// the last 4 digitst of the SSN of the comapny representative
+    var repSSN: MaterialTextField! {
+        didSet {
+            repSSN.setFieldEditingChangedHandler { (field) in
+                self.company.representative?.ssn = field.text
+            }
+        }
+    }
+    
+    /// the date of birth of the comapny representative
+    var repDOB: MaterialSelectionCard! {
+        didSet {
+            
+        }
+    }
+    
     /// Respond to a press on the continue button
     @IBAction func didPressContinue() {
         delegate?.didFill(self, company: company)
@@ -77,6 +188,20 @@ class CompanyInformationVC: UIViewController {
         return welcomeVC
     }
     
+    // MARK: View Hierarchy
+    
+    /// Setup the view on load
+    override func viewDidLoad() {
+        // if there is no company to mutate, create one
+        if company == nil {
+            company = Company()
+            // setup the default values as they will appear on view controllers
+            company.type = .company
+            company.address = Address()
+            company.representative = Representative()
+        }
+    }
+    
 }
 
 
@@ -86,7 +211,29 @@ extension CompanyInformationVC: UITableViewDelegate, UITableViewDataSource {
     
     /// Dequeue the correct cell based on the static mapping and return it
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: cellIDs[indexPath.row]!, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIDs[indexPath.row]!, for: indexPath)
+        // setup local references to the views in the cells
+        if let cell = cell as? NameCell {
+            name = cell.field
+        }
+        else if let cell = cell as? TypeCell {
+            companyType = cell.segmentedControl
+        }
+        else if let cell = cell as? AddressCell {
+            address = cell.card
+        }
+        else if let cell = cell as? RepresentativeNameCell {
+            repFirst = cell.first
+            repMiddle = cell.middle
+            repLast = cell.last
+        }
+        else if let cell = cell as? RepresentativeSSNCell {
+            repSSN = cell.field
+        }
+        else if let cell = cell as? RepresentativeDOBCell {
+            repDOB = cell.card
+        }
+        return cell
     }
 
     /// Return the number of cells in the table view
@@ -98,4 +245,5 @@ extension CompanyInformationVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return cellHeights[indexPath.row]!
     }
+    
 }

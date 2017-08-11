@@ -12,7 +12,7 @@ import MapKit
 import CoreLocation
 
 /// a list of state abbreviations
-let states = ["AL","AK","AZ","AR","CA","CO","CT","DE","DC","FL","GA","HI","ID","IL",
+let states = ["-", "AL","AK","AZ","AR","CA","CO","CT","DE","DC","FL","GA","HI","ID","IL",
               "IN","IA","KS","KY","LA","ME","MT","NE","NV","NH","NJ","NM","NY","NC",
               "ND","OH","OK","OR","MD","MA","MI","MN","MS","MO","PA","RI","SC","SD",
               "TN","TX","UT","VT","VA","WA","WV","WI","WY"]
@@ -199,8 +199,14 @@ extension MaterialAddressCard: UIPickerViewDataSource, UIPickerViewDelegate {
     
     /// Respond to a row (state) being selected
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        delegate?.stateDidChange(self, state: states[row])
         zoomMap(to: self.completeAddress!)
+        // if the row is dash, pass nil to the delegate
+        if row == 0 {
+            delegate?.stateDidChange(self, state: nil)
+        // otherwise pass the state
+        } else {
+            delegate?.stateDidChange(self, state: states[row])
+        }
     }
     
 }
