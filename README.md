@@ -1,7 +1,7 @@
 # UIBankPayoutFlow
 
 this iOS framework delivers a concise flow for setting up payout information. It was originally
-designed to be fully compatible with [Stripe][], but has been since generalized to fit a broader
+designed to be fully compatible with [Stripe][], but has since been generalized to fit a broader
 audience.
 
 [Stripe]: https://stripe.com
