@@ -16,7 +16,7 @@ how to deploy the project on a live system.
 
 ### Prerequisites
 
-UIStripeCustomPayoutFlow is both dependency managed and distributed using 
+UIBankPayoutFlow is both dependency managed and distributed using 
 [Carthage][], the decentralized package manager for iOS frameworks. Ensure you 
 have Carthage installed by running
 

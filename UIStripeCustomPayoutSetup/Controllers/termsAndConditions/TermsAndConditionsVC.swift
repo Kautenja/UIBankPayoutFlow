@@ -1,6 +1,6 @@
 //
 //  TermsAndConditionsVC.swift
-//  UIStripeCustomPayoutFlow
+//  UIBankPayoutFlow
 //
 //  Created by James Kauten on 8/10/17.
 //  Copyright © 2017 Christian Kauten. All rights reserved.
@@ -25,14 +25,14 @@ class TermsAndConditionsVC: UIViewController {
     /// the text view to display the terms and conditions
     @IBOutlet weak var termsAndConditionsTextView: UITextView! {
         didSet {
-            termsAndConditionsTextView.text = UIStripeCustomPayoutSetup.termsAndConditions
+            termsAndConditionsTextView.text = UIBankPayoutFlow.termsAndConditions
         }
     }
 
     /// the switch for users to use to agree
     @IBOutlet weak var agreementSwitch: UISwitch! {
         didSet {
-            agreementSwitch.onTintColor = UIStripeCustomPayoutSetup.tintColor
+            agreementSwitch.onTintColor = UIBankPayoutFlow.tintColor
         }
     }
     
@@ -50,8 +50,8 @@ class TermsAndConditionsVC: UIViewController {
     /// the continue button
     @IBOutlet weak var continueButton: ZFRippleButton! {
         didSet {
-            continueButton.backgroundColor = UIStripeCustomPayoutSetup.buttonBackgroundColor
-            continueButton.tintColor = UIStripeCustomPayoutSetup.tintColor
+            continueButton.backgroundColor = UIBankPayoutFlow.buttonBackgroundColor
+            continueButton.tintColor = UIBankPayoutFlow.tintColor
         }
     }
     

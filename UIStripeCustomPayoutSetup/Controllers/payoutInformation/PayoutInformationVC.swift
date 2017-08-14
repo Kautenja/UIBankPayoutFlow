@@ -1,6 +1,6 @@
 //
 //  PayoutInformationVC.swift
-//  UIStripeCustomPayoutFlow
+//  UIBankPayoutFlow
 //
 //  Created by James Kauten on 8/10/17.
 //  Copyright © 2017 Christian Kauten. All rights reserved.
@@ -28,7 +28,7 @@ class PayoutInformationVC: UIViewController {
     /// the text field for collecting the routing number
     @IBOutlet weak var routingNumber: MaterialTextField! {
         didSet {
-            routingNumber.field.tintColor = UIStripeCustomPayoutSetup.tintColor
+            routingNumber.field.tintColor = UIBankPayoutFlow.tintColor
             routingNumber.field.delegate = self
             routingNumber.setFieldEditingChangedHandler { (field) in
                 guard field.text!.characters.count <= 9 else {
@@ -44,7 +44,7 @@ class PayoutInformationVC: UIViewController {
     /// the text field for collecting the account number
     @IBOutlet weak var accountNumber: MaterialTextField! {
         didSet {
-            accountNumber.field.tintColor = UIStripeCustomPayoutSetup.tintColor
+            accountNumber.field.tintColor = UIBankPayoutFlow.tintColor
             accountNumber.field.delegate = self
             accountNumber.setFieldEditingChangedHandler { (field) in
                 self.bankAccount.accountNumber = field.text
@@ -72,8 +72,8 @@ class PayoutInformationVC: UIViewController {
     /// the continue button
     @IBOutlet weak var continueButton: ZFRippleButton! {
         didSet {
-            continueButton.backgroundColor = UIStripeCustomPayoutSetup.buttonBackgroundColor
-            continueButton.tintColor = UIStripeCustomPayoutSetup.tintColor
+            continueButton.backgroundColor = UIBankPayoutFlow.buttonBackgroundColor
+            continueButton.tintColor = UIBankPayoutFlow.tintColor
         }
     }
     

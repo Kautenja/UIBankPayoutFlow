@@ -1,6 +1,6 @@
 //
 //  DoneVC.swift
-//  UIStripeCustomPayoutFlow
+//  UIBankPayoutFlow
 //
 //  Created by James Kauten on 8/10/17.
 //  Copyright © 2017 Christian Kauten. All rights reserved.
@@ -25,7 +25,7 @@ class DoneVC: UIViewController {
     /// the company logo to display
     @IBOutlet weak var logo: UIImageView! {
         didSet {
-            logo.image = UIStripeCustomPayoutSetup.logo
+            logo.image = UIBankPayoutFlow.logo
         }
     }
     
@@ -33,7 +33,7 @@ class DoneVC: UIViewController {
     /// if there is one, else just leave as is
     @IBOutlet weak var allSetUpLabel: UITextView! {
         didSet {
-            guard let appName = UIStripeCustomPayoutSetup.appName else {
+            guard let appName = UIBankPayoutFlow.appName else {
                 return
             }
             allSetUpLabel.text = allSetUpLabel.text + " with \(appName)"
@@ -48,8 +48,8 @@ class DoneVC: UIViewController {
     /// the get started button
     @IBOutlet weak var getStarted: ZFRippleButton! {
         didSet {
-            getStarted.backgroundColor = UIStripeCustomPayoutSetup.buttonBackgroundColor
-            getStarted.tintColor = UIStripeCustomPayoutSetup.tintColor
+            getStarted.backgroundColor = UIBankPayoutFlow.buttonBackgroundColor
+            getStarted.tintColor = UIBankPayoutFlow.tintColor
         }
     }
     

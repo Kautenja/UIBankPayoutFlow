@@ -1,6 +1,6 @@
 //
 //  WelcomeVC.swift
-//  UIStripeCustomPayoutFlow
+//  UIBankPayoutFlow
 //
 //  Created by James Kauten on 8/10/17.
 //  Copyright © 2017 Christian Kauten. All rights reserved.
@@ -25,14 +25,14 @@ class WelcomeVC: UIViewController {
     /// the company logo to display
     @IBOutlet weak var logo: UIImageView! {
         didSet {
-            logo.image = UIStripeCustomPayoutSetup.logo
+            logo.image = UIBankPayoutFlow.logo
         }
     }
 
     /// the name of the app
     @IBOutlet weak var appNameLabel: UILabel! {
         didSet {
-            guard let appName = UIStripeCustomPayoutSetup.appName else {
+            guard let appName = UIBankPayoutFlow.appName else {
                 return
             }
             appNameLabel.text = "\(appName)!"
@@ -47,8 +47,8 @@ class WelcomeVC: UIViewController {
     /// the get started button
     @IBOutlet weak var getStarted: ZFRippleButton! {
         didSet {
-            getStarted.backgroundColor = UIStripeCustomPayoutSetup.buttonBackgroundColor
-            getStarted.tintColor = UIStripeCustomPayoutSetup.tintColor
+            getStarted.backgroundColor = UIBankPayoutFlow.buttonBackgroundColor
+            getStarted.tintColor = UIBankPayoutFlow.tintColor
         }
     }
     

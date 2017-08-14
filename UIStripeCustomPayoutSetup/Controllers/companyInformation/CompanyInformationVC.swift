@@ -1,6 +1,6 @@
 //
 //  CompanyInformationVC.swift
-//  UIStripeCustomPayoutFlow
+//  UIBankPayoutFlow
 //
 //  Created by James Kauten on 8/10/17.
 //  Copyright © 2017 Christian Kauten. All rights reserved.
@@ -69,7 +69,7 @@ class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
     /// the name of the company
     var name: MaterialTextField! {
         didSet {
-            name.field.tintColor = UIStripeCustomPayoutSetup.tintColor
+            name.field.tintColor = UIBankPayoutFlow.tintColor
             name.setFieldEditingChangedHandler { (field) in
                 self.company.name = field.text
             }
@@ -79,7 +79,7 @@ class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
     /// the type of the company
     var companyType: UISegmentedControl! {
         didSet {
-            companyType.tintColor = UIStripeCustomPayoutSetup.tintColor
+            companyType.tintColor = UIBankPayoutFlow.tintColor
             companyType.addTarget(self, action: #selector(companyTypeDidChange),
                                   for: UIControlEvents.valueChanged)
         }
@@ -100,7 +100,7 @@ class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
     /// the companies address
     var address: MaterialAddressCard! {
         didSet {
-            address.tintColor = UIStripeCustomPayoutSetup.tintColor
+            address.tintColor = UIBankPayoutFlow.tintColor
             address.delegate = self
         }
     }
@@ -140,7 +140,7 @@ class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
     /// the first name of the comapny representative
     var repFirst: MaterialTextField! {
         didSet {
-            repFirst.field.tintColor = UIStripeCustomPayoutSetup.tintColor
+            repFirst.field.tintColor = UIBankPayoutFlow.tintColor
             repFirst.field.delegate = self
             repFirst.setFieldEditingChangedHandler { (field) in
                 self.company.representative?.firstName = field.text
@@ -151,7 +151,7 @@ class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
     /// the middle name of the comapny representative
     var repMiddle: MaterialTextField! {
         didSet {
-            repMiddle.field.tintColor = UIStripeCustomPayoutSetup.tintColor
+            repMiddle.field.tintColor = UIBankPayoutFlow.tintColor
             repMiddle.field.delegate = self
             repMiddle.setFieldEditingChangedHandler { (field) in
                 self.company.representative?.middleName = field.text
@@ -162,7 +162,7 @@ class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
     /// the last name of the comapny representative
     var repLast: MaterialTextField! {
         didSet {
-            repLast.field.tintColor = UIStripeCustomPayoutSetup.tintColor
+            repLast.field.tintColor = UIBankPayoutFlow.tintColor
             repLast.field.delegate = self
             repLast.setFieldEditingChangedHandler { (field) in
                 self.company.representative?.lastName = field.text
@@ -173,7 +173,7 @@ class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
     /// the last 4 digitst of the SSN of the comapny representative
     var repSSN: MaterialTextField! {
         didSet {
-            repSSN.field.tintColor = UIStripeCustomPayoutSetup.tintColor
+            repSSN.field.tintColor = UIBankPayoutFlow.tintColor
             repSSN.setFieldEditingChangedHandler { (field) in
                 guard field.text!.characters.count <= 4 else {
                     let index = field.text!.index(field.text!.startIndex, offsetBy: 4)
@@ -267,8 +267,8 @@ class CompanyInformationVC: UIViewController, MaterialAddressCardDelegate {
     /// the continue button
     @IBOutlet weak var continueButton: ZFRippleButton! {
         didSet {
-            continueButton.backgroundColor = UIStripeCustomPayoutSetup.buttonBackgroundColor
-            continueButton.tintColor = UIStripeCustomPayoutSetup.tintColor
+            continueButton.backgroundColor = UIBankPayoutFlow.buttonBackgroundColor
+            continueButton.tintColor = UIBankPayoutFlow.tintColor
         }
     }
     

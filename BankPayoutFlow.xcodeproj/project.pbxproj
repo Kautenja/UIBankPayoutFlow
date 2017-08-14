@@ -7,50 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09523F4E1F3D5A6F0062AA79 /* PopupAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09523F4D1F3D5A6F0062AA79 /* PopupAlert.swift */; };
-		09AB93741F3C81E900AF1D85 /* DoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB93731F3C81E900AF1D85 /* DoneVC.swift */; };
-		09AFDF5D1F3D4501004D6CEE /* CompanyInformationCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AFDF5C1F3D4501004D6CEE /* CompanyInformationCells.swift */; };
-		09BCA10C1F3D0E3800423DDE /* UIXibView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BCA10B1F3D0E3800423DDE /* UIXibView.framework */; };
-		09BCA10F1F3D0F7C00423DDE /* PopupDialog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BCA10E1F3D0F7C00423DDE /* PopupDialog.framework */; };
-		09BCA1151F3D17CB00423DDE /* MaterialAddressCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BCA1141F3D17CB00423DDE /* MaterialAddressCard.swift */; };
-		09BCA1171F3D17D800423DDE /* MaterialAddressCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BCA1161F3D17D800423DDE /* MaterialAddressCard.xib */; };
-		09BCA1191F3D17EC00423DDE /* MaterialTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BCA1181F3D17EC00423DDE /* MaterialTextField.xib */; };
-		09BCA11B1F3D17FB00423DDE /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BCA11A1F3D17FB00423DDE /* MaterialTextField.swift */; };
-		09BCA11E1F3D184000423DDE /* MaterialSelectionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BCA11C1F3D184000423DDE /* MaterialSelectionCard.swift */; };
-		09BCA11F1F3D184000423DDE /* MaterialSelectionCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BCA11D1F3D184000423DDE /* MaterialSelectionCard.xib */; };
+		09B768B41F416B970098F242 /* UIBankPayoutFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 09B768B21F416B970098F242 /* UIBankPayoutFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09B768B71F416B970098F242 /* UIBankPayoutFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B768B01F416B970098F242 /* UIBankPayoutFlow.framework */; };
+		09B768B81F416B970098F242 /* UIBankPayoutFlow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09B768B01F416B970098F242 /* UIBankPayoutFlow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		09B768BC1F416BF30098F242 /* PopupDialog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BCA10E1F3D0F7C00423DDE /* PopupDialog.framework */; };
+		09B768BD1F416BF50098F242 /* UIXibView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BCA10B1F3D0E3800423DDE /* UIXibView.framework */; };
+		09B768BE1F416C1E0098F242 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3CF91F3C6B6F0059B3B3 /* Address.swift */; };
+		09B768BF1F416C200098F242 /* Representative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3CFB1F3C6B7D0059B3B3 /* Representative.swift */; };
+		09B768C01F416C220098F242 /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3CFD1F3C6B890059B3B3 /* BankAccount.swift */; };
+		09B768C11F416C240098F242 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3CFF1F3C6B950059B3B3 /* Company.swift */; };
+		09B768C21F416C2D0098F242 /* MaterialCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3D031F3C6ED70059B3B3 /* MaterialCard.swift */; };
+		09B768C31F416C2F0098F242 /* ZFRippleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3D211F3C74B90059B3B3 /* ZFRippleButton.swift */; };
+		09B768C41F416C330098F242 /* MaterialAddressCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BCA1141F3D17CB00423DDE /* MaterialAddressCard.swift */; };
+		09B768C51F416C350098F242 /* MaterialAddressCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BCA1161F3D17D800423DDE /* MaterialAddressCard.xib */; };
+		09B768C61F416C370098F242 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BCA11A1F3D17FB00423DDE /* MaterialTextField.swift */; };
+		09B768C71F416C3A0098F242 /* MaterialTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BCA1181F3D17EC00423DDE /* MaterialTextField.xib */; };
+		09B768C81F416C3C0098F242 /* MaterialSelectionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BCA11C1F3D184000423DDE /* MaterialSelectionCard.swift */; };
+		09B768C91F416C3E0098F242 /* MaterialSelectionCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BCA11D1F3D184000423DDE /* MaterialSelectionCard.xib */; };
+		09B768CA1F416C420098F242 /* UIBankPayoutFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3D051F3C6FC10059B3B3 /* UIBankPayoutFlow.swift */; };
+		09B768CB1F416C450098F242 /* PopupAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09523F4D1F3D5A6F0062AA79 /* PopupAlert.swift */; };
+		09B768CC1F416C500098F242 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3D171F3C74570059B3B3 /* WelcomeVC.swift */; };
+		09B768CD1F416C520098F242 /* TermsAndConditionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3D191F3C746C0059B3B3 /* TermsAndConditionsVC.swift */; };
+		09B768CE1F416C530098F242 /* CompanyInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3D1B1F3C74790059B3B3 /* CompanyInformationVC.swift */; };
+		09B768CF1F416C550098F242 /* CompanyInformationCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AFDF5C1F3D4501004D6CEE /* CompanyInformationCells.swift */; };
+		09B768D01F416C570098F242 /* PayoutInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3D1D1F3C74850059B3B3 /* PayoutInformationVC.swift */; };
+		09B768D11F416C590098F242 /* DoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB93731F3C81E900AF1D85 /* DoneVC.swift */; };
+		09B768D21F416C620098F242 /* WelcomeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09FA3D0C1F3C73E50059B3B3 /* WelcomeVC.storyboard */; };
+		09B768D31F416C640098F242 /* TermsAndConditionsVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09FA3D0F1F3C740A0059B3B3 /* TermsAndConditionsVC.storyboard */; };
+		09B768D41F416C670098F242 /* CompanyInformationVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09FA3D111F3C74220059B3B3 /* CompanyInformationVC.storyboard */; };
+		09B768D51F416C690098F242 /* PayoutInformationVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09FA3D131F3C74370059B3B3 /* PayoutInformationVC.storyboard */; };
+		09B768D61F416C6B0098F242 /* DoneVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09FA3D151F3C74490059B3B3 /* DoneVC.storyboard */; };
 		09FA3CA81F3C68F40059B3B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3CA71F3C68F40059B3B3 /* AppDelegate.swift */; };
 		09FA3CAA1F3C68F40059B3B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3CA91F3C68F40059B3B3 /* ViewController.swift */; };
 		09FA3CAD1F3C68F40059B3B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09FA3CAB1F3C68F40059B3B3 /* Main.storyboard */; };
 		09FA3CAF1F3C68F40059B3B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09FA3CAE1F3C68F40059B3B3 /* Assets.xcassets */; };
 		09FA3CB21F3C68F40059B3B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09FA3CB01F3C68F40059B3B3 /* LaunchScreen.storyboard */; };
-		09FA3CEC1F3C69350059B3B3 /* UIStripeCustomPayoutSetup.h in Headers */ = {isa = PBXBuildFile; fileRef = 09FA3CDC1F3C69350059B3B3 /* UIStripeCustomPayoutSetup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09FA3CEF1F3C69350059B3B3 /* UIStripeCustomPayoutSetup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FA3CDA1F3C69350059B3B3 /* UIStripeCustomPayoutSetup.framework */; };
-		09FA3CF01F3C69350059B3B3 /* UIStripeCustomPayoutSetup.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09FA3CDA1F3C69350059B3B3 /* UIStripeCustomPayoutSetup.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		09FA3CFA1F3C6B6F0059B3B3 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3CF91F3C6B6F0059B3B3 /* Address.swift */; };
-		09FA3CFC1F3C6B7D0059B3B3 /* Representative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3CFB1F3C6B7D0059B3B3 /* Representative.swift */; };
-		09FA3CFE1F3C6B890059B3B3 /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3CFD1F3C6B890059B3B3 /* BankAccount.swift */; };
-		09FA3D001F3C6B950059B3B3 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3CFF1F3C6B950059B3B3 /* Company.swift */; };
-		09FA3D041F3C6ED70059B3B3 /* MaterialCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3D031F3C6ED70059B3B3 /* MaterialCard.swift */; };
-		09FA3D061F3C6FC10059B3B3 /* UIStripeCustomPayoutSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3D051F3C6FC10059B3B3 /* UIStripeCustomPayoutSetup.swift */; };
-		09FA3D0D1F3C73E50059B3B3 /* WelcomeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09FA3D0C1F3C73E50059B3B3 /* WelcomeVC.storyboard */; };
-		09FA3D101F3C740A0059B3B3 /* TermsAndConditionsVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09FA3D0F1F3C740A0059B3B3 /* TermsAndConditionsVC.storyboard */; };
-		09FA3D121F3C74220059B3B3 /* CompanyInformationVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09FA3D111F3C74220059B3B3 /* CompanyInformationVC.storyboard */; };
-		09FA3D141F3C74370059B3B3 /* PayoutInformationVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09FA3D131F3C74370059B3B3 /* PayoutInformationVC.storyboard */; };
-		09FA3D161F3C74490059B3B3 /* DoneVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09FA3D151F3C74490059B3B3 /* DoneVC.storyboard */; };
-		09FA3D181F3C74570059B3B3 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3D171F3C74570059B3B3 /* WelcomeVC.swift */; };
-		09FA3D1A1F3C746C0059B3B3 /* TermsAndConditionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3D191F3C746C0059B3B3 /* TermsAndConditionsVC.swift */; };
-		09FA3D1C1F3C74790059B3B3 /* CompanyInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3D1B1F3C74790059B3B3 /* CompanyInformationVC.swift */; };
-		09FA3D1E1F3C74850059B3B3 /* PayoutInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3D1D1F3C74850059B3B3 /* PayoutInformationVC.swift */; };
-		09FA3D221F3C74B90059B3B3 /* ZFRippleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3D211F3C74B90059B3B3 /* ZFRippleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		09FA3CED1F3C69350059B3B3 /* PBXContainerItemProxy */ = {
+		09B768B51F416B970098F242 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 09FA3C9C1F3C68F40059B3B3 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 09FA3CD91F3C69350059B3B3;
-			remoteInfo = UIStripeCustomPayoutSetup;
+			remoteGlobalIDString = 09B768AF1F416B970098F242;
+			remoteInfo = UIBankPayoutFlow;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -61,7 +61,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				09FA3CF01F3C69350059B3B3 /* UIStripeCustomPayoutSetup.framework in Embed Frameworks */,
+				09B768B81F416B970098F242 /* UIBankPayoutFlow.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +72,9 @@
 		09523F4D1F3D5A6F0062AA79 /* PopupAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopupAlert.swift; path = Controllers/PopupAlert.swift; sourceTree = "<group>"; };
 		09AB93731F3C81E900AF1D85 /* DoneVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoneVC.swift; path = Controllers/done/DoneVC.swift; sourceTree = "<group>"; };
 		09AFDF5C1F3D4501004D6CEE /* CompanyInformationCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyInformationCells.swift; path = Controllers/companyInformation/CompanyInformationCells.swift; sourceTree = "<group>"; };
+		09B768B01F416B970098F242 /* UIBankPayoutFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIBankPayoutFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09B768B21F416B970098F242 /* UIBankPayoutFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIBankPayoutFlow.h; sourceTree = "<group>"; };
+		09B768B31F416B970098F242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09BCA1051F3D0DC700423DDE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		09BCA1061F3D0DCF00423DDE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		09BCA1071F3D0DD600423DDE /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
@@ -93,15 +96,12 @@
 		09FA3CAE1F3C68F40059B3B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09FA3CB11F3C68F40059B3B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09FA3CB31F3C68F40059B3B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09FA3CDA1F3C69350059B3B3 /* UIStripeCustomPayoutSetup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIStripeCustomPayoutSetup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		09FA3CDC1F3C69350059B3B3 /* UIStripeCustomPayoutSetup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStripeCustomPayoutSetup.h; sourceTree = "<group>"; };
-		09FA3CDD1F3C69350059B3B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09FA3CF91F3C6B6F0059B3B3 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Address.swift; path = Model/Address.swift; sourceTree = "<group>"; };
 		09FA3CFB1F3C6B7D0059B3B3 /* Representative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Representative.swift; path = Model/Representative.swift; sourceTree = "<group>"; };
 		09FA3CFD1F3C6B890059B3B3 /* BankAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BankAccount.swift; path = Model/BankAccount.swift; sourceTree = "<group>"; };
 		09FA3CFF1F3C6B950059B3B3 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Company.swift; path = Model/Company.swift; sourceTree = "<group>"; };
 		09FA3D031F3C6ED70059B3B3 /* MaterialCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialCard.swift; path = Views/MaterialCard.swift; sourceTree = "<group>"; };
-		09FA3D051F3C6FC10059B3B3 /* UIStripeCustomPayoutSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIStripeCustomPayoutSetup.swift; path = Controllers/UIStripeCustomPayoutSetup.swift; sourceTree = "<group>"; };
+		09FA3D051F3C6FC10059B3B3 /* UIBankPayoutFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIBankPayoutFlow.swift; path = Controllers/UIBankPayoutFlow.swift; sourceTree = "<group>"; };
 		09FA3D0C1F3C73E50059B3B3 /* WelcomeVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = WelcomeVC.storyboard; path = Controllers/welcome/WelcomeVC.storyboard; sourceTree = "<group>"; };
 		09FA3D0F1F3C740A0059B3B3 /* TermsAndConditionsVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TermsAndConditionsVC.storyboard; path = Controllers/termsAndConditions/TermsAndConditionsVC.storyboard; sourceTree = "<group>"; };
 		09FA3D111F3C74220059B3B3 /* CompanyInformationVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CompanyInformationVC.storyboard; path = Controllers/companyInformation/CompanyInformationVC.storyboard; sourceTree = "<group>"; };
@@ -115,26 +115,38 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		09B768AC1F416B970098F242 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B768BC1F416BF30098F242 /* PopupDialog.framework in Frameworks */,
+				09B768BD1F416BF50098F242 /* UIXibView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		09FA3CA11F3C68F40059B3B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09FA3CEF1F3C69350059B3B3 /* UIStripeCustomPayoutSetup.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09FA3CD61F3C69350059B3B3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09BCA10C1F3D0E3800423DDE /* UIXibView.framework in Frameworks */,
-				09BCA10F1F3D0F7C00423DDE /* PopupDialog.framework in Frameworks */,
+				09B768B71F416B970098F242 /* UIBankPayoutFlow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09B768B11F416B970098F242 /* UIBankPayoutFlow */ = {
+			isa = PBXGroup;
+			children = (
+				09B768B21F416B970098F242 /* UIBankPayoutFlow.h */,
+				09B768B31F416B970098F242 /* Info.plist */,
+				09FA3CF81F3C6B590059B3B3 /* Model */,
+				09FA3D011F3C6EAF0059B3B3 /* Views */,
+				09FA3D021F3C6EB90059B3B3 /* Controllers */,
+			);
+			path = UIBankPayoutFlow;
+			sourceTree = "<group>";
+		};
 		09BCA1001F3D0D2A00423DDE /* MaterialSelectionCard */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,8 +192,8 @@
 				09BCA1101F3D127C00423DDE /* CONTRIBUTING.md */,
 				09BCA1071F3D0DD600423DDE /* Cartfile */,
 				09BCA1081F3D0DDB00423DDE /* Makefile */,
-				09FA3CA61F3C68F40059B3B3 /* UIStripeCustomPayoutFlow */,
-				09FA3CDB1F3C69350059B3B3 /* UIStripeCustomPayoutSetup */,
+				09FA3CA61F3C68F40059B3B3 /* Example */,
+				09B768B11F416B970098F242 /* UIBankPayoutFlow */,
 				09FA3CA51F3C68F40059B3B3 /* Products */,
 				09BCA10A1F3D0E3800423DDE /* Frameworks */,
 			);
@@ -191,12 +203,12 @@
 			isa = PBXGroup;
 			children = (
 				09FA3CA41F3C68F40059B3B3 /* BankPayoutFlow.app */,
-				09FA3CDA1F3C69350059B3B3 /* UIStripeCustomPayoutSetup.framework */,
+				09B768B01F416B970098F242 /* UIBankPayoutFlow.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		09FA3CA61F3C68F40059B3B3 /* UIStripeCustomPayoutFlow */ = {
+		09FA3CA61F3C68F40059B3B3 /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				09FA3CA71F3C68F40059B3B3 /* AppDelegate.swift */,
@@ -206,19 +218,8 @@
 				09FA3CB01F3C68F40059B3B3 /* LaunchScreen.storyboard */,
 				09FA3CB31F3C68F40059B3B3 /* Info.plist */,
 			);
+			name = Example;
 			path = UIStripeCustomPayoutFlow;
-			sourceTree = "<group>";
-		};
-		09FA3CDB1F3C69350059B3B3 /* UIStripeCustomPayoutSetup */ = {
-			isa = PBXGroup;
-			children = (
-				09FA3CDD1F3C69350059B3B3 /* Info.plist */,
-				09FA3CDC1F3C69350059B3B3 /* UIStripeCustomPayoutSetup.h */,
-				09FA3CF81F3C6B590059B3B3 /* Model */,
-				09FA3D011F3C6EAF0059B3B3 /* Views */,
-				09FA3D021F3C6EB90059B3B3 /* Controllers */,
-			);
-			path = UIStripeCustomPayoutSetup;
 			sourceTree = "<group>";
 		};
 		09FA3CF81F3C6B590059B3B3 /* Model */ = {
@@ -230,6 +231,7 @@
 				09FA3CFF1F3C6B950059B3B3 /* Company.swift */,
 			);
 			name = Model;
+			path = ../UIStripeCustomPayoutSetup;
 			sourceTree = "<group>";
 		};
 		09FA3D011F3C6EAF0059B3B3 /* Views */ = {
@@ -242,12 +244,13 @@
 				09BCA1001F3D0D2A00423DDE /* MaterialSelectionCard */,
 			);
 			name = Views;
+			path = ../UIStripeCustomPayoutSetup;
 			sourceTree = "<group>";
 		};
 		09FA3D021F3C6EB90059B3B3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				09FA3D051F3C6FC10059B3B3 /* UIStripeCustomPayoutSetup.swift */,
+				09FA3D051F3C6FC10059B3B3 /* UIBankPayoutFlow.swift */,
 				09523F4D1F3D5A6F0062AA79 /* PopupAlert.swift */,
 				09FA3D071F3C738C0059B3B3 /* welcome */,
 				09FA3D0B1F3C739E0059B3B3 /* terms and conditions */,
@@ -256,6 +259,7 @@
 				09FA3D081F3C73940059B3B3 /* done */,
 			);
 			name = Controllers;
+			path = ../UIStripeCustomPayoutSetup;
 			sourceTree = "<group>";
 		};
 		09FA3D071F3C738C0059B3B3 /* welcome */ = {
@@ -307,17 +311,35 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		09FA3CD71F3C69350059B3B3 /* Headers */ = {
+		09B768AD1F416B970098F242 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09FA3CEC1F3C69350059B3B3 /* UIStripeCustomPayoutSetup.h in Headers */,
+				09B768B41F416B970098F242 /* UIBankPayoutFlow.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		09B768AF1F416B970098F242 /* UIBankPayoutFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09B768B91F416B970098F242 /* Build configuration list for PBXNativeTarget "UIBankPayoutFlow" */;
+			buildPhases = (
+				09B768AB1F416B970098F242 /* Sources */,
+				09B768AC1F416B970098F242 /* Frameworks */,
+				09B768AD1F416B970098F242 /* Headers */,
+				09B768AE1F416B970098F242 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIBankPayoutFlow;
+			productName = UIBankPayoutFlow;
+			productReference = 09B768B01F416B970098F242 /* UIBankPayoutFlow.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		09FA3CA31F3C68F40059B3B3 /* BankPayoutFlow */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09FA3CCC1F3C68F40059B3B3 /* Build configuration list for PBXNativeTarget "BankPayoutFlow" */;
@@ -331,30 +353,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				09FA3CEE1F3C69350059B3B3 /* PBXTargetDependency */,
+				09B768B61F416B970098F242 /* PBXTargetDependency */,
 			);
 			name = BankPayoutFlow;
 			productName = UIStripeCustomPayoutFlow;
 			productReference = 09FA3CA41F3C68F40059B3B3 /* BankPayoutFlow.app */;
 			productType = "com.apple.product-type.application";
-		};
-		09FA3CD91F3C69350059B3B3 /* UIStripeCustomPayoutSetup */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 09FA3CF11F3C69350059B3B3 /* Build configuration list for PBXNativeTarget "UIStripeCustomPayoutSetup" */;
-			buildPhases = (
-				09FA3CD51F3C69350059B3B3 /* Sources */,
-				09FA3CD61F3C69350059B3B3 /* Frameworks */,
-				09FA3CD71F3C69350059B3B3 /* Headers */,
-				09FA3CD81F3C69350059B3B3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = UIStripeCustomPayoutSetup;
-			productName = UIStripeCustomPayoutSetup;
-			productReference = 09FA3CDA1F3C69350059B3B3 /* UIStripeCustomPayoutSetup.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -366,15 +370,14 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Christian Kauten";
 				TargetAttributes = {
-					09FA3CA31F3C68F40059B3B3 = {
+					09B768AF1F416B970098F242 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = YLBWSHF35Z;
 						ProvisioningStyle = Automatic;
 					};
-					09FA3CD91F3C69350059B3B3 = {
+					09FA3CA31F3C68F40059B3B3 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = YLBWSHF35Z;
-						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -393,12 +396,27 @@
 			projectRoot = "";
 			targets = (
 				09FA3CA31F3C68F40059B3B3 /* BankPayoutFlow */,
-				09FA3CD91F3C69350059B3B3 /* UIStripeCustomPayoutSetup */,
+				09B768AF1F416B970098F242 /* UIBankPayoutFlow */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		09B768AE1F416B970098F242 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B768C51F416C350098F242 /* MaterialAddressCard.xib in Resources */,
+				09B768D61F416C6B0098F242 /* DoneVC.storyboard in Resources */,
+				09B768D31F416C640098F242 /* TermsAndConditionsVC.storyboard in Resources */,
+				09B768D51F416C690098F242 /* PayoutInformationVC.storyboard in Resources */,
+				09B768D21F416C620098F242 /* WelcomeVC.storyboard in Resources */,
+				09B768D41F416C670098F242 /* CompanyInformationVC.storyboard in Resources */,
+				09B768C71F416C3A0098F242 /* MaterialTextField.xib in Resources */,
+				09B768C91F416C3E0098F242 /* MaterialSelectionCard.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		09FA3CA21F3C68F40059B3B3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -406,21 +424,6 @@
 				09FA3CB21F3C68F40059B3B3 /* LaunchScreen.storyboard in Resources */,
 				09FA3CAF1F3C68F40059B3B3 /* Assets.xcassets in Resources */,
 				09FA3CAD1F3C68F40059B3B3 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09FA3CD81F3C69350059B3B3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09FA3D0D1F3C73E50059B3B3 /* WelcomeVC.storyboard in Resources */,
-				09BCA11F1F3D184000423DDE /* MaterialSelectionCard.xib in Resources */,
-				09FA3D101F3C740A0059B3B3 /* TermsAndConditionsVC.storyboard in Resources */,
-				09FA3D141F3C74370059B3B3 /* PayoutInformationVC.storyboard in Resources */,
-				09BCA1171F3D17D800423DDE /* MaterialAddressCard.xib in Resources */,
-				09FA3D161F3C74490059B3B3 /* DoneVC.storyboard in Resources */,
-				09BCA1191F3D17EC00423DDE /* MaterialTextField.xib in Resources */,
-				09FA3D121F3C74220059B3B3 /* CompanyInformationVC.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +448,30 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		09B768AB1F416B970098F242 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B768BE1F416C1E0098F242 /* Address.swift in Sources */,
+				09B768CA1F416C420098F242 /* UIBankPayoutFlow.swift in Sources */,
+				09B768C01F416C220098F242 /* BankAccount.swift in Sources */,
+				09B768BF1F416C200098F242 /* Representative.swift in Sources */,
+				09B768C11F416C240098F242 /* Company.swift in Sources */,
+				09B768CB1F416C450098F242 /* PopupAlert.swift in Sources */,
+				09B768C61F416C370098F242 /* MaterialTextField.swift in Sources */,
+				09B768C81F416C3C0098F242 /* MaterialSelectionCard.swift in Sources */,
+				09B768D11F416C590098F242 /* DoneVC.swift in Sources */,
+				09B768C31F416C2F0098F242 /* ZFRippleButton.swift in Sources */,
+				09B768CD1F416C520098F242 /* TermsAndConditionsVC.swift in Sources */,
+				09B768CE1F416C530098F242 /* CompanyInformationVC.swift in Sources */,
+				09B768CF1F416C550098F242 /* CompanyInformationCells.swift in Sources */,
+				09B768D01F416C570098F242 /* PayoutInformationVC.swift in Sources */,
+				09B768CC1F416C500098F242 /* WelcomeVC.swift in Sources */,
+				09B768C21F416C2D0098F242 /* MaterialCard.swift in Sources */,
+				09B768C41F416C330098F242 /* MaterialAddressCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		09FA3CA01F3C68F40059B3B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -454,37 +481,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		09FA3CD51F3C69350059B3B3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09FA3CFC1F3C6B7D0059B3B3 /* Representative.swift in Sources */,
-				09FA3CFE1F3C6B890059B3B3 /* BankAccount.swift in Sources */,
-				09FA3CFA1F3C6B6F0059B3B3 /* Address.swift in Sources */,
-				09FA3D221F3C74B90059B3B3 /* ZFRippleButton.swift in Sources */,
-				09BCA1151F3D17CB00423DDE /* MaterialAddressCard.swift in Sources */,
-				09FA3D1C1F3C74790059B3B3 /* CompanyInformationVC.swift in Sources */,
-				09FA3D041F3C6ED70059B3B3 /* MaterialCard.swift in Sources */,
-				09AB93741F3C81E900AF1D85 /* DoneVC.swift in Sources */,
-				09AFDF5D1F3D4501004D6CEE /* CompanyInformationCells.swift in Sources */,
-				09FA3D001F3C6B950059B3B3 /* Company.swift in Sources */,
-				09FA3D181F3C74570059B3B3 /* WelcomeVC.swift in Sources */,
-				09FA3D1A1F3C746C0059B3B3 /* TermsAndConditionsVC.swift in Sources */,
-				09BCA11B1F3D17FB00423DDE /* MaterialTextField.swift in Sources */,
-				09BCA11E1F3D184000423DDE /* MaterialSelectionCard.swift in Sources */,
-				09FA3D061F3C6FC10059B3B3 /* UIStripeCustomPayoutSetup.swift in Sources */,
-				09523F4E1F3D5A6F0062AA79 /* PopupAlert.swift in Sources */,
-				09FA3D1E1F3C74850059B3B3 /* PayoutInformationVC.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		09FA3CEE1F3C69350059B3B3 /* PBXTargetDependency */ = {
+		09B768B61F416B970098F242 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 09FA3CD91F3C69350059B3B3 /* UIStripeCustomPayoutSetup */;
-			targetProxy = 09FA3CED1F3C69350059B3B3 /* PBXContainerItemProxy */;
+			target = 09B768AF1F416B970098F242 /* UIBankPayoutFlow */;
+			targetProxy = 09B768B51F416B970098F242 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -508,6 +511,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		09B768BA1F416B970098F242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YLBWSHF35Z;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = UIBankPayoutFlow/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.kautenja.UIBankPayoutFlow.UIBankPayoutFlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		09B768BB1F416B970098F242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YLBWSHF35Z;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = UIBankPayoutFlow/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.kautenja.UIBankPayoutFlow.UIBankPayoutFlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		09FA3CCA1F3C68F40059B3B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -631,64 +688,17 @@
 			};
 			name = Release;
 		};
-		09FA3CF21F3C69350059B3B3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = YLBWSHF35Z;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = UIStripeCustomPayoutSetup/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.kautenja.UIStripeCustomPayoutFlow.UIStripeCustomPayoutSetup;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		09FA3CF31F3C69350059B3B3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = YLBWSHF35Z;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = UIStripeCustomPayoutSetup/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.kautenja.UIStripeCustomPayoutFlow.UIStripeCustomPayoutSetup;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		09B768B91F416B970098F242 /* Build configuration list for PBXNativeTarget "UIBankPayoutFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09B768BA1F416B970098F242 /* Debug */,
+				09B768BB1F416B970098F242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		09FA3C9F1F3C68F40059B3B3 /* Build configuration list for PBXProject "BankPayoutFlow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -703,15 +713,6 @@
 			buildConfigurations = (
 				09FA3CCD1F3C68F40059B3B3 /* Debug */,
 				09FA3CCE1F3C68F40059B3B3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		09FA3CF11F3C69350059B3B3 /* Build configuration list for PBXNativeTarget "UIStripeCustomPayoutSetup" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				09FA3CF21F3C69350059B3B3 /* Debug */,
-				09FA3CF31F3C69350059B3B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

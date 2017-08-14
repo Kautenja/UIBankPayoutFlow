@@ -1,6 +1,6 @@
 //
-//  UIStripeCustomPayoutSetup.swift
-//  UIStripeCustomPayoutFlow
+//  UIBankPayoutFlow.swift
+//  UIBankPayoutFlow
 //
 //  Created by James Kauten on 8/10/17.
 //  Copyright © 2017 Christian Kauten. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 
 /// the central entry point for the flow
-public class UIStripeCustomPayoutSetup: UINavigationController {
+public class UIBankPayoutFlow: UINavigationController {
     
     /// a boolean determining whether logging is enabled
     public var isLoggingEnabled = false
@@ -42,7 +42,7 @@ public class UIStripeCustomPayoutSetup: UINavigationController {
     public static func show(on vc: UIViewController,
                             callback: @escaping (Company) -> Void) {
         // create an instance of self
-        let nc = UIStripeCustomPayoutSetup()
+        let nc = UIBankPayoutFlow()
         nc.isNavigationBarHidden = true
         nc.callback = callback
         // create welcom screen on the navigation controller
@@ -57,7 +57,7 @@ public class UIStripeCustomPayoutSetup: UINavigationController {
 
 
 // MARK: Welcome Screen Delegate Functions
-extension UIStripeCustomPayoutSetup: WelcomeVCDelegate {
+extension UIBankPayoutFlow: WelcomeVCDelegate {
     
     /// Respond to a press on the get started button
     func didPressGetStarted(_ on: WelcomeVC) {
@@ -73,7 +73,7 @@ extension UIStripeCustomPayoutSetup: WelcomeVCDelegate {
 
 
 // MARK: Terms And Conditions Screen Delegate Functions
-extension UIStripeCustomPayoutSetup: TermsAndConditionsVCDelegate {
+extension UIBankPayoutFlow: TermsAndConditionsVCDelegate {
     
     /// Respond to a press on the continue button
     func didAcceptTermsAndConditions(_ on: TermsAndConditionsVC) {
@@ -89,7 +89,7 @@ extension UIStripeCustomPayoutSetup: TermsAndConditionsVCDelegate {
 
 
 // MARK: Company Information Screen Delegate Functions
-extension UIStripeCustomPayoutSetup: CompanyInformationVCDelegate {
+extension UIBankPayoutFlow: CompanyInformationVCDelegate {
     
     /// Respond to the form being filled
     func didFill(_ on: CompanyInformationVC, company: Company) {
@@ -106,7 +106,7 @@ extension UIStripeCustomPayoutSetup: CompanyInformationVCDelegate {
 
 
 // MARK: Payout Information Screen Delegate Functions
-extension UIStripeCustomPayoutSetup: PayoutInformationVCDelegate {
+extension UIBankPayoutFlow: PayoutInformationVCDelegate {
     
     /// Respond to the form being filled
     func didFill(_ on: PayoutInformationVC, account: BankAccount) {
@@ -123,7 +123,7 @@ extension UIStripeCustomPayoutSetup: PayoutInformationVCDelegate {
 
 
 // MARK: Payout Information Screen Delegate Functions
-extension UIStripeCustomPayoutSetup: DoneVCDelegate {
+extension UIBankPayoutFlow: DoneVCDelegate {
     
     /// Respond to a press on the get started button button
     func didPressDone(_ on: DoneVC) {

@@ -1,6 +1,6 @@
 //
 //  PopupAlert.swift
-//  UIStripeCustomPayoutFlow
+//  UIBankPayoutFlow
 //
 //  Created by James Kauten on 8/10/17.
 //  Copyright © 2017 Christian Kauten. All rights reserved.
@@ -22,7 +22,7 @@ class PopupAlert {
                     message: String?=nil) {
         let popup = PopupDialog(title: title, message: message)
         let acknowledge = DefaultButton(title: "Ok") { }
-        acknowledge.titleColor = UIStripeCustomPayoutSetup.tintColor
+        acknowledge.titleColor = UIBankPayoutFlow.tintColor
         popup.addButton(acknowledge)
         viewController.present(popup, animated: true, completion: nil)
     }
