@@ -24,6 +24,12 @@ how to deploy the project on a live system.
 
 ### Prerequisites
 
+#### iOS Version
+
+* >= iOS10
+
+#### Dependency Management
+
 UIBankPayoutFlow is both dependency managed and distributed using 
 [Carthage][], the decentralized package manager for iOS frameworks. Ensure you 
 have Carthage installed by running
