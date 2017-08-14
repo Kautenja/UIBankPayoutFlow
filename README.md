@@ -1,5 +1,13 @@
 # UIBankPayoutFlow
 
+[![swift-badge][]][swift-link]
+[![carthage-badge][]][carthage-link]
+
+[swift-badge]: https://img.shields.io/badge/swift-3.2-orange.svg
+[swift-link]: https://swift.org/
+[carthage-badge]: https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat
+[carthage-link]: https://github.com/Carthage/Carthage
+
 this iOS framework delivers a concise flow for setting up payout information. It was originally
 designed to be fully compatible with [Stripe][], but has since been generalized to fit a broader
 audience.
