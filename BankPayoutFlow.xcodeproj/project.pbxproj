@@ -23,10 +23,6 @@
 		09FA3CAD1F3C68F40059B3B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09FA3CAB1F3C68F40059B3B3 /* Main.storyboard */; };
 		09FA3CAF1F3C68F40059B3B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09FA3CAE1F3C68F40059B3B3 /* Assets.xcassets */; };
 		09FA3CB21F3C68F40059B3B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09FA3CB01F3C68F40059B3B3 /* LaunchScreen.storyboard */; };
-		09FA3CBD1F3C68F40059B3B3 /* UIStripeCustomPayoutFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3CBC1F3C68F40059B3B3 /* UIStripeCustomPayoutFlowTests.swift */; };
-		09FA3CC81F3C68F40059B3B3 /* UIStripeCustomPayoutFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3CC71F3C68F40059B3B3 /* UIStripeCustomPayoutFlowUITests.swift */; };
-		09FA3CE31F3C69350059B3B3 /* UIStripeCustomPayoutSetup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FA3CDA1F3C69350059B3B3 /* UIStripeCustomPayoutSetup.framework */; };
-		09FA3CEA1F3C69350059B3B3 /* UIStripeCustomPayoutSetupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FA3CE91F3C69350059B3B3 /* UIStripeCustomPayoutSetupTests.swift */; };
 		09FA3CEC1F3C69350059B3B3 /* UIStripeCustomPayoutSetup.h in Headers */ = {isa = PBXBuildFile; fileRef = 09FA3CDC1F3C69350059B3B3 /* UIStripeCustomPayoutSetup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09FA3CEF1F3C69350059B3B3 /* UIStripeCustomPayoutSetup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FA3CDA1F3C69350059B3B3 /* UIStripeCustomPayoutSetup.framework */; };
 		09FA3CF01F3C69350059B3B3 /* UIStripeCustomPayoutSetup.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09FA3CDA1F3C69350059B3B3 /* UIStripeCustomPayoutSetup.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -49,34 +45,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		09FA3CB91F3C68F40059B3B3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 09FA3C9C1F3C68F40059B3B3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 09FA3CA31F3C68F40059B3B3;
-			remoteInfo = UIStripeCustomPayoutFlow;
-		};
-		09FA3CC41F3C68F40059B3B3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 09FA3C9C1F3C68F40059B3B3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 09FA3CA31F3C68F40059B3B3;
-			remoteInfo = UIStripeCustomPayoutFlow;
-		};
-		09FA3CE41F3C69350059B3B3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 09FA3C9C1F3C68F40059B3B3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 09FA3CD91F3C69350059B3B3;
-			remoteInfo = UIStripeCustomPayoutSetup;
-		};
-		09FA3CE61F3C69350059B3B3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 09FA3C9C1F3C68F40059B3B3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 09FA3CA31F3C68F40059B3B3;
-			remoteInfo = UIStripeCustomPayoutFlow;
-		};
 		09FA3CED1F3C69350059B3B3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 09FA3C9C1F3C68F40059B3B3 /* Project object */;
@@ -125,18 +93,9 @@
 		09FA3CAE1F3C68F40059B3B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09FA3CB11F3C68F40059B3B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09FA3CB31F3C68F40059B3B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09FA3CB81F3C68F40059B3B3 /* BankPayoutFlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankPayoutFlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		09FA3CBC1F3C68F40059B3B3 /* UIStripeCustomPayoutFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStripeCustomPayoutFlowTests.swift; sourceTree = "<group>"; };
-		09FA3CBE1F3C68F40059B3B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09FA3CC31F3C68F40059B3B3 /* BankPayoutFlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankPayoutFlowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		09FA3CC71F3C68F40059B3B3 /* UIStripeCustomPayoutFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStripeCustomPayoutFlowUITests.swift; sourceTree = "<group>"; };
-		09FA3CC91F3C68F40059B3B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09FA3CDA1F3C69350059B3B3 /* UIStripeCustomPayoutSetup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIStripeCustomPayoutSetup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09FA3CDC1F3C69350059B3B3 /* UIStripeCustomPayoutSetup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStripeCustomPayoutSetup.h; sourceTree = "<group>"; };
 		09FA3CDD1F3C69350059B3B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09FA3CE21F3C69350059B3B3 /* UIStripeCustomPayoutSetupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIStripeCustomPayoutSetupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		09FA3CE91F3C69350059B3B3 /* UIStripeCustomPayoutSetupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStripeCustomPayoutSetupTests.swift; sourceTree = "<group>"; };
-		09FA3CEB1F3C69350059B3B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09FA3CF91F3C6B6F0059B3B3 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Address.swift; path = Model/Address.swift; sourceTree = "<group>"; };
 		09FA3CFB1F3C6B7D0059B3B3 /* Representative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Representative.swift; path = Model/Representative.swift; sourceTree = "<group>"; };
 		09FA3CFD1F3C6B890059B3B3 /* BankAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BankAccount.swift; path = Model/BankAccount.swift; sourceTree = "<group>"; };
@@ -164,34 +123,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		09FA3CB51F3C68F40059B3B3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09FA3CC01F3C68F40059B3B3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		09FA3CD61F3C69350059B3B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				09BCA10C1F3D0E3800423DDE /* UIXibView.framework in Frameworks */,
 				09BCA10F1F3D0F7C00423DDE /* PopupDialog.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09FA3CDF1F3C69350059B3B3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09FA3CE31F3C69350059B3B3 /* UIStripeCustomPayoutSetup.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,10 +181,7 @@
 				09BCA1071F3D0DD600423DDE /* Cartfile */,
 				09BCA1081F3D0DDB00423DDE /* Makefile */,
 				09FA3CA61F3C68F40059B3B3 /* UIStripeCustomPayoutFlow */,
-				09FA3CBB1F3C68F40059B3B3 /* UIStripeCustomPayoutFlowTests */,
-				09FA3CC61F3C68F40059B3B3 /* UIStripeCustomPayoutFlowUITests */,
 				09FA3CDB1F3C69350059B3B3 /* UIStripeCustomPayoutSetup */,
-				09FA3CE81F3C69350059B3B3 /* UIStripeCustomPayoutSetupTests */,
 				09FA3CA51F3C68F40059B3B3 /* Products */,
 				09BCA10A1F3D0E3800423DDE /* Frameworks */,
 			);
@@ -257,10 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				09FA3CA41F3C68F40059B3B3 /* BankPayoutFlow.app */,
-				09FA3CB81F3C68F40059B3B3 /* BankPayoutFlowTests.xctest */,
-				09FA3CC31F3C68F40059B3B3 /* BankPayoutFlowUITests.xctest */,
 				09FA3CDA1F3C69350059B3B3 /* UIStripeCustomPayoutSetup.framework */,
-				09FA3CE21F3C69350059B3B3 /* UIStripeCustomPayoutSetupTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -278,24 +209,6 @@
 			path = UIStripeCustomPayoutFlow;
 			sourceTree = "<group>";
 		};
-		09FA3CBB1F3C68F40059B3B3 /* UIStripeCustomPayoutFlowTests */ = {
-			isa = PBXGroup;
-			children = (
-				09FA3CBC1F3C68F40059B3B3 /* UIStripeCustomPayoutFlowTests.swift */,
-				09FA3CBE1F3C68F40059B3B3 /* Info.plist */,
-			);
-			path = UIStripeCustomPayoutFlowTests;
-			sourceTree = "<group>";
-		};
-		09FA3CC61F3C68F40059B3B3 /* UIStripeCustomPayoutFlowUITests */ = {
-			isa = PBXGroup;
-			children = (
-				09FA3CC91F3C68F40059B3B3 /* Info.plist */,
-				09FA3CC71F3C68F40059B3B3 /* UIStripeCustomPayoutFlowUITests.swift */,
-			);
-			path = UIStripeCustomPayoutFlowUITests;
-			sourceTree = "<group>";
-		};
 		09FA3CDB1F3C69350059B3B3 /* UIStripeCustomPayoutSetup */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,15 +219,6 @@
 				09FA3D021F3C6EB90059B3B3 /* Controllers */,
 			);
 			path = UIStripeCustomPayoutSetup;
-			sourceTree = "<group>";
-		};
-		09FA3CE81F3C69350059B3B3 /* UIStripeCustomPayoutSetupTests */ = {
-			isa = PBXGroup;
-			children = (
-				09FA3CE91F3C69350059B3B3 /* UIStripeCustomPayoutSetupTests.swift */,
-				09FA3CEB1F3C69350059B3B3 /* Info.plist */,
-			);
-			path = UIStripeCustomPayoutSetupTests;
 			sourceTree = "<group>";
 		};
 		09FA3CF81F3C6B590059B3B3 /* Model */ = {
@@ -434,42 +338,6 @@
 			productReference = 09FA3CA41F3C68F40059B3B3 /* BankPayoutFlow.app */;
 			productType = "com.apple.product-type.application";
 		};
-		09FA3CB71F3C68F40059B3B3 /* BankPayoutFlowTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 09FA3CCF1F3C68F40059B3B3 /* Build configuration list for PBXNativeTarget "BankPayoutFlowTests" */;
-			buildPhases = (
-				09FA3CB41F3C68F40059B3B3 /* Sources */,
-				09FA3CB51F3C68F40059B3B3 /* Frameworks */,
-				09FA3CB61F3C68F40059B3B3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				09FA3CBA1F3C68F40059B3B3 /* PBXTargetDependency */,
-			);
-			name = BankPayoutFlowTests;
-			productName = UIStripeCustomPayoutFlowTests;
-			productReference = 09FA3CB81F3C68F40059B3B3 /* BankPayoutFlowTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		09FA3CC21F3C68F40059B3B3 /* BankPayoutFlowUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 09FA3CD21F3C68F40059B3B3 /* Build configuration list for PBXNativeTarget "BankPayoutFlowUITests" */;
-			buildPhases = (
-				09FA3CBF1F3C68F40059B3B3 /* Sources */,
-				09FA3CC01F3C68F40059B3B3 /* Frameworks */,
-				09FA3CC11F3C68F40059B3B3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				09FA3CC51F3C68F40059B3B3 /* PBXTargetDependency */,
-			);
-			name = BankPayoutFlowUITests;
-			productName = UIStripeCustomPayoutFlowUITests;
-			productReference = 09FA3CC31F3C68F40059B3B3 /* BankPayoutFlowUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		09FA3CD91F3C69350059B3B3 /* UIStripeCustomPayoutSetup */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09FA3CF11F3C69350059B3B3 /* Build configuration list for PBXNativeTarget "UIStripeCustomPayoutSetup" */;
@@ -488,25 +356,6 @@
 			productReference = 09FA3CDA1F3C69350059B3B3 /* UIStripeCustomPayoutSetup.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		09FA3CE11F3C69350059B3B3 /* UIStripeCustomPayoutSetupTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 09FA3CF51F3C69350059B3B3 /* Build configuration list for PBXNativeTarget "UIStripeCustomPayoutSetupTests" */;
-			buildPhases = (
-				09FA3CDE1F3C69350059B3B3 /* Sources */,
-				09FA3CDF1F3C69350059B3B3 /* Frameworks */,
-				09FA3CE01F3C69350059B3B3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				09FA3CE51F3C69350059B3B3 /* PBXTargetDependency */,
-				09FA3CE71F3C69350059B3B3 /* PBXTargetDependency */,
-			);
-			name = UIStripeCustomPayoutSetupTests;
-			productName = UIStripeCustomPayoutSetupTests;
-			productReference = 09FA3CE21F3C69350059B3B3 /* UIStripeCustomPayoutSetupTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -522,29 +371,11 @@
 						DevelopmentTeam = YLBWSHF35Z;
 						ProvisioningStyle = Automatic;
 					};
-					09FA3CB71F3C68F40059B3B3 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = YLBWSHF35Z;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 09FA3CA31F3C68F40059B3B3;
-					};
-					09FA3CC21F3C68F40059B3B3 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = YLBWSHF35Z;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 09FA3CA31F3C68F40059B3B3;
-					};
 					09FA3CD91F3C69350059B3B3 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = YLBWSHF35Z;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
-					};
-					09FA3CE11F3C69350059B3B3 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = YLBWSHF35Z;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 09FA3CA31F3C68F40059B3B3;
 					};
 				};
 			};
@@ -562,10 +393,7 @@
 			projectRoot = "";
 			targets = (
 				09FA3CA31F3C68F40059B3B3 /* BankPayoutFlow */,
-				09FA3CB71F3C68F40059B3B3 /* BankPayoutFlowTests */,
-				09FA3CC21F3C68F40059B3B3 /* BankPayoutFlowUITests */,
 				09FA3CD91F3C69350059B3B3 /* UIStripeCustomPayoutSetup */,
-				09FA3CE11F3C69350059B3B3 /* UIStripeCustomPayoutSetupTests */,
 			);
 		};
 /* End PBXProject section */
@@ -581,20 +409,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		09FA3CB61F3C68F40059B3B3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09FA3CC11F3C68F40059B3B3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		09FA3CD81F3C69350059B3B3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -607,13 +421,6 @@
 				09FA3D161F3C74490059B3B3 /* DoneVC.storyboard in Resources */,
 				09BCA1191F3D17EC00423DDE /* MaterialTextField.xib in Resources */,
 				09FA3D121F3C74220059B3B3 /* CompanyInformationVC.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09FA3CE01F3C69350059B3B3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,22 +454,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		09FA3CB41F3C68F40059B3B3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09FA3CBD1F3C68F40059B3B3 /* UIStripeCustomPayoutFlowTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09FA3CBF1F3C68F40059B3B3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09FA3CC81F3C68F40059B3B3 /* UIStripeCustomPayoutFlowUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		09FA3CD51F3C69350059B3B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -687,37 +478,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		09FA3CDE1F3C69350059B3B3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09FA3CEA1F3C69350059B3B3 /* UIStripeCustomPayoutSetupTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		09FA3CBA1F3C68F40059B3B3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 09FA3CA31F3C68F40059B3B3 /* BankPayoutFlow */;
-			targetProxy = 09FA3CB91F3C68F40059B3B3 /* PBXContainerItemProxy */;
-		};
-		09FA3CC51F3C68F40059B3B3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 09FA3CA31F3C68F40059B3B3 /* BankPayoutFlow */;
-			targetProxy = 09FA3CC41F3C68F40059B3B3 /* PBXContainerItemProxy */;
-		};
-		09FA3CE51F3C69350059B3B3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 09FA3CD91F3C69350059B3B3 /* UIStripeCustomPayoutSetup */;
-			targetProxy = 09FA3CE41F3C69350059B3B3 /* PBXContainerItemProxy */;
-		};
-		09FA3CE71F3C69350059B3B3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 09FA3CA31F3C68F40059B3B3 /* BankPayoutFlow */;
-			targetProxy = 09FA3CE61F3C69350059B3B3 /* PBXContainerItemProxy */;
-		};
 		09FA3CEE1F3C69350059B3B3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 09FA3CD91F3C69350059B3B3 /* UIStripeCustomPayoutSetup */;
@@ -868,64 +631,6 @@
 			};
 			name = Release;
 		};
-		09FA3CD01F3C68F40059B3B3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = YLBWSHF35Z;
-				INFOPLIST_FILE = UIStripeCustomPayoutFlowTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.kautenja.UIStripeCustomPayoutFlow.UIStripeCustomPayoutFlowTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankPayoutFlow.app/BankPayoutFlow";
-			};
-			name = Debug;
-		};
-		09FA3CD11F3C68F40059B3B3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = YLBWSHF35Z;
-				INFOPLIST_FILE = UIStripeCustomPayoutFlowTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.kautenja.UIStripeCustomPayoutFlow.UIStripeCustomPayoutFlowTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankPayoutFlow.app/BankPayoutFlow";
-			};
-			name = Release;
-		};
-		09FA3CD31F3C68F40059B3B3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = YLBWSHF35Z;
-				INFOPLIST_FILE = UIStripeCustomPayoutFlowUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.kautenja.UIStripeCustomPayoutFlow.UIStripeCustomPayoutFlowUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = UIStripeCustomPayoutFlow;
-			};
-			name = Debug;
-		};
-		09FA3CD41F3C68F40059B3B3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = YLBWSHF35Z;
-				INFOPLIST_FILE = UIStripeCustomPayoutFlowUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.kautenja.UIStripeCustomPayoutFlow.UIStripeCustomPayoutFlowUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = UIStripeCustomPayoutFlow;
-			};
-			name = Release;
-		};
 		09FA3CF21F3C69350059B3B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -981,34 +686,6 @@
 			};
 			name = Release;
 		};
-		09FA3CF61F3C69350059B3B3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = YLBWSHF35Z;
-				INFOPLIST_FILE = UIStripeCustomPayoutSetupTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.kautenja.UIStripeCustomPayoutFlow.UIStripeCustomPayoutSetupTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankPayoutFlow.app/BankPayoutFlow";
-			};
-			name = Debug;
-		};
-		09FA3CF71F3C69350059B3B3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = YLBWSHF35Z;
-				INFOPLIST_FILE = UIStripeCustomPayoutSetupTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.kautenja.UIStripeCustomPayoutFlow.UIStripeCustomPayoutSetupTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankPayoutFlow.app/BankPayoutFlow";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1030,38 +707,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		09FA3CCF1F3C68F40059B3B3 /* Build configuration list for PBXNativeTarget "BankPayoutFlowTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				09FA3CD01F3C68F40059B3B3 /* Debug */,
-				09FA3CD11F3C68F40059B3B3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		09FA3CD21F3C68F40059B3B3 /* Build configuration list for PBXNativeTarget "BankPayoutFlowUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				09FA3CD31F3C68F40059B3B3 /* Debug */,
-				09FA3CD41F3C68F40059B3B3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		09FA3CF11F3C69350059B3B3 /* Build configuration list for PBXNativeTarget "UIStripeCustomPayoutSetup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				09FA3CF21F3C69350059B3B3 /* Debug */,
 				09FA3CF31F3C69350059B3B3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		09FA3CF51F3C69350059B3B3 /* Build configuration list for PBXNativeTarget "UIStripeCustomPayoutSetupTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				09FA3CF61F3C69350059B3B3 /* Debug */,
-				09FA3CF71F3C69350059B3B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
