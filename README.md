@@ -1,7 +1,8 @@
-# UIStripeCustomPayoutFlow
+# UIBankPayoutFlow
 
-this iOS framework delivers a concise flow for setting up payout information for
-a custom seller account on [Stripe][]
+this iOS framework delivers a concise flow for setting up payout information. It was originally
+designed to be fully compatible with [Stripe][], but has been since generalized to fit a broader
+audience.
 
 [Stripe]: https://stripe.com
 
@@ -38,10 +39,10 @@ make install
 ```
 
 Once carthage finishes downloading and building the dependencies open 
-[UIStripeCustomPayoutFlow.xcodeproj][] and build the project to ensure the 
+[UIBankPayoutFlow.xcodeproj][] and build the project to ensure the 
 dependency installation went smoothly
 
-[UIStripeCustomPayoutFlow.xcodeproj]: ./UIStripeCustomPayoutFlow.xcodeproj
+[UIBankPayoutFlow.xcodeproj]: ./UIBankPayoutFlow.xcodeproj
 
 ## Deployment
 
@@ -49,7 +50,7 @@ To incorporate this framework in your workflow simply add the following line to
 your Cartfile:
 
 ```ruby
-github "kautenja/UIStripeCustomPayoutFlow"
+github "kautenja/UIBankPayoutFlow"
 ```
 
 ## Built With
@@ -69,11 +70,11 @@ Please read [CONTRIBUTING.md][] for details on our code of conduct, and the proc
 ## Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, 
-see the [tags on this repository](https://github.com/kautenja/UIStripeCustomPayoutFlow/tags). 
+see the [tags on this repository](https://github.com/kautenja/UIBankPayoutFlow/tags). 
 
 ## Authors
 
-See the list of [contributors](https://github.com/kautenja/UIStripeCustomPayoutFlow/contributors) who participated in this project.
+See the list of [contributors](https://github.com/kautenja/UIBankPayoutFlow/contributors) who participated in this project.
 
 ## License
 
