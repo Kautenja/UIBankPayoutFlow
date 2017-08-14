@@ -39,10 +39,10 @@ make install
 ```
 
 Once carthage finishes downloading and building the dependencies open 
-[UIBankPayoutFlow.xcodeproj][] and build the project to ensure the 
+[BankPayoutFlow.xcodeproj][] and build the project to ensure the 
 dependency installation went smoothly
 
-[UIBankPayoutFlow.xcodeproj]: ./UIBankPayoutFlow.xcodeproj
+[BankPayoutFlow.xcodeproj]: ./BankPayoutFlow.xcodeproj
 
 ## Deployment
 
